@@ -26,16 +26,19 @@ public class DialogueTrigger : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        //Makes icon appear above NPC's head when player approaches
+        //Signals to player that they can interact with NPC (currently using Spacebar)
         if (convoIcon != null)
         {
             convoIcon.SetActive(true);
         }
 
-        
+
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
+        //Removes icon above NPS's head when player leaves trigger area
         if (convoIcon != null)
         {
             convoIcon.SetActive(false);
@@ -58,6 +61,6 @@ public class DialogueTrigger : MonoBehaviour
             text.SetActive(true);
 
         }
-        
+
     }
 }
