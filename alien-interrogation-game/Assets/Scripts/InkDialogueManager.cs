@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using Ink.Runtime;
+using TMPro;
 
 public class InkDialogueManager : MonoBehaviour
 {
@@ -13,16 +14,16 @@ public class InkDialogueManager : MonoBehaviour
     public bool isTalking = false;
 
     static Story story;
-    Text nametag;
-    Text message;
+    TMP_Text nametag;
+    TMP_Text message;
     List<string> tags;
     static Choice choiceSelected;
 
     private void Start()
     {
         story = new Story(inkFile.text);
-        nametag = textBox.transform.GetChild(0).GetComponent<Text>();
-        message = textBox.transform.GetChild(1).GetComponent<Text>();
+        nametag = textBox.transform.GetChild(0).GetComponent<TextMeshProUGUI>();
+        message = textBox.transform.GetChild(1).GetComponent<TextMeshProUGUI>();
         tags = new List<string>();
         choiceSelected = null;
     }
@@ -34,7 +35,7 @@ public class InkDialogueManager : MonoBehaviour
             // Is there more to the story?
             if (story.canContinue)
             {
-                nametag.text = "Phoenix"; // FIXME: Change name and don't have hard coded string
+                nametag.text = "Bob"; // FIXME: Don't have hard coded string
                 AdvanceDialogue();
 
                 // Are there any choices?
