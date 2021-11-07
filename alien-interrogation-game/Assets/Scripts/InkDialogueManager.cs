@@ -35,7 +35,7 @@ public class InkDialogueManager : MonoBehaviour
             // Is there more to the story?
             if (story.canContinue)
             {
-                nametag.text = "Bob"; // FIXME: Don't have hard coded string
+                //nametag.text = "Bob"; // FIXME: Don't have hard coded string
                 AdvanceDialogue();
 
                 // Are there any choices?
@@ -61,7 +61,7 @@ public class InkDialogueManager : MonoBehaviour
     private void AdvanceDialogue()
     {
         string currentSentence = story.Continue();
-        //ParseTags(); Optional system if we want to use tags to set animations and colors
+        ParseTags();
         StopAllCoroutines();
         StartCoroutine(TypeSentence(currentSentence));
     }
@@ -125,24 +125,32 @@ public class InkDialogueManager : MonoBehaviour
     /*** Tag Parser ***/
     /// In Inky, you can use tags which can be used to cue stuff in a game.
     /// This is just one way of doing it. Not the only method on how to trigger events.
-    //void ParseTags()
-    //{
-    //    tags = story.currentTags;
-    //    foreach (string t in tags)
-    //    {
-    //        string prefix = t.Split(' ')[0];
-    //        string param = t.Split(' ')[1];
+    void ParseTags()
+    {
+        tags = story.currentTags;
+        foreach (string t in tags)
+        {
+            string prefix = t.Split(' ')[0];
+            string param = t.Split(' ')[1];
 
-    //        switch(prefix.ToLower())
-    //        {
-    //            case "anim":
-    //                SetAnimation(param);
-    //                break;
-    //            case "color":
-    //                SetTextColor(param);
-    //                break;
-    //        }
-    //    }
-    //}
+            switch (prefix.ToLower())
+            {
+                //case "anim":
+                //    SetAnimation(param);
+                //    break;
+                //case "color":
+                //    SetTextColor(param);
+                //    break;
+                case "name":
+                    SetNametag(param);
+                    break;
+            }
+        }
+    }
+
+    private void SetNametag(string name)
+    {
+        nametag.text = name;
+    }
 
 }
