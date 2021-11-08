@@ -154,3 +154,13 @@ public class InkDialogueManager : MonoBehaviour
     }
 
 }
+
+public class Selectable : MonoBehaviour
+{
+    public object element;
+    public void Decide()
+    {
+        InkDialogueManager.SetDecision(element);
+    }
+
+}
