@@ -7,12 +7,11 @@ using TMPro;
 
 public class InkDialogueManager : MonoBehaviour
 {
-    public TextAsset inkFile;
-    public GameObject textBox;
-    public GameObject customButton;
-    public GameObject optionPanel;
-    public GameObject dialogueUI;
-    public bool isTalking = false;
+    public TextAsset inkFile; // The json file from inky that has the script we want to load.
+    public GameObject textBox; // The gameObject that displays the dialogue box and holds the message and nametag text boxes.
+    public GameObject customButton; // The prefab for the buttons that get created in optionPanel.
+    public GameObject optionPanel; // Holds the buttons using vertical layout component.
+    public GameObject dialogueUI; // The object holding all of the UI relavent to dialogue.
 
     static Story story;
     TMP_Text nametag;
@@ -37,14 +36,15 @@ public class InkDialogueManager : MonoBehaviour
         }
     }
 
+    //Checks state of story and progresses accordingly
     public void PlayStory()
     {
         // Is there more to the story?
         if (story.canContinue)
         {
+            // Makes UI for dialogue visible
             dialogueUI.SetActive(true);
 
-            //nametag.text = "Bob"; // FIXME: Don't have hard coded string
             AdvanceDialogue();
 
             // Are there any choices?
@@ -59,11 +59,15 @@ public class InkDialogueManager : MonoBehaviour
         }
     }
 
-    // Finished the story (Dialogue)
+    // Finished the story
     public void FinishDialogue()
     {
         Debug.Log("End of Dialogue");
-        dialogueUI.SetActive(false);
+
+        // Makes dialogue UI invisible
+        dialogueUI.SetActive(false); 
+
+        // Sets story to passive phrase
         story.ChoosePathString("DONE"); //FIXME: Don't use hard coded string
     }
 
@@ -126,15 +130,13 @@ public class InkDialogueManager : MonoBehaviour
             Destroy(optionPanel.transform.GetChild(i).gameObject);
         }
         choiceSelected = null;
-        //AdvanceDialogue();
         PlayStory();
     }
 
 
 
     /*** Tag Parser ***/
-    /// In Inky, you can use tags which can be used to cue stuff in a game.
-    /// This is just one way of doing it. Not the only method on how to trigger events.
+    /// Uses tags in Inky file to cue stuff in the game.
     void ParseTags()
     {
         tags = story.currentTags;
@@ -156,22 +158,25 @@ public class InkDialogueManager : MonoBehaviour
         }
     }
 
+    // Sets the text for nametag.
+    // Will likely be replaced by a portrait scriptable object system
     private void SetNametag(string name)
     {
         nametag.text = name;
     }
 
-    //This function is called when memory device is used and it resets the current script.
+    //This function is called when memory device is used and it resets the story to the beginning.
     public void MemoryWipe()
     {
         AdvanceFromDecision();
-        story.ChoosePathString("Beginning");
+        story.ChoosePathString("Beginning"); //FIXME: Should not use hard coded string
         PlayStory();
 
     }
 
 }
 
+// Class used for option system
 public class Selectable : MonoBehaviour
 {
     public object element;

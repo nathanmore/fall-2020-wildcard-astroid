@@ -38,5 +38,5 @@ No thanks. -> END
 
 === DONE ===
 #name Bob
-Hello there.
+Get to work.
 -> END
