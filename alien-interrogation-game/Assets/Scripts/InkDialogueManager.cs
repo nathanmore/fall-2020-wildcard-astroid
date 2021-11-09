@@ -126,12 +126,12 @@ public class InkDialogueManager : MonoBehaviour
             Destroy(optionPanel.transform.GetChild(i).gameObject);
         }
         choiceSelected = null;
-        AdvanceDialogue();
+        //AdvanceDialogue();
+        PlayStory();
     }
 
 
-    // This system is for if we want to use tags to control things like animations and text color.
-    // Currently not implemented but here for example of possible system
+
     /*** Tag Parser ***/
     /// In Inky, you can use tags which can be used to cue stuff in a game.
     /// This is just one way of doing it. Not the only method on how to trigger events.
@@ -142,15 +142,13 @@ public class InkDialogueManager : MonoBehaviour
         {
             string prefix = t.Split(' ')[0];
             string param = t.Split(' ')[1];
+            for (int i = 2; i < t.Split().Length; i++)
+            {
+                param += " " + t.Split(' ')[i];
+            }
 
             switch (prefix.ToLower())
             {
-                //case "anim":
-                //    SetAnimation(param);
-                //    break;
-                //case "color":
-                //    SetTextColor(param);
-                //    break;
                 case "name":
                     SetNametag(param);
                     break;
@@ -166,6 +164,7 @@ public class InkDialogueManager : MonoBehaviour
     //This function is called when memory device is used and it resets the current script.
     public void MemoryWipe()
     {
+        AdvanceFromDecision();
         story.ChoosePathString("Beginning");
         PlayStory();
 
