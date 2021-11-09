@@ -32,22 +32,27 @@ public class InkDialogueManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            // Is there more to the story?
-            if (story.canContinue)
-            {
-                //nametag.text = "Bob"; // FIXME: Don't have hard coded string
-                AdvanceDialogue();
+            PlayStory();
+        }
+    }
 
-                // Are there any choices?
-                if (story.currentChoices.Count != 0)
-                {
-                    StartCoroutine(ShowChoices());
-                }
-            }
-            else
+    private void PlayStory()
+    {
+        // Is there more to the story?
+        if (story.canContinue)
+        {
+            //nametag.text = "Bob"; // FIXME: Don't have hard coded string
+            AdvanceDialogue();
+
+            // Are there any choices?
+            if (story.currentChoices.Count != 0)
             {
-                FinishDialogue();
+                StartCoroutine(ShowChoices());
             }
+        }
+        else
+        {
+            FinishDialogue();
         }
     }
 
@@ -151,6 +156,14 @@ public class InkDialogueManager : MonoBehaviour
     private void SetNametag(string name)
     {
         nametag.text = name;
+    }
+
+    //This function is called when memory device is used and it resets the current script.
+    public void MemoryWipe()
+    {
+        story.ChoosePathString("Beginning");
+        PlayStory();
+
     }
 
 }
