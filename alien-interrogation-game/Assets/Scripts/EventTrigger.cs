@@ -4,9 +4,7 @@ using UnityEngine;
 
 public class EventTrigger : MonoBehaviour
 {
-    //Reference to text acting as placeholder for dialogue box
-    //This will be removed later but provides example for now
-    public GameObject text;
+    public InkDialogueManager dialogueManager;
 
     //Reference to icon that appears aboce characters head.
     public GameObject convoIcon;
@@ -31,8 +29,6 @@ public class EventTrigger : MonoBehaviour
             convoIcon.SetActive(false);
         }
 
-        //This is for temporary text box and would be removed after we implement dialogue manager
-        text.SetActive(false);
     }
 
     public void OnTriggerStay2D(Collider2D collision)
@@ -41,12 +37,7 @@ public class EventTrigger : MonoBehaviour
         {
             //We would then trigger the dialogue which would activate the Dialogue Manager we would attatch to NPC
             //this.TriggerDialogue();
-
-
-            //The code below is for testing purposes and demonstration and would be removed
-            Debug.Log("Spacebar");
-            text.SetActive(true);
-
+            dialogueManager.PlayStory();
         }
 
     }

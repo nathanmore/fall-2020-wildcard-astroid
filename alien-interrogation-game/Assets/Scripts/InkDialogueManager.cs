@@ -11,6 +11,7 @@ public class InkDialogueManager : MonoBehaviour
     public GameObject textBox;
     public GameObject customButton;
     public GameObject optionPanel;
+    public GameObject dialogueUI;
     public bool isTalking = false;
 
     static Story story;
@@ -36,11 +37,13 @@ public class InkDialogueManager : MonoBehaviour
         }
     }
 
-    private void PlayStory()
+    public void PlayStory()
     {
         // Is there more to the story?
         if (story.canContinue)
         {
+            dialogueUI.SetActive(true);
+
             //nametag.text = "Bob"; // FIXME: Don't have hard coded string
             AdvanceDialogue();
 
@@ -57,9 +60,10 @@ public class InkDialogueManager : MonoBehaviour
     }
 
     // Finished the story (Dialogue)
-    private void FinishDialogue()
+    public void FinishDialogue()
     {
         Debug.Log("End of Dialogue");
+        dialogueUI.SetActive(true);
     }
 
     // Advance through the story

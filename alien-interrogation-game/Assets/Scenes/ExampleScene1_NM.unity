@@ -141,7 +141,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &126349773
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -793,7 +793,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be7abdbb89543694196fddb424777def, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: {fileID: 0}
+  dialogueManager: {fileID: 675790250}
   convoIcon: {fileID: 1445173119}
 --- !u!61 &675790249
 BoxCollider2D:
@@ -837,6 +837,7 @@ MonoBehaviour:
   textBox: {fileID: 546954699}
   customButton: {fileID: 4614411586786794396, guid: 42cad2b40fe3e2f479717e3bb0e519e9, type: 3}
   optionPanel: {fileID: 1292479014}
+  dialogueUI: {fileID: 126349772}
   isTalking: 0
 --- !u!1 &829985336
 GameObject:
