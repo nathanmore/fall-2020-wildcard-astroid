@@ -5,8 +5,8 @@ Hey, how is your case cominig?
 -> Choices1
 
 == Choices1 ==
-* [Good] -> Good
-* [Bad] -> Bad
++ [Good] -> Good
++ [Bad] -> Bad
 
 == Good == 
 #name Me
@@ -23,8 +23,8 @@ Well you better get back to the grind then.
 -> END
 
 === Donut ===
-* [Yes] -> yes
-* [No] -> no
++ [Yes] -> yes
++ [No] -> no
 ->END
 
 === yes ===
@@ -34,4 +34,9 @@ Yes, thank you.
 
 === no ===
 #name Me
-No thanks. ->END
+No thanks. -> END
+
+=== DONE ===
+#name Bob
+Hello there.
+-> END

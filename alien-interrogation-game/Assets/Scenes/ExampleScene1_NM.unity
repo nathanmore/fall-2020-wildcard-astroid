@@ -660,7 +660,6 @@ GameObject:
   - component: {fileID: 675790244}
   - component: {fileID: 675790249}
   - component: {fileID: 675790248}
-  - component: {fileID: 675790250}
   m_Layer: 0
   m_Name: Bob (NPC)
   m_TagString: Untagged
@@ -793,8 +792,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be7abdbb89543694196fddb424777def, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueManager: {fileID: 675790250}
-  convoIcon: {fileID: 1445173119}
+  dialogueObject: {fileID: 1445173119}
 --- !u!61 &675790249
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -821,24 +819,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3, y: 3}
   m_EdgeRadius: 0
---- !u!114 &675790250
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 675790243}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 73affc634f5dc5546b70db62015f95c0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inkFile: {fileID: 4900000, guid: 35a950436f1a9d8438e18a2b2fe96cd4, type: 3}
-  textBox: {fileID: 546954699}
-  customButton: {fileID: 4614411586786794396, guid: 42cad2b40fe3e2f479717e3bb0e519e9, type: 3}
-  optionPanel: {fileID: 1292479014}
-  dialogueUI: {fileID: 126349772}
-  isTalking: 0
 --- !u!1 &829985336
 GameObject:
   m_ObjectHideFlags: 0
@@ -1214,7 +1194,7 @@ GameObject:
   - component: {fileID: 1292479017}
   - component: {fileID: 1292479016}
   m_Layer: 5
-  m_Name: ChoiceBox
+  m_Name: OptionPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1310,8 +1290,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1445173120}
   - component: {fileID: 1445173121}
+  - component: {fileID: 1445173122}
   m_Layer: 0
-  m_Name: Isometric Diamond
+  m_Name: DialogueObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1382,6 +1363,24 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1445173122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1445173119}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73affc634f5dc5546b70db62015f95c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inkFile: {fileID: 4900000, guid: 5772b23706c977047ad19b835ba6d3af, type: 3}
+  textBox: {fileID: 546954699}
+  customButton: {fileID: 4614411586786794396, guid: 42cad2b40fe3e2f479717e3bb0e519e9, type: 3}
+  optionPanel: {fileID: 1292479014}
+  dialogueUI: {fileID: 126349772}
+  isTalking: 0
 --- !u!1 &1574283749
 GameObject:
   m_ObjectHideFlags: 0
@@ -1599,7 +1598,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1445173122}
         m_TargetAssemblyTypeName: InkDialogueManager, Assembly-CSharp
         m_MethodName: MemoryWipe
         m_Mode: 1

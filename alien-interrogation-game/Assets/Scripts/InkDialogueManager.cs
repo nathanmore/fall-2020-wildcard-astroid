@@ -63,7 +63,8 @@ public class InkDialogueManager : MonoBehaviour
     public void FinishDialogue()
     {
         Debug.Log("End of Dialogue");
-        dialogueUI.SetActive(true);
+        dialogueUI.SetActive(false);
+        story.ChoosePathString("DONE"); //FIXME: Don't use hard coded string
     }
 
     // Advance through the story
