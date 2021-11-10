@@ -171,10 +171,16 @@ public class InkDialogueManager : MonoBehaviour
     //This function is called when memory device is used and it resets the story to the beginning.
     public void MemoryWipe()
     {
-        AdvanceFromDecision();
         story.ChoosePathString("Beginning"); //FIXME: Should not use hard coded string
-        PlayStory();
+        AdvanceFromDecision();
+        //PlayStory();
 
+    }
+
+    public void ConfrontButton()
+    {
+        story.ChoosePathString("Contradiction"); //FIXME: Should not use hard coded string
+        AdvanceFromDecision();
     }
 
 }

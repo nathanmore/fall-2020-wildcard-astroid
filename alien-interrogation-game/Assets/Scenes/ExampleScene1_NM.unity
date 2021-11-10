@@ -901,7 +901,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 829985339}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1445173122}
+        m_TargetAssemblyTypeName: InkDialogueManager, Assembly-CSharp
+        m_MethodName: ConfrontButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &829985339
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1375,7 +1387,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73affc634f5dc5546b70db62015f95c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inkFile: {fileID: 4900000, guid: aecbda1514a167c439886dc90ed096ac, type: 3}
+  inkFile: {fileID: 4900000, guid: 56424af038043574c8bf418b601ea293, type: 3}
   textBox: {fileID: 546954699}
   customButton: {fileID: 4614411586786794396, guid: 42cad2b40fe3e2f479717e3bb0e519e9, type: 3}
   optionPanel: {fileID: 1292479014}
