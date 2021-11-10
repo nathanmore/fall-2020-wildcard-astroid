@@ -130,6 +130,9 @@ public class InkDialogueManager : MonoBehaviour
             Destroy(optionPanel.transform.GetChild(i).gameObject);
         }
         choiceSelected = null;
+
+        SetNametag("Me"); //FIXME: Don't use hard coded string. Also: will be replaced with scriptable asset for character portraits/names
+
         PlayStory();
     }
 

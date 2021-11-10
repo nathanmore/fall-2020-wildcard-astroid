@@ -326,8 +326,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -446.5, y: 93.7}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: -490.83737, y: 88.95476}
+  m_SizeDelta: {x: 317.2794, y: 55.7654}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &173682167
 MonoBehaviour:
@@ -1375,12 +1375,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73affc634f5dc5546b70db62015f95c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inkFile: {fileID: 4900000, guid: 5772b23706c977047ad19b835ba6d3af, type: 3}
+  inkFile: {fileID: 4900000, guid: aecbda1514a167c439886dc90ed096ac, type: 3}
   textBox: {fileID: 546954699}
   customButton: {fileID: 4614411586786794396, guid: 42cad2b40fe3e2f479717e3bb0e519e9, type: 3}
   optionPanel: {fileID: 1292479014}
   dialogueUI: {fileID: 126349772}
-  isTalking: 0
 --- !u!1 &1574283749
 GameObject:
   m_ObjectHideFlags: 0

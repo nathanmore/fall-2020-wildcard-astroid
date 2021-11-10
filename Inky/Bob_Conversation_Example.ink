@@ -22,12 +22,12 @@ Not so well to be honest. I could use a donut to encourage me though.
 #name Bob
 We're all out of donuts. You better just get back to work.
 ~ claim2 = true
-{claim1 == true: -> Contradiction.Lie}
+{claim1 == true: -> Cont.Lie}
 -> END
 
 === Donut ===
 ~claim1 = true
-{claim2 == true: -> Contradiction.Question}
+{claim2 == true: -> Cont.Question}
 +++ [Yes]
 #name Me
 Yes, thank you -> END
@@ -37,7 +37,7 @@ No thanks -> END
 
 ->END
 
-=== Contradiction ===
+=== Cont ===
 = Lie
 +++ [You're lying]
 #name Me
