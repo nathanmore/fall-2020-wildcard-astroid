@@ -7,11 +7,11 @@ using TMPro;
 
 public class InkDialogueManager : MonoBehaviour
 {
-    public TextAsset inkFile;
-    public GameObject textBox;
-    public GameObject customButton;
-    public GameObject optionPanel;
-    public bool isTalking = false;
+    public TextAsset inkFile; // The json file from inky that has the script we want to load.
+    public GameObject textBox; // The gameObject that displays the dialogue box and holds the message and nametag text boxes.
+    public GameObject customButton; // The prefab for the buttons that get created in optionPanel.
+    public GameObject optionPanel; // Holds the buttons using vertical layout component.
+    public GameObject dialogueUI; // The object holding all of the UI relavent to dialogue.
 
     static Story story;
     TMP_Text nametag;
@@ -32,29 +32,43 @@ public class InkDialogueManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            // Is there more to the story?
-            if (story.canContinue)
-            {
-                //nametag.text = "Bob"; // FIXME: Don't have hard coded string
-                AdvanceDialogue();
-
-                // Are there any choices?
-                if (story.currentChoices.Count != 0)
-                {
-                    StartCoroutine(ShowChoices());
-                }
-            }
-            else
-            {
-                FinishDialogue();
-            }
+            PlayStory();
         }
     }
 
-    // Finished the story (Dialogue)
-    private void FinishDialogue()
+    //Checks state of story and progresses accordingly
+    public void PlayStory()
+    {
+        // Is there more to the story?
+        if (story.canContinue)
+        {
+            // Makes UI for dialogue visible
+            dialogueUI.SetActive(true);
+
+            AdvanceDialogue();
+
+            // Are there any choices?
+            if (story.currentChoices.Count != 0)
+            {
+                StartCoroutine(ShowChoices());
+            }
+        }
+        else
+        {
+            FinishDialogue();
+        }
+    }
+
+    // Finished the story
+    public void FinishDialogue()
     {
         Debug.Log("End of Dialogue");
+
+        // Makes dialogue UI invisible
+        dialogueUI.SetActive(false); 
+
+        // Sets story to passive phrase
+        story.ChoosePathString("DONE"); //FIXME: Don't use hard coded string
     }
 
     // Advance through the story
@@ -116,15 +130,16 @@ public class InkDialogueManager : MonoBehaviour
             Destroy(optionPanel.transform.GetChild(i).gameObject);
         }
         choiceSelected = null;
-        AdvanceDialogue();
+
+        SetNametag("Me"); //FIXME: Don't use hard coded string. Also: will be replaced with scriptable asset for character portraits/names
+
+        PlayStory();
     }
 
 
-    // This system is for if we want to use tags to control things like animations and text color.
-    // Currently not implemented but here for example of possible system
+
     /*** Tag Parser ***/
-    /// In Inky, you can use tags which can be used to cue stuff in a game.
-    /// This is just one way of doing it. Not the only method on how to trigger events.
+    /// Uses tags in Inky file to cue stuff in the game.
     void ParseTags()
     {
         tags = story.currentTags;
@@ -132,15 +147,13 @@ public class InkDialogueManager : MonoBehaviour
         {
             string prefix = t.Split(' ')[0];
             string param = t.Split(' ')[1];
+            for (int i = 2; i < t.Split().Length; i++)
+            {
+                param += " " + t.Split(' ')[i];
+            }
 
             switch (prefix.ToLower())
             {
-                //case "anim":
-                //    SetAnimation(param);
-                //    break;
-                //case "color":
-                //    SetTextColor(param);
-                //    break;
                 case "name":
                     SetNametag(param);
                     break;
@@ -148,13 +161,31 @@ public class InkDialogueManager : MonoBehaviour
         }
     }
 
+    // Sets the text for nametag.
+    // Will likely be replaced by a portrait scriptable object system
     private void SetNametag(string name)
     {
         nametag.text = name;
     }
 
+    //This function is called when memory device is used and it resets the story to the beginning.
+    public void MemoryWipe()
+    {
+        story.ChoosePathString("Beginning"); //FIXME: Should not use hard coded string
+        AdvanceFromDecision();
+        //PlayStory();
+
+    }
+
+    public void ConfrontButton()
+    {
+        story.ChoosePathString("Contradiction"); //FIXME: Should not use hard coded string
+        AdvanceFromDecision();
+    }
+
 }
 
+// Class used for option system
 public class Selectable : MonoBehaviour
 {
     public object element;
