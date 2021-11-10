@@ -1,5 +1,3 @@
-VAR claim1 = false
-VAR claim2 = false
 -> Beginning
 === Beginning ===
 #name Det. Bob
@@ -17,12 +15,11 @@ Anyway, how is your case coming?
 = Root
      #name Det. Bob
      That is good to hear. Would you like a donut?
-     ~ claim1 = true
      + Yes please. 
         -> Branch1
      + No thanks. 
         -> Branch2
-     + {Tree2.Root} [(I thought there weren't donuts)] 
+     + {Tree2.Branch1} [(I thought there weren't donuts)] 
         -> Contradiction1.Case1
 
 = Branch1
@@ -30,10 +27,10 @@ Anyway, how is your case coming?
      Here you go *hands donut*. 
      Now you better get back to it.
      +++ Hey boss, any chance I could get a raise?
-        #name Det. Bob
-        What are you crazy?! 
-        I just gave you a donut! 
-        Get out of here! 
+         #name Det. Bob
+         What are you crazy?! 
+         I just gave you a donut! 
+         Get out of here! 
             -> DONE
 
 = Branch2
