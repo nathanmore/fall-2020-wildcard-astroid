@@ -25,12 +25,13 @@ Somebody must have manually deleted the footage. I-it wasn't me, though! I don't
 (I can't conclude for certain Dauphin is the culprit.)
 (I suspect he may have deleted the footage, though. Let's see if we can find out what he's hiding...)
 
-+ Who has access to the footage? -> Root_1
-+ When could the footage have been possible deleted? -> Root_2
-+ How often do you leave the room unlocked? -> Root_3
+//contradictions in tree3 branch 2+++, tree 1 branch 1
++ Who has access to the footage? -> Tree1.Root
++ When could the footage have been possible deleted? -> Tree2.Root
++ How often do you leave the room unlocked? -> Tree3.Root
 *    ->DONE
 
-=== Root_1 ===
+=== Tree1 ===
 //Who has access?
 = Root
 #name Dauphin
@@ -58,7 +59,7 @@ All right, I'll keep in mind the possibility of a creature gleaning the pass.
 = branch1   
     #name Dauphin
     W-w-w-well, uhm, I don't know. 
-    It could have been N-nerguzzus since he works independently of me.
+    It could have been N-nerguzzus since they work independently of me.
     O-o-r it could have been the password-spotter!
     #name Det. C 
     Just to be clear, anybody with the password has full access to the footage?
@@ -66,6 +67,8 @@ All right, I'll keep in mind the possibility of a creature gleaning the pass.
     Uhm, yes. Y-y-yes, that's just it. 
     Some nefarious creature could have entered the password while I was away!
     If they had the password, then they had full access to all the footage!
+    
+    + {Tree3.branch2} What about the 25 factor authentication process? -> Cont1
     
     +++How often do you leave the room unlocked?
         #name Dauphin
@@ -107,7 +110,7 @@ All right, I'll keep in mind the possibility of a creature gleaning the pass.
     The room was locked each time, though?
     #Dauphin 
     Y-y-yes. Nerguzzus might have left the room unlocked on their shift.
-    I did not make a mistake in this.
+    I did not leave the door open.
     
     +++When could the footage have possibly been deleted?
         #name Dauphin
@@ -126,7 +129,7 @@ All right, I'll keep in mind the possibility of a creature gleaning the pass.
         ->DONE
 
 
-== Root_2 ==
+== Tree2 ==
 //When couuld it have happened?
 = Root 
 #name Dauphin
@@ -142,11 +145,11 @@ so it must have happened while I was out.
 I see. It happened while you were away. 
 I'll note that down.
 
-+ Who has access to the footage? -> branch_1
-+ How often do you leave the room unlocked? -> branch_2
++ Who has access to the footage? -> branch1
++ How often do you leave the room unlocked? -> branch2
 
 //who -> how
-=branch_1
+=branch1
     #name Dauphin
     Well, you would need the password.
     The creatures that have the password are, Uhm, j-just me and Nerguzzus. 
@@ -180,7 +183,7 @@ I'll note that down.
         ->DONE
 
 //how -> who
-=branch_2
+=branch2
     #name Dauphin
     W-w-well when I'm in here, the door is unlocked.
     B-but if I have to leave unattended for some reason, protocol says to lock the door.
@@ -207,7 +210,7 @@ I'll note that down.
 
 
 
-=== Root_3 === 
+=== Tree3 === 
 = Root 
 #name Dauphin
 L-leave the door unlocked? I-I wouldn't do that. What kind of guard would do that?
@@ -227,11 +230,11 @@ Y-y-yes, excellent point. My record is good, I, uh, never violate protocol!
 #name Det. C 
 I have a few more questions for you before I go bothering them.
 
-+ When could the footage have been possible deleted? -> branch_2
-+ Who has access to the footage? -> branch_1
++ When could the footage have been possible deleted? -> branch2
++ Who has access to the footage? -> branch1
 
 //when -> who
-=branch_2
+=branch2
     #name Dauphin 
     W-well, uhm, I don't know.
     #name Det. C 
@@ -258,18 +261,19 @@ I have a few more questions for you before I go bothering them.
         #name Dauphin
         Oh, uhm, just Nerguzzus.
         #name Det C 
-        Do you think Nerguzzus deleted the files.
+        Do you think Nerguzzus deleted the files?
         #name Dauphin 
         W-w-w-w-well! I say, uhm, yes...
         L-l-l-look, I don't want to throw them under the shuttlebus, but there's a complicated 25 factor authentication process beyond the password. 
         Only, uhm, Nerguzzus and myself can really navigate it. 
         So, uhm, it must have been them.
-        #Det. C 
-        Understood. 
+        #name Det. C 
+        Understood.
         ->DONE
+        + {Tree1.branch1} Don't get smart with me, stop blaming Nerguzzus. ->Cont2
 
 //who -> when
-=branch_1
+=branch1
     #name Dauphin
     Well, you would need the password.
     The creatures that have the password are, Uhm, j-just me and Nerguzzus. 
@@ -308,5 +312,72 @@ W-w-w-well I appreciate your concern, b-b-b-but I must get back to work.
 #Det. C 
 Of course. I might hang around just a bit. Don't mind me.
 ->Beginning
+
+=== DONE2 ====
+#name Dauphin 
+Aren't you going to ask any questions, D-detective?
+#name Det. C 
+No, I've got all the information I need.
+#name Dauphin 
+O-o-ok. I'm good to resume work then?
+#name Det. C 
+Knock yourself out, buddy.
+->END
+
+//what about 25FA
+=== Cont1 ===
+#name Dauphin
+O-o-oh, t-tt-that. 
+D-didn't realize you knew. 
+Just a slip of the clicker.
+#name Det. C 
+I have you on camera saying the opposite. 
+There was no password gleamer. 
+You broke protocol and deleted the files, and I want you to tell me why.
+#name Dauphin 
+P-p-please don't tell anybody...
+It was a favor for a friend. 
+Shudderz got, uhm, really high a few days ago, and, uhm, 
+he did some unspeakable things in the file room on camera.
+S-so, uhm, he told me he'd, uhm, invite me to one of his parties if I, 
+uhm, deleted the footage. So I did.
+#name Det. C 
+There, was that so hard?
+I'll need to go have a talk with Shudderz. 
+(flashy thing animation)
+Never mind, I have everything I need.
+You have a nice day.
+-> DONE2
+
+//You're really throwing your companion under the bus
+=== Cont2 ===
+#name Dauphin 
+W-w-what? I would n-n-n-never...
+#name Det. C 
+I have footage of you saying the exact opposite. 
+#name Dauphin 
+I-I-I don't remember saying that...!
+#name Det. C 
+I have a device that deletes memories. Interrogation use only. 
+It's integrated into fish buddy.
+#name Dauphin 
+W-w-w-what? W-w-wow, that's really cool!
+#name Det. C 
+Yup.
+So tell me why you're contradicting yourself.
+#name Dauphin 
+O-oh, uhm, y-y-you're right, I deleted the footage. 
+Uhm, S-shudderz asked me to. 
+He had an embarassing moment in the file room a few relative days ago...
+#name Det. C 
+And you, the biggest good two-fin in the office, broke protocol and deleted the files for him? 
+#name Dauphin 
+W-w-w-well, he told me he'd invite me to one of his parties if I did...
+#name Det. C 
+I'll have to have a talk with him later. 
+(flashy thing animation)
+Never mind, I have everything I need.
+You have a nice day.
+->END
 
 
