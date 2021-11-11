@@ -1,23 +1,34 @@
 #name Det.C
 Dauphin! Good to see you, my fellow mammal! 
-Listen, there's been a crime committed. Security clearance theta-2. I need to see data of the evidence room for 3 relative days ago. 
+Listen, there's been a crime committed. A theft.
+Security clearance theta-2. I need to see data of the evidence room for 3 relative days ago. 
 I'd like everything, footage, pressure, temperature, hit me with it all.
+Oh, and for the books, name, occupation, and home planet.
 #name Dauphin
 O..O...Ok. Good to see you too, Detective C. 
+My name is Dauphin, I work security and surveillance,
+and I am from Planet Narret of the Silky Smooth Galaxy. 
+#name Det. C 
+Thanks. Can you get the footage for me?
+#name Dauphin
 Y-yes, I can bring that up, just a second...here it is!
 #name Det.C 
+...
 What's this static?
 #name Dauphin
 W-well, it seems we have seismic readings as usual - looks to me like 3 creatures were in the room at that time.
 They all left one by one.
 Visual footage is missing. That's odd.
 #name Det.C 
-What? How on Terra did that happen? 
+What? How on Terra-2 did that happen? 
 We have like 25 zetabytes of storage on this thing, right? 
 Couldn't have overflowed?
 #name Dauphin
 Nope. 
 Somebody must have manually deleted the footage. I-it wasn't me, though! I don't know.
+#name Det. C 
+Hmm. You mind if I ask you a few questions about the deleted footage? 
+
 -> Beginning
 
 === Beginning ===
