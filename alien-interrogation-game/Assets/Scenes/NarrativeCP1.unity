@@ -1778,8 +1778,8 @@ MonoBehaviour:
   customButton: {fileID: 4614411586786794396, guid: 42cad2b40fe3e2f479717e3bb0e519e9, type: 3}
   optionPanel: {fileID: 86788074}
   dialogueUI: {fileID: 1200979185}
-  characterInfo: {fileID: 11400000, guid: dc76cd1d01854944e847d64852504df1, type: 2}
-  player: {fileID: 11400000, guid: 45645845d79999040980c25df50b3f74, type: 2}
+  characterInfo: {fileID: 11400000, guid: 1f42127b9c4effe4099c4acd8ba9e3d3, type: 2}
+  player: {fileID: 11400000, guid: dc76cd1d01854944e847d64852504df1, type: 2}
 --- !u!212 &1583020444
 SpriteRenderer:
   m_ObjectHideFlags: 0

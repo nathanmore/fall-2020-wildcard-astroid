@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7aab21fa947ca6e418c8fb90c80e3237, type: 3}
-  m_Name: Dect. C
+  m_Name: LTAnorakSect
   m_EditorClassIdentifier: 
-  name: Detective C
-  sprite: {fileID: 21300000, guid: 181f89bc4075e1745ae419677e2e1560, type: 3}
+  name: LTAnorakSect
+  sprite: {fileID: -2393588265003470299, guid: 7dd08e54f1321044eb3cc4a1d805bd6d, type: 3}
