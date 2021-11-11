@@ -12,13 +12,16 @@ public class InkDialogueManager : MonoBehaviour
     public GameObject customButton; // The prefab for the buttons that get created in optionPanel.
     public GameObject optionPanel; // Holds the buttons using vertical layout component.
     public GameObject dialogueUI; // The object holding all of the UI relavent to dialogue.
+
     //Adding Characters for names (Josh)
     public CharacterInfo characterInfo;
     public CharacterInfo player;
     // 
+
     static Story story;
     TMP_Text nametag;
     TMP_Text message;
+    Image portrait;
     List<string> tags;
     static Choice choiceSelected;
 
@@ -27,6 +30,7 @@ public class InkDialogueManager : MonoBehaviour
         story = new Story(inkFile.text);
         nametag = textBox.transform.GetChild(0).GetComponent<TextMeshProUGUI>();
         message = textBox.transform.GetChild(1).GetComponent<TextMeshProUGUI>();
+        portrait = textBox.transform.GetChild(2).GetComponent<Image>();
         tags = new List<string>();
         choiceSelected = null;
     }
@@ -134,7 +138,7 @@ public class InkDialogueManager : MonoBehaviour
         }
         choiceSelected = null;
 
-        SetNametag(player); //Edited by Josh to display image and name
+        SetSpeaker(player); //Edited by Josh to display image and name
 
         PlayStory();
     }
@@ -159,7 +163,14 @@ public class InkDialogueManager : MonoBehaviour
             {
                 case "name":
                     // SetNametag(param);
-                    SetNametag(characterInfo); //Edited by Josh to display image and name
+                    if (param == "Me") //FIXME replace hard coded string with public variable
+                    {
+                        SetSpeaker(player);
+                    }
+                    else
+                    {
+                        SetSpeaker(characterInfo); //Edited by Josh to display image and name
+                    }
                     break;
             }
         }
@@ -167,10 +178,11 @@ public class InkDialogueManager : MonoBehaviour
 
     // Sets the text for nametag.
     // Will likely be replaced by a portrait scriptable object system
-    private void SetNametag(CharacterInfo character) // changed string parameter to a CharacterInfo parament 
+    private void SetSpeaker(CharacterInfo character) // changed string parameter to a CharacterInfo parament 
     {
         nametag.text = character.name;
-        DisplayCI.displayer.DisplayImage(character);
+        //DisplayCI.displayer.DisplayImage(character);
+        portrait.sprite = character.sprite;
     }
 
     //This function is called when memory device is used and it resets the story to the beginning.
