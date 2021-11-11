@@ -12,7 +12,10 @@ public class InkDialogueManager : MonoBehaviour
     public GameObject customButton; // The prefab for the buttons that get created in optionPanel.
     public GameObject optionPanel; // Holds the buttons using vertical layout component.
     public GameObject dialogueUI; // The object holding all of the UI relavent to dialogue.
-
+    //Adding Characters for names (Josh)
+    public CharacterInfo characterInfo;
+    public CharacterInfo player;
+    // 
     static Story story;
     TMP_Text nametag;
     TMP_Text message;
@@ -131,7 +134,7 @@ public class InkDialogueManager : MonoBehaviour
         }
         choiceSelected = null;
 
-        SetNametag("Me"); //FIXME: Don't use hard coded string. Also: will be replaced with scriptable asset for character portraits/names
+        SetNametag(player); //Edited by Josh to display image and name
 
         PlayStory();
     }
@@ -155,7 +158,8 @@ public class InkDialogueManager : MonoBehaviour
             switch (prefix.ToLower())
             {
                 case "name":
-                    SetNametag(param);
+                    // SetNametag(param);
+                    SetNametag(characterInfo); //Edited by Josh to display image and name
                     break;
             }
         }
@@ -163,9 +167,10 @@ public class InkDialogueManager : MonoBehaviour
 
     // Sets the text for nametag.
     // Will likely be replaced by a portrait scriptable object system
-    private void SetNametag(string name)
+    private void SetNametag(CharacterInfo character) // changed string parameter to a CharacterInfo parament 
     {
-        nametag.text = name;
+        nametag.text = character.name;
+        DisplayCI.displayer.DisplayImage(character);
     }
 
     //This function is called when memory device is used and it resets the story to the beginning.
