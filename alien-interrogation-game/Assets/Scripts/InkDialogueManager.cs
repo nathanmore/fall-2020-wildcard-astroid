@@ -8,16 +8,18 @@ using TMPro;
 public class InkDialogueManager : MonoBehaviour
 {
     public TextAsset inkFile; // The json file from inky that has the script we want to load.
-    public GameObject textBox; // The gameObject that displays the dialogue box and holds the message and nametag text boxes.
-    public GameObject customButton; // The prefab for the buttons that get created in optionPanel.
-    public GameObject optionPanel; // Holds the buttons using vertical layout component.
     public GameObject dialogueUI; // The object holding all of the UI relavent to dialogue.
+    public GameObject customButton; // The prefab for the buttons that get created in optionPanel.
 
     //Adding Characters for names (Josh)
     public CharacterInfo characterInfo;
     public CharacterInfo player;
     // 
 
+    GameObject textBox; // The gameObject that displays the dialogue box and holds the message and nametag text boxes.
+    GameObject optionPanel; // Holds the buttons using vertical layout component.
+    GameObject confrontButton; // Holds the confront button
+    GameObject memoryButon; // Holds button for flashy thing (memory wipe)
     static Story story;
     TMP_Text nametag;
     TMP_Text message;
@@ -28,6 +30,12 @@ public class InkDialogueManager : MonoBehaviour
     private void Start()
     {
         story = new Story(inkFile.text);
+
+        textBox = dialogueUI.transform.GetChild(0).gameObject;
+        optionPanel = dialogueUI.transform.GetChild(1).gameObject;
+        confrontButton = dialogueUI.transform.GetChild(2).gameObject;
+        memoryButon = dialogueUI.transform.GetChild(3).gameObject;
+
         nametag = textBox.transform.GetChild(0).GetComponent<TextMeshProUGUI>();
         message = textBox.transform.GetChild(1).GetComponent<TextMeshProUGUI>();
         portrait = textBox.transform.GetChild(2).GetComponent<Image>();
@@ -41,6 +49,8 @@ public class InkDialogueManager : MonoBehaviour
         {
             PlayStory();
         }
+        confrontButton.GetComponent<Button>().onClick.AddListener(() => { ConfrontButton(); });
+        memoryButon.GetComponent<Button>().onClick.AddListener(() => { MemoryWipe(); });
     }
 
     //Checks state of story and progresses accordingly
@@ -163,7 +173,7 @@ public class InkDialogueManager : MonoBehaviour
             {
                 case "name":
                     // SetNametag(param);
-                    if (param == "Me") //FIXME replace hard coded string with public variable
+                    if (param == "player") //FIXME replace hard coded string with public variable
                     {
                         SetSpeaker(player);
                     }
