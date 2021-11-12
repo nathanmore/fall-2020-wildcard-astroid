@@ -10,11 +10,11 @@ public class FollowPlayer : MonoBehaviour
     public float noticed;
    
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         distance = Vector2.Distance(transform.position, FishPosition.position);
         if(distance > noticed)
-        transform.position = Vector2.MoveTowards(transform.position,FishPosition.position, speed);       
+        transform.position = Vector2.MoveTowards(transform.position,FishPosition.position, speed * Time.deltaTime);       
     }
 
 }
