@@ -6,12 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
     path: Assets/Scenes/Final Game Scenes/TitleScreen_JC.unity
     guid: ef5239f7a9db7e84c8f762b7afe09190
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/NarrativeCP1.unity
     guid: f5b5c1e713da9074d8c0cb454fe8e0dc
+  - enabled: 1
+    path: Assets/Scenes/Final Game Scenes/Stage1_Interrogation.unity
+    guid: 104bb604d75d4dc4cb82e1a52bdd393c
   m_configObjects: {}
