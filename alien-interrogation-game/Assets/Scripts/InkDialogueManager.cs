@@ -20,7 +20,7 @@ public class InkDialogueManager : MonoBehaviour
     GameObject optionPanel; // Holds the buttons using vertical layout component.
     GameObject confrontButton; // Holds the confront button
     GameObject memoryButon; // Holds button for flashy thing (memory wipe)
-    static Story story;
+    Story story;
     TMP_Text nametag;
     TMP_Text message;
     Image portrait;
@@ -82,7 +82,7 @@ public class InkDialogueManager : MonoBehaviour
         Debug.Log("End of Dialogue");
 
         // Makes dialogue UI invisible
-        dialogueUI.SetActive(false); 
+        dialogueUI.SetActive(false);
 
         // Sets story to passive phrase
         story.ChoosePathString("DONE"); //FIXME: Don't use hard coded string
@@ -112,15 +112,13 @@ public class InkDialogueManager : MonoBehaviour
     IEnumerator ShowChoices()
     {
         Debug.Log("There are choices need to be made here!");
-        List<Choice> _choices = story.currentChoices;
 
-        for (int i = 0; i < _choices.Count; i++)
+        for (int i = 0; i < story.currentChoices.Count; i++)
         {
-            GameObject temp = Instantiate(customButton, optionPanel.transform);
-            temp.transform.GetChild(0).GetComponent<Text>().text = _choices[i].text;
-            temp.AddComponent<Selectable>();
-            temp.GetComponent<Selectable>().element = _choices[i];
-            temp.GetComponent<Button>().onClick.AddListener(() => { temp.GetComponent<Selectable>().Decide(); });
+            var choice = story.currentChoices[i];
+            GameObject button = Instantiate(customButton, optionPanel.transform);
+            button.transform.GetChild(0).GetComponent<Text>().text = choice.text;
+            button.GetComponent<Button>().onClick.AddListener(() => { SetDecision(choice); });
         }
 
         optionPanel.SetActive(true);
@@ -131,9 +129,9 @@ public class InkDialogueManager : MonoBehaviour
     }
 
     // Tells the story which branch to go to
-    public static void SetDecision(object element)
+    public void SetDecision(Choice element)
     {
-        choiceSelected = (Choice)element;
+        choiceSelected = element;
         story.ChooseChoiceIndex(choiceSelected.index);
     }
 
@@ -198,7 +196,7 @@ public class InkDialogueManager : MonoBehaviour
     //This function is called when memory device is used and it resets the story to the beginning.
     public void MemoryWipe()
     {
-        story.ChoosePathString("Beginning"); //FIXME: Should not use hard coded string
+        story.ChoosePathString("BEGINNING"); //FIXME: Should not use hard coded string
         AdvanceFromDecision();
         //PlayStory();
 
@@ -206,19 +204,8 @@ public class InkDialogueManager : MonoBehaviour
 
     public void ConfrontButton()
     {
-        story.ChoosePathString("Contradiction"); //FIXME: Should not use hard coded string
+        story.ChoosePathString("CONTRADICTION"); //FIXME: Should not use hard coded string
         AdvanceFromDecision();
-    }
-
-}
-
-// Class used for option system
-public class Selectable : MonoBehaviour
-{
-    public object element;
-    public void Decide()
-    {
-        InkDialogueManager.SetDecision(element);
     }
 
 }

@@ -78,7 +78,7 @@ Anyway, how is your case coming?
 = Branch2
      -> DONE
 
-=== Contradiction ===
+=== CONTRADICTION ===
 = Default
      {case1 == true && Tree2.Branch1: -> Case1}
      {case2 == true && Tree1.Root: -> Case2}

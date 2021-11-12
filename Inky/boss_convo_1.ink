@@ -1,11 +1,13 @@
+-> BEGINNING
+=== BEGINNING ===
 #name Boss
 I'm the boss. I give the orders around here.
-#name Det. C 
+#name player
 I know who you are, boss.
 #name Boss 
 Given that you came barging in here without knocking and no update for me,
 I can only assume you forgot.
-#name Det. C 
+#name player
 Very funny, boss.
 #name Boss 
 Glad you think so. 
