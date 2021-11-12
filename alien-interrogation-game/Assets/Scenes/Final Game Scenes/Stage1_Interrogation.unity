@@ -13271,6 +13271,7 @@ GameObject:
   - component: {fileID: 1719297205}
   - component: {fileID: 1719297208}
   - component: {fileID: 1719297209}
+  - component: {fileID: 1719297210}
   m_Layer: 0
   m_Name: FishBuddy
   m_TagString: Untagged
@@ -13404,6 +13405,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.405957, y: 1.4737297}
   m_EdgeRadius: 0
+--- !u!114 &1719297210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1719297204}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 618d3af7f33d6164b933c5c24da4e540, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FishPosition: {fileID: 2096024691}
+  speed: 0.1
+  noticed: 1
 --- !u!1 &1727694982
 GameObject:
   m_ObjectHideFlags: 0
