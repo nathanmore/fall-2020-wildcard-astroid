@@ -1,3 +1,24 @@
+
+#name player
+This technology is dangerous, Detective C.
+Before you leave my office I am required to instruct you on its use.
+#name player
+I'm ready.
+#name player 
+Your neuralyzer device causes memory loss. A safety has been included to maximize the loss to ten seconds.
+This is a theta-level clearance. You are authorized to use it on anybody you wish, except yourself.
+The neuralyzer is meant to help you discreetly draw out lies. Nobody can know of its existence.
+#name player
+Seems simple enough.
+#name player
+I'm supposed to test your capabilities before you leave.
+Rose, call in the new intern, would you?
+#name Intern
+Hello! Please to meet you! I'm very grateful to be extended this opportunity, I love it here, the space is gorgeous, just give the word and I'll get to work! Oh I'm so sorry I'm blathering on about myself and I did't mean to I'm ju-
+#name player
+Shush, for just a moment. Detective C. has a few questions for you about your resume.
+
+
 ->BEGINNING
 
 ==BEGINNING==
@@ -6,29 +27,11 @@ VAR cont2 = false
 VAR cont3 = false
 VAR cont4 = false
 
-#name boss
-This technology is dangerous, Detective C.
-Before you leave my office I am required to instruct you on its use.
-#name player
-I'm ready.
-#name boss 
-Your neuralyzer device causes memory loss. A safety has been included to maximize the loss to ten seconds.
-This is a theta-level clearance. You are authorized to use it on anybody you wish, except yourself.
-The neuralyzer is meant to help you discreetly draw out lies. Nobody can know of its existence.
-#name player
-Seems simple enough.
-#name boss
-I'm supposed to test your capabilities before you leave.
-Rose, call in the new intern, would you?
-#name Intern
-Hello! Please to meet you! I'm very grateful to be extended this opportunity, I love it here, the space is gorgeous, just give the word and I'll get to work! Oh I'm so sorry I'm blathering on about myself and I did't mean to I'm ju-
-#name boss
-Shush, for just a moment. Detective C. has a few questions for you about your resume.
 -> INTERROGATION
 
 ==INTERROGATION==
 #name player
-(I didn't expect Boss to suddenly put me on the spot like this. I suppose I'll just have to start asking questions.)
+(I didn't expect player to suddenly put me on the spot like this. I suppose I'll just have to start asking questions.)
 
 +What was your last place of work? -> Tree1
 +What do you value in your workplace? -> Tree2
@@ -48,7 +51,7 @@ How long did you work there?
 #name intern
 I did leave after only two relative years, because the working conditions were absolutely terrible. 
 My old supervisor used to scream when papers weren't processed fast enough.
-#name Boss 
+#name player 
 Don't worry, I never yell at my empoyees. And I only every take nibbles out of them.
 ~ cont1 = true
 /*
@@ -60,7 +63,7 @@ notes:
 +++What do you value in your workplace?
     #name intern 
     Workplace safety is my foremost concern. I want to work in a place where I feel respected.
-    #name Boss 
+    #name player 
     This precinct is, in fact, an equal opportunity employer. 
     With the exception of artificial intelligence.  Our superiors still can't decide if those should get people rights.
     #name player 
@@ -109,7 +112,7 @@ notes:
     #name intern 
     Oh, uhm, I stayed there for 12 relative years. I have references, they'll tell you I was a hard, dedicated worker..
     #name player 
-    I'll leave reference checking to you, Boss.
+    I'll leave reference checking to you, player.
     ~cont2 = true
 /*
 notes:
@@ -124,11 +127,11 @@ notes:
 {cont2 == true && Tree1 : -> Cont2}
 #name intern 
 Contradiction? What do you mean?
-#name Boss 
+#name player 
 I don't see a contradiction.
 #name player 
 Oh, I think I misheard something.
-#name Boss 
+#name player 
 Quick! Memory wipe! Now!
 ->END
 
@@ -153,8 +156,8 @@ Now fess up. You goofed.
 I'm sorry, I did lie! I gave that whole speech about loyalty, I didn't want to sabotage myself! 
 #name player 
 Sometimes that's the best play.
-So, boss? How was that?
-#name Boss 
+So, player? How was that?
+#name player 
 Good enough. Wipe them, you're free to begin your investigation.
 ->DONE
 
@@ -173,8 +176,8 @@ I know. We have a memory loss device. I wiped your memory.
 #name intern 
 W-w-WHAT? Hello? Really? This isn't science fiction! 
 #name player 
-Shush. So, boss, how did I do?
-#name Boss 
+Shush. So, player, how did I do?
+#name player 
 Goode enough. Wipe them, you're free to begin your investigation.
 
 ->DONE
@@ -186,7 +189,7 @@ Goode enough. Wipe them, you're free to begin your investigation.
 Do you have any more questions?
 #name player
 Uhm, I can't really think of any more at the moment.
-#name Boss 
+#name player 
 All right C, you're out of questions. Time to scrub the brain clean!
 Remember, best practice says you apply the same stimuli to the subject, so be sure to ask the same question after using the neuralyzer!
 #name intern 
@@ -197,18 +200,18 @@ Don't worry about it.
 ->END
 
 =DONE2
-#name Boss 
+#name player 
 Well, C, did you find the contradiction?
 #name player 
 I think so?... 
 Pretty sure I saw it.
-#name Boss 
+#name player 
 Good. Wipe their memory, go back to their response, and press them on it!
 #name intern 
 Wipe my memory?
 #name player
 They won't remember anything, how do I confront them?
-#name Boss 
+#name player 
 The neuralyzer records footage. Use that, then wipe them after.
 #name player 
 Got it.
