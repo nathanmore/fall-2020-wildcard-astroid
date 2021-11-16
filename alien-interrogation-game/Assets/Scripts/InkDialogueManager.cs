@@ -86,7 +86,6 @@ public class InkDialogueManager : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space))
         if (choicesShown == false) // Makes sure story is not progressed while choices are presented to player
-                Debug.Log("keyCode R: Setting False"); 
         {
             if (Input.GetKeyDown(KeyCode.Space))
             {
