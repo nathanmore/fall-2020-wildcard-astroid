@@ -1,10 +1,3 @@
-->BEGINNING
-
-==BEGINNING==
-VAR cont1 = false
-VAR cont2 = false
-VAR cont3 = false
-VAR cont4 = false
 
 #name player
 This technology is dangerous, Detective C.
@@ -24,6 +17,16 @@ Rose, call in the new intern, would you?
 Hello! Please to meet you! I'm very grateful to be extended this opportunity, I love it here, the space is gorgeous, just give the word and I'll get to work! Oh I'm so sorry I'm blathering on about myself and I did't mean to I'm ju-
 #name player
 Shush, for just a moment. Detective C. has a few questions for you about your resume.
+
+
+->BEGINNING
+
+==BEGINNING==
+VAR cont1 = false
+VAR cont2 = false
+VAR cont3 = false
+VAR cont4 = false
+
 -> INTERROGATION
 
 ==INTERROGATION==
