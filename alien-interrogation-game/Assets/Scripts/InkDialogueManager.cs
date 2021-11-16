@@ -277,7 +277,6 @@ public class InkDialogueManager : MonoBehaviour
     {
         story.ChoosePathString("BEGINNING"); //FIXME: Should not use hard coded string
         AdvanceFromDecision();
-        //PlayStory();
     }
 
     public void ConfrontButton()
