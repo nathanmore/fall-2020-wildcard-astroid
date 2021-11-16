@@ -7,6 +7,7 @@ using TMPro;
 
 public class InkDialogueManager : MonoBehaviour
 {
+
     public TextAsset inkFile; // The json file from inky that has the script we want to load.
     public GameObject dialogueUI; // The object holding all of the UI relavent to dialogue.
     public GameObject customButton; // The prefab for the buttons that get created in optionPanel.
@@ -26,6 +27,9 @@ public class InkDialogueManager : MonoBehaviour
     Image portrait;
     List<string> tags;
     static Choice choiceSelected;
+
+    [SerializeField]
+    float typeDelay = 1.0f;
 
     private void Start()
     {
@@ -97,7 +101,9 @@ public class InkDialogueManager : MonoBehaviour
         ParseTags();
         StopAllCoroutines();
         StartCoroutine(TypeSentence(currentSentence));
+        //TypeSentence(currentSentence);
     }
+
 
     // Type out the sentence letter by letter
     IEnumerator TypeSentence(string sentence)
@@ -109,6 +115,23 @@ public class InkDialogueManager : MonoBehaviour
             yield return null;
         }
     }
+
+    //public void TypeSentence(string sentence)
+    //{
+    //    message.text = "";
+    //    int i = 0;
+    //    float totalTime = 0f;
+
+    //    while (i < sentence.Length)
+    //    {
+    //        if (totalTime < typeDelay)
+    //        {
+    //            message.text += sentence[i++];
+    //        }
+    //        totalTime += Time.time;
+    //    }
+
+    //}
 
     // Create then show the choices on the screen until one is selected
     IEnumerator ShowChoices()
