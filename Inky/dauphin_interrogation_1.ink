@@ -1,8 +1,3 @@
--> BEGINNING
-
-=== BEGINNING ===
-VAR cont1 = false
-VAR cont2 = false
 #name player
 Dauphin! Good to see you, my fellow mammal! 
 Listen, there's been a crime committed. A theft.
@@ -33,8 +28,11 @@ Nope.
 Somebody must have manually deleted the footage. I-it wasn't me, though! I don't know.
 #name player
 Hmm. You mind if I ask you a few questions about the deleted footage? 
+-> BEGINNING
 
-
+=== BEGINNING ===
+VAR cont1 = false
+VAR cont2 = false
 #name player
 (I can't conclude for certain Dauphin is the culprit.)
 (I suspect he may have deleted the footage, though. Let's see if we can find out what he's hiding...)
@@ -244,11 +242,11 @@ Y-y-yes, excellent point. My record is good, I, uh, never violate protocol!
 #name player
 I have a few more questions for you before I go bothering them.
 
-+ When could the footage have been possible deleted? -> branch2
-+ Who has access to the footage? -> branch1
++ When could the footage have been possible deleted? -> branch1
++ Who has access to the footage? -> branch2
 
 //when -> who
-=branch2
+=branch1
     #name Dauphin 
     W-well, uhm, I don't know.
     #name player
@@ -288,7 +286,7 @@ I have a few more questions for you before I go bothering them.
         //+ {Tree1.branch1} Don't get smart with me, stop blaming Nerguzzus. ->Cont2
 
 //who -> when
-=branch1
+=branch2
     #name Dauphin
     Well, you would need the password.
     The creatures that have the password are, Uhm, j-just me and Nerguzzus. 
