@@ -7,5 +7,7 @@ using UnityEngine.UI;
 public class CharacterInfo : ScriptableObject
 {
     public new string name;
-    public Sprite sprite; 
+    public Sprite sprite;
+    [SerializeField] public int id;
+    List<string> importantThings = new List<string> { };
 }

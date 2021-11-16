@@ -18,14 +18,12 @@ public class EventTrigger : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         dialogueObject.SetActive(true);
-
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
         dialogueManager.FinishDialogue();
         dialogueObject.SetActive(false);
-
     }
 
 }

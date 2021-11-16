@@ -47,6 +47,7 @@ public class InkDialogueManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
+            PlayerMovement.playerMovement.AllowMovemnet(false);
             PlayStory();
         }
         confrontButton.GetComponent<Button>().onClick.AddListener(() => { ConfrontButton(); });
@@ -83,6 +84,7 @@ public class InkDialogueManager : MonoBehaviour
 
         // Makes dialogue UI invisible
         dialogueUI.SetActive(false);
+        PlayerMovement.playerMovement.AllowMovemnet(true);
 
         // Sets story to passive phrase
         story.ChoosePathString("DONE"); //FIXME: Don't use hard coded string
@@ -199,7 +201,6 @@ public class InkDialogueManager : MonoBehaviour
         story.ChoosePathString("BEGINNING"); //FIXME: Should not use hard coded string
         AdvanceFromDecision();
         //PlayStory();
-
     }
 
     public void ConfrontButton()
