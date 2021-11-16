@@ -9198,6 +9198,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4900000, guid: f417aafd13810f549b626158d512af06, type: 3}
     - target: {fileID: 925714034103187158, guid: a77ea8f0312afe34e98b09995d72676f, type: 3}
+      propertyPath: typeDelay
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 925714034103187158, guid: a77ea8f0312afe34e98b09995d72676f, type: 3}
       propertyPath: dialogueUI
       value: 
       objectReference: {fileID: 1816771759}
@@ -13418,7 +13422,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FishPosition: {fileID: 2096024691}
-  speed: 0.1
+  speed: 3
   noticed: 1
 --- !u!1 &1727694982
 GameObject:
