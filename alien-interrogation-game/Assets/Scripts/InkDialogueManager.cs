@@ -27,9 +27,8 @@ public class InkDialogueManager : MonoBehaviour
     Image portrait;
     List<string> tags;
     static Choice choiceSelected;
-
-    [SerializeField]
-    float typeDelay = 1.0f;
+    //Bool used for skipping typeSentence animation/delay
+    private bool skip;
 
     private void Start()
     {
@@ -45,17 +44,35 @@ public class InkDialogueManager : MonoBehaviour
         portrait = textBox.transform.GetChild(2).GetComponent<Image>();
         tags = new List<string>();
         choiceSelected = null;
+   
+        skip = false; 
     }
 
     private void Update()
     {
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            if (skip)
+            {
+                skip = false;
+                Debug.Log("keyCode R: Setting False"); 
+            }
+            else if(!skip)
+            {
+                skip = true;
+                Debug.Log("keyCode R: Setting True");
+            }
+        }
+
         if (Input.GetKeyDown(KeyCode.Space))
         {
             PlayerMovement.playerMovement.AllowMovemnet(false);
             PlayStory();
         }
+
         confrontButton.GetComponent<Button>().onClick.AddListener(() => { ConfrontButton(); });
         memoryButon.GetComponent<Button>().onClick.AddListener(() => { MemoryWipe(); });
+
     }
 
     //Checks state of story and progresses accordingly
@@ -104,15 +121,22 @@ public class InkDialogueManager : MonoBehaviour
         //TypeSentence(currentSentence);
     }
 
-
     // Type out the sentence letter by letter
     IEnumerator TypeSentence(string sentence)
     {
         message.text = "";
+
         foreach (char letter in sentence.ToCharArray())
         {
             message.text += letter;
             yield return null;
+            if (skip) break;
+        }
+        if (skip)
+        {
+            message.text = "";
+            message.text = sentence;
+            //skip = false; This line makes it so you have to press R every time before each sentence to toggle skip as true; 
         }
     }
 
