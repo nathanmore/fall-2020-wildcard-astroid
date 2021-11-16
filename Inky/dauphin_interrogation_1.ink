@@ -1,8 +1,3 @@
--> BEGINNING
-
-=== BEGINNING ===
-VAR cont1 = false
-VAR cont2 = false
 #name player
 Dauphin! Good to see you, my fellow mammal! 
 Listen, there's been a crime committed. A theft.
@@ -33,8 +28,11 @@ Nope.
 Somebody must have manually deleted the footage. I-it wasn't me, though! I don't know.
 #name player
 Hmm. You mind if I ask you a few questions about the deleted footage? 
+-> BEGINNING
 
-
+=== BEGINNING ===
+VAR cont1 = false
+VAR cont2 = false
 #name player
 (I can't conclude for certain Dauphin is the culprit.)
 (I suspect he may have deleted the footage, though. Let's see if we can find out what he's hiding...)

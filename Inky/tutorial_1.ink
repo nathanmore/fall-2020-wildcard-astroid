@@ -27,9 +27,6 @@ VAR cont2 = false
 VAR cont3 = false
 VAR cont4 = false
 
--> INTERROGATION
-
-==INTERROGATION==
 #name player
 (I didn't expect player to suddenly put me on the spot like this. I suppose I'll just have to start asking questions.)
 

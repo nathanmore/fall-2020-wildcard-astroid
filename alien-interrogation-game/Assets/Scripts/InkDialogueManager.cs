@@ -6,6 +6,15 @@ using UnityEngine.UI;
 using Ink.Runtime;
 using TMPro;
 
+/// <Nathan M's Remaining Tasks>
+/// Implement saving of location in dialogue script
+///     When confronting, if contradictions are not discovered it should branch back to save point
+///     (where you pressed the button) so as to not disturb flow of dialogue everytime button is pressed.
+/// 
+/// Optional: Check Inky tutorial to see how they display text
+/// </summary>
+
+
 public class InkDialogueManager : MonoBehaviour
 {
 
@@ -37,21 +46,27 @@ public class InkDialogueManager : MonoBehaviour
     {
         story = new Story(inkFile.text);
 
+        // The following components must be listed as children of the dialogueUI object in the Unity scene in this same order in order for script to function
         textBox = dialogueUI.transform.GetChild(0).gameObject;
         optionPanel = dialogueUI.transform.GetChild(1).gameObject;
         confrontButton = dialogueUI.transform.GetChild(2).gameObject;
         memoryButon = dialogueUI.transform.GetChild(3).gameObject;
 
+        // These components must be listed as children of the textbox object in the Unity scene in this same order in order for script to function
         nametag = textBox.transform.GetChild(0).GetComponent<TextMeshProUGUI>();
         message = textBox.transform.GetChild(1).GetComponent<TextMeshProUGUI>();
         portrait = textBox.transform.GetChild(2).GetComponent<Image>();
         tags = new List<string>();
         choiceSelected = null;
+
+        // Makes it so that buttons preform their task when clicked
+        confrontButton.GetComponent<Button>().onClick.AddListener(() => { ConfrontButton(); });
+        memoryButon.GetComponent<Button>().onClick.AddListener(() => { MemoryWipe(); });
     }
 
     private void Update()
     {
-        if (choicesShown == false)
+        if (choicesShown == false) // Makes sure story is not progressed while choices are presented to player
         {
             if (Input.GetKeyDown(KeyCode.Space))
             {
@@ -59,8 +74,6 @@ public class InkDialogueManager : MonoBehaviour
                 PlayStory();
             }
         }
-        confrontButton.GetComponent<Button>().onClick.AddListener(() => { ConfrontButton(); });
-        memoryButon.GetComponent<Button>().onClick.AddListener(() => { MemoryWipe(); });
     }
 
     //Checks state of story and progresses accordingly

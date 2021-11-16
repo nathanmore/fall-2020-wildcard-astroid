@@ -9196,7 +9196,7 @@ PrefabInstance:
     - target: {fileID: 925714034103187158, guid: a77ea8f0312afe34e98b09995d72676f, type: 3}
       propertyPath: inkFile
       value: 
-      objectReference: {fileID: 4900000, guid: f417aafd13810f549b626158d512af06, type: 3}
+      objectReference: {fileID: 4900000, guid: 7b2f498e8d021e742a2a2ff59c38cbae, type: 3}
     - target: {fileID: 925714034103187158, guid: a77ea8f0312afe34e98b09995d72676f, type: 3}
       propertyPath: typeDelay
       value: 2
@@ -13422,7 +13422,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FishPosition: {fileID: 2096024691}
-  speed: 3
+  speed: 4
   noticed: 1
 --- !u!1 &1727694982
 GameObject:
@@ -13896,6 +13896,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8345493342731980561, guid: 309fc61b91826244eada04fe9a4e488e, type: 3}
       propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8345493343086718183, guid: 309fc61b91826244eada04fe9a4e488e, type: 3}
+      propertyPath: m_Navigation.m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8345493343946039959, guid: 309fc61b91826244eada04fe9a4e488e, type: 3}
+      propertyPath: m_Navigation.m_Mode
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
