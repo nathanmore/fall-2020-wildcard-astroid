@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 using Ink.Runtime;
@@ -27,9 +28,10 @@ public class InkDialogueManager : MonoBehaviour
     Image portrait;
     List<string> tags;
     static Choice choiceSelected;
+    bool choicesShown = false;
 
-    [SerializeField]
-    float typeDelay = 1.0f;
+    //[SerializeField]
+    //float typeDelay = 1.0f;
 
     private void Start()
     {
@@ -49,10 +51,13 @@ public class InkDialogueManager : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (choicesShown == false)
         {
-            PlayerMovement.playerMovement.AllowMovemnet(false);
-            PlayStory();
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                PlayerMovement.playerMovement.AllowMovemnet(false);
+                PlayStory();
+            }
         }
         confrontButton.GetComponent<Button>().onClick.AddListener(() => { ConfrontButton(); });
         memoryButon.GetComponent<Button>().onClick.AddListener(() => { MemoryWipe(); });
@@ -136,7 +141,8 @@ public class InkDialogueManager : MonoBehaviour
     // Create then show the choices on the screen until one is selected
     IEnumerator ShowChoices()
     {
-        Debug.Log("There are choices need to be made here!");
+        Debug.Log("Show Choices");
+        choicesShown = true;
 
         for (int i = 0; i < story.currentChoices.Count; i++)
         {
@@ -164,6 +170,7 @@ public class InkDialogueManager : MonoBehaviour
     void AdvanceFromDecision()
     {
         optionPanel.SetActive(false);
+        choicesShown = false;
 
         for (int i = 0; i < optionPanel.transform.childCount; i++)
         {
@@ -195,8 +202,7 @@ public class InkDialogueManager : MonoBehaviour
             switch (prefix.ToLower())
             {
                 case "name":
-                    // SetNametag(param);
-                    if (param == "player") //FIXME replace hard coded string with public variable
+                    if (param == "player" || param == player.name) //FIXME replace hard coded string with public variable
                     {
                         SetSpeaker(player);
                     }
@@ -204,6 +210,10 @@ public class InkDialogueManager : MonoBehaviour
                     {
                         SetSpeaker(characterInfo); //Edited by Josh to display image and name
                     }
+                    break;
+                case "note":
+                    int noteNum = Int32.Parse(param); // Converts the string number to an integer
+                    GameValueManager.CurrIndex = noteNum; // Passes the int to game manager
                     break;
             }
         }

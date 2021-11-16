@@ -17,6 +17,8 @@ public class GameValueManager : MonoBehaviour
     //used to track if important info has been gathered from each character
     List<bool> acuKnowledge = new List<bool>();
 
+    private int currIndex;
+
 
     //checks if both points of contradiction have been seen and if the player is currently at a point of contradiction 
     //if true, it means the player can successfully confront the character they are talking to
@@ -78,4 +80,15 @@ public class GameValueManager : MonoBehaviour
         return instance.acuKnowledge[index];
     }
 
+    public static int CurrIndex
+    {
+        get
+        {
+            return instance.currIndex;
+        }
+        set
+        {
+            instance.currIndex = value;
+        }
+    }
 }
