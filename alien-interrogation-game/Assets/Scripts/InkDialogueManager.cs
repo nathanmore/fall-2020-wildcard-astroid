@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System;
+using System.Timers;
 using UnityEngine;
 using UnityEngine.UI;
 using Ink.Runtime;
@@ -10,8 +11,6 @@ using TMPro;
 /// Implement saving of location in dialogue script
 ///     When confronting, if contradictions are not discovered it should branch back to save point
 ///     (where you pressed the button) so as to not disturb flow of dialogue everytime button is pressed.
-/// 
-/// Optional: Check Inky tutorial to see how they display text
 /// </summary>
 
 
@@ -39,8 +38,8 @@ public class InkDialogueManager : MonoBehaviour
     static Choice choiceSelected;
     bool choicesShown = false;
 
-    //[SerializeField]
-    //float typeDelay = 1.0f;
+    //Determines delay between each character being printed
+    float typeDelay = 0.01f;
 
     private void Start()
     {
@@ -119,7 +118,6 @@ public class InkDialogueManager : MonoBehaviour
         ParseTags();
         StopAllCoroutines();
         StartCoroutine(TypeSentence(currentSentence));
-        //TypeSentence(currentSentence);
     }
 
 
@@ -130,7 +128,7 @@ public class InkDialogueManager : MonoBehaviour
         foreach (char letter in sentence.ToCharArray())
         {
             message.text += letter;
-            yield return null;
+            yield return new WaitForSeconds(typeDelay);
         }
     }
 
@@ -138,15 +136,20 @@ public class InkDialogueManager : MonoBehaviour
     //{
     //    message.text = "";
     //    int i = 0;
-    //    float timer = 0f;
+    //    float lastTime = Time.deltaTime;
+    //    float timeInterval = 0f;
+    //    float testTime = 0f;
 
     //    while (i < sentence.Length)
     //    {
-    //        if (timer > typeDelay)
+    //        timeInterval = Time.deltaTime - lastTime;
+    //        testTime = Time.deltaTime;
+    //        if (timeInterval > typeDelay)
     //        {
     //            message.text += sentence[i++];
+    //            lastTime = Time.deltaTime;
     //        }
-    //        timer += Time.deltaTime;
+    //        i++;
     //    }
 
     //}
