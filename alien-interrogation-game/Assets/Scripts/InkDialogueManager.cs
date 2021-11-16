@@ -138,15 +138,15 @@ public class InkDialogueManager : MonoBehaviour
     //{
     //    message.text = "";
     //    int i = 0;
-    //    float totalTime = 0f;
+    //    float timer = 0f;
 
     //    while (i < sentence.Length)
     //    {
-    //        if (totalTime < typeDelay)
+    //        if (timer > typeDelay)
     //        {
     //            message.text += sentence[i++];
     //        }
-    //        totalTime += Time.time;
+    //        timer += Time.deltaTime;
     //    }
 
     //}
