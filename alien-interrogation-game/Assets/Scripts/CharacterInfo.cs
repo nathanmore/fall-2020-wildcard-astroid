@@ -9,5 +9,6 @@ public class CharacterInfo : ScriptableObject
     public new string name;
     public Sprite sprite;
     [SerializeField] public int id;
+    public bool guilty;
     List<string> importantThings = new List<string> { };
 }

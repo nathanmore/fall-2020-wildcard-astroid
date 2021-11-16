@@ -36,6 +36,8 @@ public class InkDialogueManager : MonoBehaviour
     Image portrait;
     List<string> tags;
     static Choice choiceSelected;
+    //Bool used for skipping typeSentence animation/delay
+    private bool skip;
     bool choicesShown = false;
 
     //Determines delay between each character being printed
@@ -57,6 +59,8 @@ public class InkDialogueManager : MonoBehaviour
         portrait = textBox.transform.GetChild(2).GetComponent<Image>();
         tags = new List<string>();
         choiceSelected = null;
+   
+        skip = false; 
 
         // Makes it so that buttons preform their task when clicked
         confrontButton.GetComponent<Button>().onClick.AddListener(() => { ConfrontButton(); });
@@ -65,6 +69,21 @@ public class InkDialogueManager : MonoBehaviour
 
     private void Update()
     {
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            if (skip)
+            {
+                skip = false;
+                Debug.Log("keyCode R: Setting False"); 
+            }
+            else if(!skip)
+            {
+                skip = true;
+                Debug.Log("keyCode R: Setting True");
+            }
+        }
+
+        if (Input.GetKeyDown(KeyCode.Space))
         if (choicesShown == false) // Makes sure story is not progressed while choices are presented to player
         {
             if (Input.GetKeyDown(KeyCode.Space))
@@ -120,15 +139,24 @@ public class InkDialogueManager : MonoBehaviour
         StartCoroutine(TypeSentence(currentSentence));
     }
 
-
     // Type out the sentence letter by letter
     IEnumerator TypeSentence(string sentence)
     {
         message.text = "";
+
         foreach (char letter in sentence.ToCharArray())
         {
             message.text += letter;
+
+            if (skip) break;
+
             yield return new WaitForSeconds(typeDelay);
+        }
+        if (skip)
+        {
+            message.text = "";
+            message.text = sentence;
+            //skip = false; This line makes it so you have to press R every time before each sentence to toggle skip as true; 
         }
     }
 
