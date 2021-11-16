@@ -244,11 +244,11 @@ Y-y-yes, excellent point. My record is good, I, uh, never violate protocol!
 #name player
 I have a few more questions for you before I go bothering them.
 
-+ When could the footage have been possible deleted? -> branch2
-+ Who has access to the footage? -> branch1
++ When could the footage have been possible deleted? -> branch1
++ Who has access to the footage? -> branch2
 
 //when -> who
-=branch2
+=branch1
     #name Dauphin 
     W-well, uhm, I don't know.
     #name player
@@ -288,7 +288,7 @@ I have a few more questions for you before I go bothering them.
         //+ {Tree1.branch1} Don't get smart with me, stop blaming Nerguzzus. ->Cont2
 
 //who -> when
-=branch1
+=branch2
     #name Dauphin
     Well, you would need the password.
     The creatures that have the password are, Uhm, j-just me and Nerguzzus. 
