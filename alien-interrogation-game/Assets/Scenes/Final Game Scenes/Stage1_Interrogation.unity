@@ -13422,7 +13422,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FishPosition: {fileID: 2096024691}
-  speed: 5
+  speed: 4
   noticed: 1
 --- !u!1 &1727694982
 GameObject:

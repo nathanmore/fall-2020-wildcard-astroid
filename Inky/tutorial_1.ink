@@ -130,6 +130,7 @@ I don't see a contradiction.
 Oh, I think I misheard something.
 #name player 
 Quick! Memory wipe! Now!
+#return ToSave
 ->END
 
 =Cont1

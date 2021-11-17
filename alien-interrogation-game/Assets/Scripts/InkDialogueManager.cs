@@ -38,10 +38,16 @@ public class InkDialogueManager : MonoBehaviour
     static Choice choiceSelected;
     //Bool used for skipping typeSentence animation/delay
     private bool skip;
-    bool choicesShown = false;
+    private bool choicesShown = false;
+    private string currentSentence;
+    private float typeDelay = 0.01f; //Determines delay between each character being printed
 
-    //Determines delay between each character being printed
-    float typeDelay = 0.01f;
+
+    /// Various variables used for saving and loading into a specific state in the story
+    private string saveState; // Holds the current saved state of the story
+    private string savedSentence; // Saves the last text displayed prior to save so that player is right where they left off
+    private CharacterInfo currSpeaker; //Holds the current character speaking
+    private CharacterInfo savedSpeaker; //Saves the current speaker prior to save
 
     private void Start()
     {
@@ -133,7 +139,7 @@ public class InkDialogueManager : MonoBehaviour
     // Advance through the story
     private void AdvanceDialogue()
     {
-        string currentSentence = story.Continue();
+        currentSentence = story.Continue();
         ParseTags();
         StopAllCoroutines();
         StartCoroutine(TypeSentence(currentSentence));
@@ -160,27 +166,6 @@ public class InkDialogueManager : MonoBehaviour
         }
     }
 
-    //public void TypeSentence(string sentence)
-    //{
-    //    message.text = "";
-    //    int i = 0;
-    //    float lastTime = Time.deltaTime;
-    //    float timeInterval = 0f;
-    //    float testTime = 0f;
-
-    //    while (i < sentence.Length)
-    //    {
-    //        timeInterval = Time.deltaTime - lastTime;
-    //        testTime = Time.deltaTime;
-    //        if (timeInterval > typeDelay)
-    //        {
-    //            message.text += sentence[i++];
-    //            lastTime = Time.deltaTime;
-    //        }
-    //        i++;
-    //    }
-
-    //}
 
     // Create then show the choices on the screen until one is selected
     IEnumerator ShowChoices()
@@ -259,17 +244,21 @@ public class InkDialogueManager : MonoBehaviour
                     int noteNum = Int32.Parse(param); // Converts the string number to an integer
                     GameValueManager.CurrIndex = noteNum; // Passes the int to game manager
                     break;
+                case "return":
+                    ReturnToSave(saveState);
+                    break;
             }
         }
     }
 
-    // Sets the text for nametag.
+    // Sets the portrait and name displayed
     // Will likely be replaced by a portrait scriptable object system
-    private void SetSpeaker(CharacterInfo character) // changed string parameter to a CharacterInfo parament 
+    private void SetSpeaker(CharacterInfo character)
     {
         nametag.text = character.name;
-        //DisplayCI.displayer.DisplayImage(character);
         portrait.sprite = character.sprite;
+
+        currSpeaker = character;
     }
 
     //This function is called when memory device is used and it resets the story to the beginning.
@@ -281,8 +270,25 @@ public class InkDialogueManager : MonoBehaviour
 
     public void ConfrontButton()
     {
+        saveState = story.state.ToJson();
+        savedSpeaker = currSpeaker;
+        savedSentence = currentSentence;
+
         story.ChoosePathString("CONTRADICTION"); //FIXME: Should not use hard coded string
         AdvanceFromDecision();
+    }
+
+    public void ReturnToSave(string save)
+    {
+        story.state.LoadJson(save);
+        SetSpeaker(savedSpeaker);
+        currentSentence = savedSentence;
+
+        //string currentSentence = savedSentence;
+
+        //StopAllCoroutines();
+        //StartCoroutine(TypeSentence(currentSentence));
+        //TypeSentence(savedSentence);
     }
 
 }

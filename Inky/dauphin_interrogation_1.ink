@@ -345,12 +345,9 @@ Knock yourself out, buddy.
     {cont1 == true && Tree3.branch2 : -> Cont1}
     {cont2 == true && Tree1.branch1 : -> Cont2}
      #name player
-     You're lying!
-     #name Dauphin
-     What are you talking about??
-     #name player
-     (Wait, why did I say that. I haven't found any incriminating info yet.)
-     Sorry... uh, nevermind.
+     (I have'nt encountered any inconsistencies in Dauphin's story yet.)
+     (I should keep asking him questions. Maybe even try the memory gun.)
+     #return ToSave
      -> DONE
 //what about 25FA
 = Cont1 
