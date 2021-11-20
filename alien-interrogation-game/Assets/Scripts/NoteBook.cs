@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class NoteBook : MonoBehaviour
 {
@@ -11,13 +12,17 @@ public class NoteBook : MonoBehaviour
     public Button backButton;
     public Button nextButton;
     private int page;
-    List<string> notebook = new List<string>();
+    public List<string> notebook = new List<string>();
+    public GameObject notebookUI;
+    TMP_Text message;
 
     private void Start()
     {
         page = 0;
         backButton.onClick.AddListener(backButtonClicked);
         nextButton.onClick.AddListener(nextButtonClicked);
+
+        message = notebookUI.GetComponent<TextMeshProUGUI>();
 
         //initializes list with empty strings
         int i = 0;
@@ -33,6 +38,8 @@ public class NoteBook : MonoBehaviour
     //there should be a unique index for every possible fact
     private void Update()
     {
+        int index = GameValueManager.CurrIndex; 
+
         if (page == 0)
         {
             //display page + /n +
@@ -104,9 +111,9 @@ public class NoteBook : MonoBehaviour
     }
 
 
-    void addFact(string fact)
-    {
-        int index = 0; //should be CurrIndex just don't know how to use the function yet
-        notebook[index] = fact;
-    }
+    //void addFact(string fact)
+    //{
+    //    int index = GameValueManager.CurrIndex; //should be CurrIndex just don't know how to use the function yet
+    //    notebook[index] = fact;
+    //}
 }
