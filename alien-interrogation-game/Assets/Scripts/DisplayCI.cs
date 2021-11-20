@@ -6,18 +6,26 @@ using TMPro;
 
 public class DisplayCI : MonoBehaviour
 {
-    private CharacterInfo m_CI;
-    // public TextMeshProUGUI characterName; //This is for editing the name using DisplayCI
+    public CharacterInfo m_CI;
+    public TextMeshProUGUI characterName; //This is for editing the name using DisplayCI
     public Image image;
-    public static DisplayCI displayer; 
+    public static DisplayCI displayer;
+    private List<string> notes;
+    public bool guilty; 
 
     void Awake()
     {
+        characterName.text = m_CI.name;
+        image.sprite = m_CI.sprite;
+        //these are the notes that are going to be displayed in the notepad
+        notes = m_CI.importantThings;
+        guilty = m_CI.guilty;
         displayer = this;
     }
+    //this method is used for displaying character outside of DisplayCI;
     public void DisplayImage(CharacterInfo character)
     {
-        //We can display the name through here as well
         image.sprite = character.sprite;
+        characterName.text = character.name;
     }
 }

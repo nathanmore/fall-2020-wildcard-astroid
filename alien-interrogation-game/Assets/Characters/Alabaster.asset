@@ -14,3 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Alabaster
   sprite: {fileID: 226970964078247360, guid: da7c40dba9728544088a829356b0afd4, type: 3}
+  id: 0
+  guilty: 1
+  importantThings: []

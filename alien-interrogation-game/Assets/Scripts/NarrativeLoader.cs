@@ -10,10 +10,9 @@ public class NarrativeLoader : MonoBehaviour
     public float transitionTime = 1f;
     public void StartGame()
     {
-        StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + 1));
+        StartCoroutine(NextLevel(SceneManager.GetActiveScene().buildIndex + 1));
     }
-
-    IEnumerator LoadLevel (int levelIndenx)
+    IEnumerator NextLevel (int levelIndenx)
     {
         transition.SetTrigger("End");
 
@@ -21,5 +20,4 @@ public class NarrativeLoader : MonoBehaviour
 
         SceneManager.LoadScene(levelIndenx);
     }
-
 }
