@@ -60,9 +60,9 @@ public class InkDialogueManager : MonoBehaviour
         memoryButon = dialogueUI.transform.GetChild(3).gameObject;
 
         // These components must be listed as children of the textbox object in the Unity scene in this same order in order for script to function
-        nametag = textBox.transform.GetChild(0).GetComponent<TextMeshProUGUI>();
-        message = textBox.transform.GetChild(1).GetComponent<TextMeshProUGUI>();
-        portrait = textBox.transform.GetChild(2).GetComponent<Image>();
+        nametag = textBox.transform.GetChild(2).GetComponent<TextMeshProUGUI>();
+        message = textBox.transform.GetChild(3).GetComponent<TextMeshProUGUI>();
+        portrait = textBox.transform.GetChild(4).GetComponent<Image>();
         tags = new List<string>();
         choiceSelected = null;
    
