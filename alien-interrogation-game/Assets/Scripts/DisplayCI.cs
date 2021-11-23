@@ -18,7 +18,7 @@ public class DisplayCI : MonoBehaviour
         characterName.text = m_CI.name;
         image.sprite = m_CI.sprite;
         //these are the notes that are going to be displayed in the notepad
-        notes = m_CI.importantThings;
+        notes = m_CI.contradictions;
         guilty = m_CI.guilty;
         displayer = this;
     }
