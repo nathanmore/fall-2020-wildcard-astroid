@@ -250,6 +250,9 @@ public class InkDialogueManager : MonoBehaviour
                 case "found":
                     GameValueManager.SetInfoBools(param);
                     break;
+                case "transition":
+                    GameValueManager.TransitionScenes(param);
+                    break;
             }
         }
     }

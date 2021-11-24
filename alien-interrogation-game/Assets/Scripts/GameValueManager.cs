@@ -1,15 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameValueManager : MonoBehaviour
 {
     public static GameValueManager instance;
 
+    [SerializeField]
+    private string stage1SceneName = "Stage1_Interrogation";
+    [SerializeField]
+    private string stage2SceneName = "Stage2_Int";
+
     // Bools used to track player info for scene transitions from tutorial to stage 1 and stage 1 to stage 2
-    private bool tutorialInfo = false;
-    private bool stage1Info1 = false;
-    private bool stage1Info2 = false;
+    public bool tutorialInfo = false;
+    public bool stage1Info1 = false;
+    public bool stage1Info2 = false;
 
     //used to record important pieces of info seen
     List<string> convoKnowledge = new List<string>();
@@ -86,6 +92,22 @@ public class GameValueManager : MonoBehaviour
         else if (boolName == "stage1Info2")
         {
             instance.stage1Info2 = true;
+        }
+    }
+
+    public static void TransitionScenes(string scene)
+    {
+        if (scene == "stage1")
+        {
+            SceneManager.LoadScene(instance.stage1SceneName);
+        }
+        else if (scene == "stage2")
+        {
+            SceneManager.LoadScene(instance.stage2SceneName);
+        }
+        else
+        {
+            Debug.Log("Invalid scene code in Inky");
         }
     }
 }

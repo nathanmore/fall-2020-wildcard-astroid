@@ -6,7 +6,7 @@ It is good to have you Bob.
 #name intern
 Thanks!
 By the way, the boss wanted me to give you this.
-*Hands memory gun*
+\*Hands memory gun*
 This next case is a big one and the boss says any means necessary to find the culprit.
 #name player
 I will put it to good use.

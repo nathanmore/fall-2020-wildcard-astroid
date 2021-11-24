@@ -15,6 +15,11 @@ public class EventTrigger : MonoBehaviour
         dialogueManager = dialogueObject.GetComponent<InkDialogueManager>();
     }
 
+    private void Update()
+    {
+        
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         dialogueObject.SetActive(true);
