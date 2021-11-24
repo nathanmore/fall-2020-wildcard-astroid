@@ -247,6 +247,9 @@ public class InkDialogueManager : MonoBehaviour
                 case "return":
                     ReturnToSave(saveState);
                     break;
+                case "found":
+                    GameValueManager.SetInfoBools(param);
+                    break;
             }
         }
     }
