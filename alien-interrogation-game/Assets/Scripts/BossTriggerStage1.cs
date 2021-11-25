@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BossTutorialConvoTrigger : MonoBehaviour
+public class BossTriggerStage1 : MonoBehaviour
 {
     //GameObject that renders icon above NPC head and holds dialogueManager for that character
     public GameObject dialogueObject1;
@@ -18,7 +18,7 @@ public class BossTutorialConvoTrigger : MonoBehaviour
 
     private void Update()
     {
-        if (GameValueManager.instance.tutorialInfo == true)
+        if (GameValueManager.instance.stage1Info1 == true && GameValueManager.instance.stage1Info2 == true)
         {
             currDialogueObject = dialogueObject2;
         }

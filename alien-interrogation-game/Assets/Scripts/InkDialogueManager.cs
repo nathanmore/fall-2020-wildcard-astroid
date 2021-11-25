@@ -33,7 +33,7 @@ public class InkDialogueManager : MonoBehaviour
     private bool skip;
     private bool choicesShown = false;
     private string currentSentence;
-    private float typeDelay = 0.01f; //Determines delay between each character being printed
+    private float typeDelay = 0.005f; //Determines delay between each character being printed
 
 
     /// Various variables used for saving and loading into a specific state in the story
