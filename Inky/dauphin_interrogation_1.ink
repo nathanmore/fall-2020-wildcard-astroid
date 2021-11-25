@@ -80,7 +80,7 @@ All right, I'll keep in mind the possibility of a creature gleaning the pass.
     Some nefarious creature could have entered the password while I was away!
     If they had the password, then they had full access to all the footage!
     ~ cont1 = true
-    //+ {Tree3.branch2} What about the 25 factor authentication process? -> Cont1
+    //+ {Tree3.branch1} What about the 25 factor authentication process? -> Cont1
     
     +++How often do you leave the room unlocked?
         #name Dauphin
@@ -327,6 +327,8 @@ Of course. I might hang around just a bit. Don't mind me.
 -> END
 //->Beginning
 
+
+//make it more rewarding when done to talk after them
 === DONE2 ====
 #name Dauphin 
 Aren't you going to ask any questions, D-detective?
