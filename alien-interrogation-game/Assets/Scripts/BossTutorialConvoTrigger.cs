@@ -15,7 +15,7 @@ public class BossTutorialConvoTrigger : MonoBehaviour
     private void Start()
     {
         currDialogueObject = dialogueObject1;
-        dialogueManager = currDialogueObject.GetComponent<InkDialogueManager>();
+        //dialogueManager = currDialogueObject.GetComponent<InkDialogueManager>();
     }
 
     private void Update()
@@ -23,8 +23,12 @@ public class BossTutorialConvoTrigger : MonoBehaviour
         if (GameValueManager.instance.tutorialInfo == true)
         {
             currDialogueObject = dialogueObject2;
-            dialogueManager = currDialogueObject.GetComponent<InkDialogueManager>();
         }
+        else
+        {
+            currDialogueObject = dialogueObject1;
+        }
+        //dialogueManager = currDialogueObject.GetComponent<InkDialogueManager>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -34,7 +38,7 @@ public class BossTutorialConvoTrigger : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        dialogueManager.FinishDialogue();
+        //dialogueManager.FinishDialogue();
         currDialogueObject.SetActive(false);
     }
 }

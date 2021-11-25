@@ -24,9 +24,12 @@ VAR done = false //did we find the contradiction yet
 #name player
 (ADA1N probably knows something about the blaster shot, let's see if we can drag it out of them.)
 
-+Can I see your gun? -> Tree1
-+Did you loan your weapon to anyone recently? -> Tree2
-+You have actual StarTrooper aim. -> Tree3 
++Can I see your gun? 
+    -> Tree1
++Did you loan your weapon to anyone recently? 
+    -> Tree2
++You have actual StarTrooper aim. 
+    -> Tree3 
 
 ->END
 
@@ -53,8 +56,10 @@ All right, we'll try a few more questions before resorting to violence.
 notes:
 ADA1N is very fond of its blaster and doesn't like to let others touch it
 */
-+Did you loan your weapon to anyone recently? -> branch1 
-+You have actual StarTrooper aim. -> branch2
++Did you loan your weapon to anyone recently? 
+    -> branch1 
++You have actual StarTrooper aim. 
+    -> branch2
 
 //Did you loan your weapon recently -> startrooper aim
 =branch1
@@ -167,8 +172,10 @@ Machines are so stupid.
 ADA1N had his blaster on him for the past 3 relative days
 */
 
-+Can I see your weapon? ->branch1
-+You have actual StarTrooper aim. -> branch2
++Can I see your weapon? 
+    ->branch1
++You have actual StarTrooper aim. 
+    -> branch2
 
 //can I see your weapon?
 =branch1
@@ -297,8 +304,10 @@ NO. I AM NOT RESPONSIBLE FOR THE FAILINGS OF OTHERS.
 notes: ADA1N is no the only one with a blaster. THe boss, and detective g both carry a blaster.
 */
 
-+Can I see your gun? -> branch1
-+Did you loan your weapon to anyone recently? ->branch2
++Can I see your gun? 
+    -> branch1
++Did you loan your weapon to anyone recently? 
+    ->branch2
 
 
 //can i see your gun -> did you loan your weapon out?
@@ -550,5 +559,6 @@ HAR HAR.
 AS IF YOU HAD THE COMPUTING POWER.
 #name player 
 All right, fun talk. 
+#found stage1Info2
 ->END
 

@@ -38,10 +38,13 @@ VAR cont2 = false
 (I suspect he may have deleted the footage, though. Let's see if we can find out what he's hiding...)
 
 //contradictions in tree3 branch 2+++, tree 1 branch 1
-+ Who has access to the footage? -> Tree1.Root
-+ When could the footage have been possible deleted? -> Tree2.Root
-+ How often do you leave the room unlocked? -> Tree3.Root
-*    ->DONE
++ Who has access to the footage? 
+     -> Tree1.Root
++ When could the footage have been possible deleted? 
+     -> Tree2.Root
++ How often do you leave the room unlocked? 
+     -> Tree3.Root
+
 
 === Tree1 ===
 //Who has access?
@@ -64,8 +67,10 @@ They haven't made these keyboards flipper friendly! Maybe somebody gleamed the p
 #name player
 All right, I'll keep in mind the possibility of a creature gleaning the pass.
 
-+ When could the footage have been possible deleted? -> branch1
-+ How often do you leave the room unlocked? -> branch2
++ When could the footage have been possible deleted? 
+     -> branch1
++ How often do you leave the room unlocked? 
+     -> branch2
 
 //When could it have happened -> Do you leave door unocked?
 = branch1   
@@ -98,7 +103,7 @@ All right, I'll keep in mind the possibility of a creature gleaning the pass.
         Sometimes they can forget things, right?
         #name player
         Sure, that's plausible.
-        ->DONE
+             ->DONE
     
 //Do you leave door unlocked -> when could it have happened
 = branch2
@@ -157,8 +162,10 @@ so it must have happened while I was out.
 I see. It happened while you were away. 
 I'll note that down.
 
-+ Who has access to the footage? -> branch1
-+ How often do you leave the room unlocked? -> branch2
++ Who has access to the footage? 
+     -> branch1
++ How often do you leave the room unlocked? 
+     -> branch2
 
 //who -> how
 =branch1
@@ -242,8 +249,10 @@ Y-y-yes, excellent point. My record is good, I, uh, never violate protocol!
 #name player
 I have a few more questions for you before I go bothering them.
 
-+ When could the footage have been possible deleted? -> branch1
-+ Who has access to the footage? -> branch2
++ When could the footage have been possible deleted? 
+     -> branch1
++ Who has access to the footage? 
+     -> branch2
 
 //when -> who
 =branch1
@@ -376,6 +385,7 @@ Knock yourself out, buddy.
     (flashy thing animation)
     Never mind, I have everything I need.
     You have a nice day.
+    #found stage1Info1
     -> DONE2
 
 //You're really throwing your companion under the bus
@@ -409,6 +419,7 @@ Knock yourself out, buddy.
     (flashy thing animation)
     Never mind, I have everything I need.
     You have a nice day.
+    #found stage1Info1
     ->END
 
 

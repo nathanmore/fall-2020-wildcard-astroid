@@ -15,8 +15,10 @@ I will put it to good use.
 === BEGINNING ===
 #name player
 I have a few questions for you Bob.
-* What is the new case? -> NewCase
-* Why is the LT so cranky? -> Cranky
++ What is the new case? 
+    -> NewCase
++ Why is the LT so cranky? 
+    -> Cranky
 
 === NewCase ===
 #name intern

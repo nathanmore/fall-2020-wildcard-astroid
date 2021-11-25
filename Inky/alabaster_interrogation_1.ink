@@ -30,9 +30,12 @@ VAR done = false
 #name player
 (Let's see what we can find out about how he obtained ADA1N's gun.)
 
-+ ADA1N told me you returned their blaster. How did you acquire it? -> Tree1
-+ Were you in the evidence room three relative days ago? -> Tree2
-+ Could you stop speaking in riddles for a second? -> Tree3
++ ADA1N told me you returned their blaster. How did you acquire it? 
+    -> Tree1
++ Were you in the evidence room three relative days ago? 
+    -> Tree2
++ Could you stop speaking in riddles for a second? 
+    -> Tree3
 
 //ADA1N told me you returned their blaster when did you acquire it?
 ==Tree1==
@@ -65,8 +68,10 @@ Alabster found the blaster on his desk
 */
 
 
-+Were you in the evidence room three relative days ago? -> branch1
-+Could you stop speaking in riddles for a second? -> branch2
++Were you in the evidence room three relative days ago? 
+    -> branch1
++Could you stop speaking in riddles for a second? 
+    -> branch2
 
     //Were you in the evidence room three relative days ago -> stop speaking in riddles
     =branch1
@@ -206,8 +211,10 @@ Excellent. That took way too long. Moving on...
 /*notes:
 adain did not go into the evidence room*/
 
-+ADA1N told me you returned their blaster. How did you acquire it? -> branch1
-+Could you stop speaking in riddles for a second? -> branch2
++ADA1N told me you returned their blaster. How did you acquire it? 
+    -> branch1
++Could you stop speaking in riddles for a second? 
+    -> branch2
 
     //where did you get the blaster
     =branch1
@@ -318,8 +325,10 @@ Alabaster simply makes gutteral sounds with skin flabs that produce 'speech'.
 #name player 
 Yeah, sure. Be like that.
 
-+ADA1N told me you returned their blaster. How did you acquire it? -> branch1
-+Were you in the evidence room three relative days ago? -> branch2
++ADA1N told me you returned their blaster. How did you acquire it? 
+    -> branch1
++Were you in the evidence room three relative days ago? 
+    -> branch2
 
     //how did you get blaster -> were you in evidence room?
     =branch1
