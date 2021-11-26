@@ -7,6 +7,7 @@ public class AccusationTrigger : MonoBehaviour
     public GameObject interactableIcon;
     public GameObject AccusationObject;
 
+    private bool alreadyActive;
     private bool allowPress;
 
     // Update is called once per frame
@@ -14,15 +15,17 @@ public class AccusationTrigger : MonoBehaviour
     {
         if (allowPress)
         {
-            if (Input.GetKeyDown(KeyCode.E))
+            if (!alreadyActive && Input.GetKeyDown(KeyCode.Space))
             {
                 AccusationObject.SetActive(true);
                 PlayerMovement.playerMovement.AllowMovemnet(false);
+                alreadyActive = true;
             }
-            if (Input.GetKeyDown(KeyCode.Escape))
+            else if (Input.GetKeyDown(KeyCode.Space))
             {
                 AccusationObject.SetActive(false);
                 PlayerMovement.playerMovement.AllowMovemnet(true);
+                alreadyActive = false; 
             }
         }
     }
