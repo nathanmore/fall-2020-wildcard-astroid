@@ -10,7 +10,7 @@ public class EventTrigger : MonoBehaviour
 
     private void Start()
     {
-
+        dialogueObject.SetActive(false);
     }
 
     private void Update()
@@ -32,6 +32,11 @@ public class EventTrigger : MonoBehaviour
         {
             dialogueObject.SetActive(false);
         }
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        OnTriggerEnter2D(collision);
     }
 
 }

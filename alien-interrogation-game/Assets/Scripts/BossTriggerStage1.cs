@@ -14,6 +14,7 @@ public class BossTriggerStage1 : MonoBehaviour
     private void Start()
     {
         currDialogueObject = dialogueObject1;
+        currDialogueObject.SetActive(false);
     }
 
     private void Update()
@@ -38,5 +39,10 @@ public class BossTriggerStage1 : MonoBehaviour
         {
             currDialogueObject.SetActive(false);
         }
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        OnTriggerEnter2D(collision);
     }
 }
