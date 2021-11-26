@@ -56,9 +56,13 @@ public class PlayerMovement : MonoBehaviour
             movement.y = Input.GetAxisRaw("Vertical");
 
             if (movement.y > 0)
-                animator.SetBool("Backwards", true);  
+            {
+                animator.SetBool("Backwards", true);
+            }
             else if (movement.y < 0)
+            {
                 animator.SetBool("Forwards", true);
+            }
             else
             {
                 animator.SetBool("Forwards", false);
