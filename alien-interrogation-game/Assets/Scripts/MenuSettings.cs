@@ -14,7 +14,6 @@ public class MenuSettings : MonoBehaviour
 
     public void Awake()
     {
-        Debug.Log("Awaking");
         menuSettings = this;
     }
 

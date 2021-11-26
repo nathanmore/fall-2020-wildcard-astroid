@@ -9,15 +9,17 @@ public class CharacterSelect : MonoBehaviour
 {
     public RectTransform[] charBtns;
     public RectTransform indicator;
+
     public GameObject notePad;
     private Button btn;
+
     private static int indicatorPos;
     [SerializeField] private int rowLenght;
     [SerializeField] private int rowDifference;
     private int firstRowIndex;
+
     public static CharacterSelect characterSelect;
  
-    
     // Start is called before the first frame update
     void Awake()
     {
@@ -36,6 +38,7 @@ public class CharacterSelect : MonoBehaviour
         {
             Check(GetDisplayCI());
         }
+       
         if (Input.GetKeyDown(KeyCode.D))
         {
             if(indicatorPos < charBtns.Length - 1)
@@ -94,7 +97,7 @@ public class CharacterSelect : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            Debug.Log(indicatorPos);
+          //  Debug.Log(indicatorPos);
             btn = charBtns[indicatorPos].gameObject.GetComponent<Button>();
             btn.targetGraphic.CrossFadeColor(btn.colors.pressedColor, btn.colors.fadeDuration, true, true);       
             NotePad();
