@@ -26,11 +26,17 @@ public class BossTutorialConvoTrigger : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        currDialogueObject.SetActive(true);
+        if (collision.gameObject.tag == "Player")
+        {
+            currDialogueObject.SetActive(true);
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        currDialogueObject.SetActive(false);
+        if (collision.gameObject.tag == "Player")
+        {
+            currDialogueObject.SetActive(false);
+        }
     }
 }

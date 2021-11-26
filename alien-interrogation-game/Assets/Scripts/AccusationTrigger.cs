@@ -18,13 +18,13 @@ public class AccusationTrigger : MonoBehaviour
             if (!alreadyActive && Input.GetKeyDown(KeyCode.Space))
             {
                 AccusationObject.SetActive(true);
-                PlayerMovement.playerMovement.AllowMovemnet(false);
+                PlayerMovement.playerMovement.AllowMovement(false);
                 alreadyActive = true;
             }
             else if (Input.GetKeyDown(KeyCode.Space))
             {
                 AccusationObject.SetActive(false);
-                PlayerMovement.playerMovement.AllowMovemnet(true);
+                PlayerMovement.playerMovement.AllowMovement(true);
                 alreadyActive = false; 
             }
         }

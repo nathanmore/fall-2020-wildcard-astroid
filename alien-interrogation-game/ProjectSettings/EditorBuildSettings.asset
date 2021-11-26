@@ -11,12 +11,15 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Final Game Scenes/TitleScreen_JC.unity
     guid: ef5239f7a9db7e84c8f762b7afe09190
-  - enabled: 0
-    path: Assets/Scenes/NarrativeCP1.unity
-    guid: f5b5c1e713da9074d8c0cb454fe8e0dc
+  - enabled: 1
+    path: Assets/Scenes/Final Game Scenes/Tutorial_Int.unity
+    guid: 1e92e3b43a15d0449a0c9daee501c708
   - enabled: 1
     path: Assets/Scenes/Final Game Scenes/Stage1_Interrogation.unity
     guid: 104bb604d75d4dc4cb82e1a52bdd393c
+  - enabled: 1
+    path: Assets/Scenes/Final Game Scenes/Stage2_Int.unity
+    guid: 8723d6121c2470b49a09f7f6fb45f228
   - enabled: 1
     path: Assets/Scenes/Final Game Scenes/You Win.unity
     guid: cca48fa3279c03247b48180432afed5d

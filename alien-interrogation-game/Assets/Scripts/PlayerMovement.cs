@@ -71,7 +71,7 @@ public class PlayerMovement : MonoBehaviour
         rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
     }
 
-    public void AllowMovemnet(bool movement)
+    public void AllowMovement(bool movement)
     {
         allowed = movement;
     }
