@@ -103,7 +103,7 @@ public class GameValueManager : MonoBehaviour
         }
         else if (scene == "stage2")
         {
-            SceneManager.LoadScene(instance.stage1SceneName);
+            SceneManager.LoadScene(instance.stage2SceneName);
         }
         else
         {
