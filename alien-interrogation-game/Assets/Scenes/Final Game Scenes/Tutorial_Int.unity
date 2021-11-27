@@ -558,8 +558,9 @@ GameObject:
   - component: {fileID: 365825887}
   - component: {fileID: 365825886}
   - component: {fileID: 365825885}
+  - component: {fileID: 365825890}
   m_Layer: 0
-  m_Name: Intern_Place_Holder
+  m_Name: Intern
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -670,7 +671,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 5a528a0b2baeae743afff866bb848ba8, type: 3}
+  m_Sprite: {fileID: -3280491226722250382, guid: aec9dd0ef3a25fc4fa2e9ff5f2ed188d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -689,13 +690,32 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 365825884}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.9658318, y: 1.4593458, z: 913.0978}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
+  m_LocalPosition: {x: -2.42, y: 1.26, z: 913.0978}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children:
   - {fileID: 1645337609}
   m_Father: {fileID: 1006661384}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &365825890
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 365825884}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 909ce153145a1b540892b668eee910aa, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!4 &376501797 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1466176741194425242, guid: 760e417072c8a78468f592c43b802efa, type: 3}
@@ -3581,7 +3601,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8158239858086308118, guid: a77ea8f0312afe34e98b09995d72676f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.693
+      value: 0.69299954
       objectReference: {fileID: 0}
     - target: {fileID: 8158239858086308118, guid: a77ea8f0312afe34e98b09995d72676f, type: 3}
       propertyPath: m_LocalPosition.z
