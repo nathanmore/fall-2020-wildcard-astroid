@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 public class GameValueManager : MonoBehaviour
 {
     public static GameValueManager instance;
-
     [SerializeField]
     private string stage1SceneName = "Stage1_Interrogation";
     [SerializeField]
