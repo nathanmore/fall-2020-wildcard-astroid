@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class GameValueManager : MonoBehaviour
 {
     public static GameValueManager instance;
+    
     [SerializeField]
     private string stage1SceneName = "Stage1_Interrogation";
     [SerializeField]
@@ -94,7 +95,7 @@ public class GameValueManager : MonoBehaviour
         }
     }
 
-    public static void TransitionScenes(string scene)
+    public static void NextScene(string scene)
     {
         if (scene == "stage1")
         {
@@ -102,7 +103,7 @@ public class GameValueManager : MonoBehaviour
         }
         else if (scene == "stage2")
         {
-            SceneManager.LoadScene(instance.stage2SceneName);
+            SceneManager.LoadScene(instance.stage1SceneName);
         }
         else
         {

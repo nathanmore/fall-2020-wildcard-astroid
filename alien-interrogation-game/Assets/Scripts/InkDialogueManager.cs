@@ -247,7 +247,7 @@ public class InkDialogueManager : MonoBehaviour
                     GameValueManager.SetInfoBools(param);
                     break;
                 case "transition":
-                    GameValueManager.TransitionScenes(param);
+                    GameValueManager.NextScene(param);
                     break;
             }
         }
