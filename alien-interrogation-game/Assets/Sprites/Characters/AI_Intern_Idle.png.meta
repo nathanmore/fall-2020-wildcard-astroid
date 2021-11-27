@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: 15f73825a7f13ee418822239c7e2ede2
+guid: aec9dd0ef3a25fc4fa2e9ff5f2ed188d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3268200912896706232
-    second: AI_Shudderz_Idle_0
+      213: -3280491226722250382
+    second: AI_Intern_Idle_0
   - first:
-      213: -790768223835574860
-    second: AI_Shudderz_Idle_1
+      213: 585315009163611444
+    second: AI_Intern_Idle_1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -109,7 +109,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: AI_Shudderz_Idle_0
+      name: AI_Intern_Idle_0
       rect:
         serializedVersion: 2
         x: 0
@@ -123,14 +123,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8b6c0d32a6bfa5d20800000000000000
-      internalID: 3268200912896706232
+      spriteID: 2715f6e2c9a5972d0800000000000000
+      internalID: -3280491226722250382
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AI_Shudderz_Idle_1
+      name: AI_Intern_Idle_1
       rect:
         serializedVersion: 2
         x: 32
@@ -144,8 +144,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4bd2d967d70a605f0800000000000000
-      internalID: -790768223835574860
+      spriteID: 43dc6e256e47f1800800000000000000
+      internalID: 585315009163611444
       vertices: []
       indices: 
       edges: []
