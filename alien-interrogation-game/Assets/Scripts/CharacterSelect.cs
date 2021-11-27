@@ -95,14 +95,14 @@ public class CharacterSelect : MonoBehaviour
 
         indicator.localPosition = charBtns[indicatorPos].localPosition;
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.E))
         {
           //  Debug.Log(indicatorPos);
             btn = charBtns[indicatorPos].gameObject.GetComponent<Button>();
             btn.targetGraphic.CrossFadeColor(btn.colors.pressedColor, btn.colors.fadeDuration, true, true);       
             NotePad();
         }
-        else if (Input.GetKeyUp(KeyCode.Space))
+        else if (Input.GetKeyUp(KeyCode.E))
         {
             btn.targetGraphic.CrossFadeColor(btn.colors.normalColor, btn.colors.fadeDuration, true, true);
         }

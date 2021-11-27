@@ -87,7 +87,7 @@ public class InkDialogueManager : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Space))
             {
-                PlayerMovement.playerMovement.AllowMovemnet(false);
+                PlayerMovement.playerMovement.AllowMovement(false);
                 PlayStory();
             }
         }
@@ -123,7 +123,7 @@ public class InkDialogueManager : MonoBehaviour
 
         // Makes dialogue UI invisible
         dialogueUI.SetActive(false);
-        PlayerMovement.playerMovement.AllowMovemnet(true);
+        PlayerMovement.playerMovement.AllowMovement(true);
 
         // Sets story to passive phrase
         story.ChoosePathString("DONE"); //FIXME: Don't use hard coded string
@@ -247,7 +247,7 @@ public class InkDialogueManager : MonoBehaviour
                     GameValueManager.SetInfoBools(param);
                     break;
                 case "transition":
-                    GameValueManager.TransitionScenes(param);
+                    GameValueManager.NextScene(param);
                     break;
             }
         }
