@@ -19,11 +19,14 @@ public class PlayerMovement : MonoBehaviour
 
     private Animator animator;
 
+    private bool alreadyOpened;
+
     // Start is called before the first frame update
     void Start()
     {
         playerMovement = this;
         allowed = true;
+        alreadyOpened = false;
 
         sprite = GetComponent<SpriteRenderer>();
 
@@ -33,9 +36,15 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (!alreadyOpened && Input.GetKeyDown(KeyCode.Escape))
         {
             MenuSettings.menuSettings.Open();
+            alreadyOpened = true;
+        }
+        else if(alreadyOpened && Input.GetKeyDown(KeyCode.Escape))
+        {
+            MenuSettings.menuSettings.Close();
+            alreadyOpened = false;
         }
         if (allowed)
         {

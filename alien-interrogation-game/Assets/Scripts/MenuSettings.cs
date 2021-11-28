@@ -23,7 +23,13 @@ public class MenuSettings : MonoBehaviour
         prevIndex = index - 1;
         menus[prevIndex].SetActive(true);
         menus[index].SetActive(true);
-        Debug.Log(index);
+       // Debug.Log(index);
+    }
+    public void Close()
+    {
+        for (int i = index; i >= 1; i--)
+            GoBack();
+        menus[index].SetActive(false);
     }
     public void AdjVolume(float volLevel)
     {
