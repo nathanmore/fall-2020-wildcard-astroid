@@ -487,14 +487,16 @@ I'm a detective. I know when you're lying. I want the truth, now.
 #name Alabaster 
 Alabaster tells and does not tell.
 Alabaster went to the evidence room 3 relative days ago, to pick up evidence.
-Next thing Alabaster knows, he's holding blaster, Detective G has blank look and blaster hole is in wall!
-This is all Alabaster can recounts.
+Next thing Alabaster can know, he's holding blaster, Detective G has blank look and blaster hole is in wall!
+Thus ends the tale of Alabaster going to the evidence room and acquiring blaster.
 #name player
 Interesting. You don't remember what you did in the evidence room?
 #name Alabster 
 MMMMMMMMMM
 ...
 No.
+Alabaster even forget which evidence he needed.
+If evidence does not exist in Alabaster's cognition...does evidence exist at all?
 #name player
 Sounds like to me like you were hit with a memeory wipe and handed the blaster. 
 This thief is more clever than I initially thought.
