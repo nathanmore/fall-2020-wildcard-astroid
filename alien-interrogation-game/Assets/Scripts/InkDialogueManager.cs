@@ -1,17 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using System;
-using System.Timers;
 using UnityEngine;
 using UnityEngine.UI;
 using Ink.Runtime;
 using TMPro;
-
-/// <Nathan M's Remaining Tasks>
-/// Implement saving of location in dialogue script
-///     When confronting, if contradictions are not discovered it should branch back to save point
-///     (where you pressed the button) so as to not disturb flow of dialogue everytime button is pressed.
-/// </summary>
 
 
 public class InkDialogueManager : MonoBehaviour
@@ -25,7 +18,7 @@ public class InkDialogueManager : MonoBehaviour
     public CharacterInfo characterInfo;
     public CharacterInfo player;
     // 
-
+    
     GameObject textBox; // The gameObject that displays the dialogue box and holds the message and nametag text boxes.
     GameObject optionPanel; // Holds the buttons using vertical layout component.
     GameObject confrontButton; // Holds the confront button
@@ -40,7 +33,7 @@ public class InkDialogueManager : MonoBehaviour
     private bool skip;
     private bool choicesShown = false;
     private string currentSentence;
-    private float typeDelay = 0.01f; //Determines delay between each character being printed
+    private float typeDelay = 0.005f; //Determines delay between each character being printed
 
 
     /// Various variables used for saving and loading into a specific state in the story
@@ -94,7 +87,7 @@ public class InkDialogueManager : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Space))
             {
-                PlayerMovement.playerMovement.AllowMovemnet(false);
+                PlayerMovement.playerMovement.AllowMovement(false);
                 PlayStory();
             }
         }
@@ -130,7 +123,7 @@ public class InkDialogueManager : MonoBehaviour
 
         // Makes dialogue UI invisible
         dialogueUI.SetActive(false);
-        PlayerMovement.playerMovement.AllowMovemnet(true);
+        PlayerMovement.playerMovement.AllowMovement(true);
 
         // Sets story to passive phrase
         story.ChoosePathString("DONE"); //FIXME: Don't use hard coded string
@@ -207,7 +200,10 @@ public class InkDialogueManager : MonoBehaviour
         }
         choiceSelected = null;
 
-        SetSpeaker(player); //Edited by Josh to display image and name
+        SetSpeaker(player);
+
+        //currentSentence = story.Continue();
+        //StartCoroutine(TypeSentence(currentSentence));
 
         PlayStory();
     }
@@ -247,6 +243,12 @@ public class InkDialogueManager : MonoBehaviour
                 case "return":
                     ReturnToSave(saveState);
                     break;
+                case "found":
+                    GameValueManager.SetInfoBools(param);
+                    break;
+                case "transition":
+                    GameValueManager.NextScene(param);
+                    break;
             }
         }
     }
@@ -265,7 +267,15 @@ public class InkDialogueManager : MonoBehaviour
     public void MemoryWipe()
     {
         story.ChoosePathString("BEGINNING"); //FIXME: Should not use hard coded string
-        AdvanceFromDecision();
+        StopAllCoroutines();
+        if (choicesShown == true)
+        {
+            AdvanceFromDecision();
+        }
+        else
+        {
+            PlayStory();
+        }
     }
 
     public void ConfrontButton()

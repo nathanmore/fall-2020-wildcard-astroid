@@ -6,18 +6,35 @@ using UnityEngine.SceneManagement;
 public class NarrativeLoader : MonoBehaviour
 {
     public Animator transition;
-
     public float transitionTime = 1f;
+
+    [SerializeField]
+    private string firstSceneName = "Tutorial_Int";
+
     public void StartGame()
     {
-        StartCoroutine(NextLevel(SceneManager.GetActiveScene().buildIndex + 1));
+        // This method call was not working for me so I switched to using scene name at least for now - N.M.
+        //StartCoroutine(NextLevel(SceneManager.GetActiveScene().buildIndex + 1));
+
+        StartCoroutine(NextLevel(firstSceneName));
     }
-    IEnumerator NextLevel (int levelIndenx)
+
+    //IEnumerator NextLevel (int levelIndenx)
+    //{
+    //    transition.SetTrigger("End");
+
+    //    yield return new WaitForSeconds(transitionTime);
+
+    //    SceneManager.LoadScene(levelIndenx);
+    //}
+
+    IEnumerator NextLevel(string levelName)
     {
         transition.SetTrigger("End");
 
         yield return new WaitForSeconds(transitionTime);
 
-        SceneManager.LoadScene(levelIndenx);
+        SceneManager.LoadScene(levelName);
     }
+
 }

@@ -1,17 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameValueManager : MonoBehaviour
 {
     public static GameValueManager instance;
+    
+    [SerializeField]
+    private string stage1SceneName = "Stage1_Interrogation";
+    [SerializeField]
+    private string stage2SceneName = "Stage2_Int";
 
-    //used to track if one point of contradiction has been seen
-    bool point1 = false;
-    //used to track if another point of contradiction has been seen
-    bool point2 = false;
-    //used to see if currently at a point of contradiction
-    bool atPoint = false;
+    // Bools used to track player info for scene transitions from tutorial to stage 1 and stage 1 to stage 2
+    public bool tutorialInfo = false;
+    public bool stage1Info1 = false;
+    public bool stage1Info2 = false;
+
     //used to record important pieces of info seen
     List<string> convoKnowledge = new List<string>();
     //used to track if important info has been gathered from each character
@@ -19,37 +24,19 @@ public class GameValueManager : MonoBehaviour
 
     private int currIndex;
 
-
-    //checks if both points of contradiction have been seen and if the player is currently at a point of contradiction 
-    //if true, it means the player can successfully confront the character they are talking to
-    bool canConfront()
+    // Important for making sure there is only one GameValueManager instance
+    private void Awake()
     {
-        if (instance.point1 == true && instance.point2 == true && instance.atPoint == true)
+        if (instance == null)
         {
-            return true;
+            instance = this;
+            DontDestroyOnLoad(instance);
         }
-
-        return false;
+        else
+        {
+            Destroy(this);
+        }
     }
-
-
-    void setPoint1(bool val)
-    {
-        instance.point1 = val;
-    }
-
-
-    void setPoint2(bool val)
-    {
-        instance.point2 = val;
-    }
-
-
-    void setAtPoint(bool val)
-    {
-        instance.atPoint = val;
-    }
-
 
     void addConvoKnowledge(string info)
     {
@@ -89,6 +76,38 @@ public class GameValueManager : MonoBehaviour
         set
         {
             instance.currIndex = value;
+        }
+    }
+
+    public static void SetInfoBools(string boolName)
+    {
+        if (boolName == "tutorialInfo")
+        {
+            instance.tutorialInfo = true;
+        }
+        else if (boolName == "stage1Info1")
+        {
+            instance.stage1Info1 = true;
+        }
+        else if (boolName == "stage1Info2")
+        {
+            instance.stage1Info2 = true;
+        }
+    }
+
+    public static void NextScene(string scene)
+    {
+        if (scene == "stage1")
+        {
+            SceneManager.LoadScene(instance.stage1SceneName);
+        }
+        else if (scene == "stage2")
+        {
+            SceneManager.LoadScene(instance.stage2SceneName);
+        }
+        else
+        {
+            Debug.Log("Invalid scene code in Inky");
         }
     }
 }

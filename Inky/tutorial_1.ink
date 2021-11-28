@@ -30,8 +30,10 @@ VAR cont4 = false
 #name player
 (I didn't expect player to suddenly put me on the spot like this. I suppose I'll just have to start asking questions.)
 
-+What was your last place of work? -> Tree1
-+What do you value in your workplace? -> Tree2
++What was your last place of work? 
+    -> Tree1
++What do you value in your workplace? 
+    -> Tree2
 
 //What was your last place of work?
 ==Tree1==
@@ -66,7 +68,7 @@ notes:
     #name player 
     This IS a precinct for criminals, so we can't really guarantee your safety.
     But, we CAN guarantee that everyone at the precinct respects you. We have a zero tolerance for hazing, ghosting, and gaslighting.
-    #intern 
+    #name intern 
     Not sure what all those terms are but that does sound nice.
 /*
 notes:
