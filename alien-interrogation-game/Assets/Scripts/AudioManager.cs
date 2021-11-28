@@ -39,7 +39,6 @@ public class AudioManager : MonoBehaviour
     }
     private void Start()
     {
-
         PlayAudio("Background Music");
     }
 
@@ -48,10 +47,10 @@ public class AudioManager : MonoBehaviour
         Sounds s = Array.Find(sounds, sounds => sounds.name == musName);
         if (s == null)
         {
-            Debug.Log("Sound : " + musName + " was not found.");
+            //Debug.Log("Sound : " + musName + " was not found.");
             return; 
         }
-        Debug.Log("Playing " + musName);
+        //Debug.Log("Playing " + musName);
         s.source.Play();
     }
 

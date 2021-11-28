@@ -19,6 +19,7 @@ public class MenuSettings : MonoBehaviour
 
     public void Open()
     {
+        AudioManager.audioManager.PlayAudio("Beep Sound");
         index = 1;
         prevIndex = index - 1;
         menus[prevIndex].SetActive(true);
@@ -27,8 +28,10 @@ public class MenuSettings : MonoBehaviour
     }
     public void Close()
     {
-        for (int i = index; i >= 1; i--)
+        AudioManager.audioManager.PlayAudio("Beep Sound");
+        for (int i = index; i > 1; i--)
             GoBack();
+        index--;
         menus[index].SetActive(false);
     }
     public void AdjVolume(float volLevel)
@@ -38,7 +41,7 @@ public class MenuSettings : MonoBehaviour
 
     public void GoOptions()
     {
-        
+        AudioManager.audioManager.PlayAudio("Beep Sound");
         index++;
         prevIndex = index - 1;
         menus[prevIndex].SetActive(false);
@@ -48,6 +51,7 @@ public class MenuSettings : MonoBehaviour
 
     public void GoBack()
     {
+        AudioManager.audioManager.PlayAudio("Beep Sound");
         menus[index].SetActive(false);
         menus[prevIndex].SetActive(true);
         index--;
@@ -55,8 +59,10 @@ public class MenuSettings : MonoBehaviour
     }
     public void Play()
     {
+        AudioManager.audioManager.PlayAudio("Beep Sound");
         menus[index].SetActive(false);
         menus[prevIndex].SetActive(false);
+        PlayerMovement.playerMovement.AlreadyOpened(false);
     }
 
     public void Quit()

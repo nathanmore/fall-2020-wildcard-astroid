@@ -38,11 +38,13 @@ public class PlayerMovement : MonoBehaviour
     {
         if (!alreadyOpened && Input.GetKeyDown(KeyCode.Escape))
         {
+            Debug.Log("open");
             MenuSettings.menuSettings.Open();
             alreadyOpened = true;
         }
         else if(alreadyOpened && Input.GetKeyDown(KeyCode.Escape))
         {
+            Debug.Log("close");
             MenuSettings.menuSettings.Close();
             alreadyOpened = false;
         }
@@ -87,5 +89,9 @@ public class PlayerMovement : MonoBehaviour
     public void AllowMovement(bool movement)
     {
         allowed = movement;
+    }
+    public void AlreadyOpened(bool opened)
+    {
+        alreadyOpened = opened;
     }
 }
