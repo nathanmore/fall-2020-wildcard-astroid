@@ -1,20 +1,20 @@
 -> BEGINNING
 === BEGINNING ===
 #name player
-I'm conducting an investigation. 
-As per protocol, I need your name, occupation, and home planet.
+Hey, you're Alabaster, right?
+Still working that desk job? It's been a while!
 #name Alabaster 
 (sigh) I be Alabaster, yes.
 My occupation is cubicle. 
-I from comet C-X183. 
 #name player
-'Cubicle' isn't an occupationn, but I'll let it slide.
+'Cubicle' isn't really an occupation.
+In any case, I'm conducting an investigation.
 When was the last time you were in the evidence room?
 #name Alabster 
 I no go to evidence room. I here. 
 At cubicle. My home.
 #name player
-I thought management told you that you weren't allowed to rest at your cubicle.
+Last I heard, management told you that you weren't allowed to sleep at your desk.
 #name Alabster 
 Management....
 are fools. They cannot know of Alabster.
