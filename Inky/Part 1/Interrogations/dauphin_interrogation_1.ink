@@ -4,11 +4,9 @@ Dauphin! Good to see you, my fellow mammal!
 Listen, there's been a crime committed. A theft.
 I need to see data of the evidence room for three relative days ago. Security clearance Theta-2. 
 I need everything, footage, pressure, temperature--hit me with it all.
-Oh, and for the books, name, occupation, and home planet.
 #name Dauphin
 O-O-Ok. Good to see you too, Detective C. 
-Let me just close this window; I was looking at photos of my home, planet Narret of the Silky Smooth galaxy.
-Since I work security and surveillance, you came to the place for help.
+I-I a-absolutely can do that.
 #name player
 Thanks. So you can pull the footage for me?
 #name Dauphin
@@ -32,11 +30,12 @@ Hmm. You mind if I ask you a few questions about the deleted footage?
 -> BEGINNING
 
 === BEGINNING ===
-VAR cont1 = false
-VAR cont2 = false
+VAR cont1 = false //only need a password
+VAR cont2 = false //complicated 25 fa process 
+VAR cont3 = false //never left door unlcoked
+VAR cont4 = false //left door unlcoked
 #name player
-(I can't conclude for certain Dauphin is the culprit.)
-(I suspect he may have deleted the footage, though. Let's see if we can find out what he's hiding...)
+(I suspect Dauphin may have deleted the footage, for some reason. Let's see if we can find out what he's hiding...)
 
 //contradictions in tree3 branch 2+++, tree 1 branch 1
 + Who has access to the footage? 
@@ -52,7 +51,6 @@ VAR cont2 = false
 = Root
 #name Dauphin
 I have the password, Detective G has it, the boss has it...
-Oh! Nerguzzus has it because they are put on security sometimes too!
 Nobody else has it, I don't think...
 I haven't given it to anybody else.
 #name player
@@ -65,6 +63,8 @@ Just had to check.
 L-l-look, the creatures I listed are the only creatures who are supposed to have the password! 
 B-b-but! I let people in here all the time! A-a-and I don't type very fast! 
 They haven't made these keyboards flipper friendly! Maybe somebody gleamed the passcode!
+
+~cont1 = true
 #index 0
 #name player
 All right, I'll keep in mind the possibility of a creature gleaning the pass.
@@ -78,8 +78,7 @@ All right, I'll keep in mind the possibility of a creature gleaning the pass.
 = branch1   
     #name Dauphin
     W-w-w-well, um... I don't know. 
-    It could have been N-Nerguzzus; they work independently of me.
-    O-o-r it could have been a password-spotter!
+    O-o-r it could have been the password-spotter!
     #name player
     Just to be clear, anybody with the password has full access to the footage?
     #index 1
@@ -100,15 +99,18 @@ All right, I'll keep in mind the possibility of a creature gleaning the pass.
         Your record is indeed quite clean. 
         #name Dauphin
         Y-yes! The door was always locked when I was away!
+        E-except this one time, when I left it open y-yesterday on a bathroom break.
         #name player 
         //#REMEMBER2FIX Need clarification from Nadav on next line
-        So for the password-spotter to gain access, they would have enter the password with you watching?
+        You broke protocol and left the door open?
         #name Dauphin
-        U-uhm, uhh, yes. So maybe, uhm, Nerguzus left the door unattended. 
-        Sometimes they can forget things, right?
+        U-uhm, uhh, yes.
+        I-i-it was only a few minutes!
+        B-b-but maybe the password spotter entered the password then!
         #index 2
         #name player
         Sure, that's plausible.
+        ~cont4 = true //left door open for spotter
              ->DONE
     
 //Do you leave door unlocked -> when could it have happened
@@ -128,29 +130,22 @@ All right, I'll keep in mind the possibility of a creature gleaning the pass.
     #name player
     "Prolonged gaming session?"
     #name Dauphin 
-    16 hours of Landnautica.
+    Don't ask.
     #name player
     The room was locked each time, though?
 #index 3
     #name Dauphin 
-    Y-y-yes. Nerguzzus might have left the room unlocked on their shift.
-    I did not leave the door open.
-    
+    Y-y-yes. I did not leave the door open.
+    ~cont3 = true //never left door open
     +++When could the footage have possibly been deleted?
         #name Dauphin
         W-w-w-well, uhm, I don't know. 
-        I-it must have been during Nerguzzus' shift since it couldn't have been during mine!
-        You should ask Nerguzzus!
         #name player
-        All in due time.
-        Does Nerguzzus ask you before they delete footage?
+        Any ideas? Since the door is locked when you're away and only a few choice people know the password.
         #name Dauphin
-        U-u-usually, yes. 
-        But they didn't this time!
+        T-t-this is why you're the detective, not me.
 #index 4
         #name player
-        (I think Dauphin deleted the footage, and won't tell me why.
-        I'd better be really thorough here before I seek out Nerguzzus.)
         ->DONE
 
 
@@ -160,7 +155,6 @@ All right, I'll keep in mind the possibility of a creature gleaning the pass.
 #name Dauphin
 I-I-don't know! 
 I'm in here a lot, so I couldn't say.
-M-m-maybe it happened during Nerguzzus' shift.
 #name player
 And it couldn't have happened on your watch?
 #name Dauphin 
@@ -180,7 +174,7 @@ I'll note that down.
 =branch1
     #name Dauphin
     Well, you would need the password.
-    The creatures that have the password are, Uhm, j-just me and Nerguzzus. 
+    The creatures that have the password are, Uhm, j-just me.
     And Detective G.
     And the boss.
     ...
@@ -205,11 +199,12 @@ I'll note that down.
         #name player 
         You're sure?
         #name Dauphin
-        U-um, uhh, yes. So maybe, uhm, Nerguzus left the door unattended. 
+        U-um, uhh, yes. 
         Sometimes they can forget things, right?
     #index 7
         #name player
         I could imagine that.
+        ~cont3 = true
         ->DONE
 
 //how -> who
@@ -222,21 +217,22 @@ I'll note that down.
     Yes, yes.
     So you claim that because you kept the door locked, the files could not possibly have been deleted on your shift?
     #name Dauphin
-    Y-y-y-es. I-i-it must have been deleted on Nerguzzus' shift.
+    Y-y-y-es.
+    ~cont3 = true
     
     +++Who has access to the footage?
         #name Dauphin 
-        U-uhm, myself, Nerguzzus, Detective G., and, uh, the boss. All of us have clearance.
+        U-uhm, myself, Detective G., and, uh, the boss. All of us have clearance.
         #name player
         And who accesses the footage most often?
         #name Dauphin 
         W-w-well, the boss has, boss things to do, and, uh,
         Detective G. doesn't really do much of anything, so, uh,
-        it's mostly me and Nerguzzus.
+        it's mostly me.
     #index 8
         #name player
         Ok, thank you, duly noted. 
-        Only you  and Nerguzzus access these files.
+        Only you usually access these files.
         ->DONE
 
 
@@ -261,6 +257,7 @@ Y-y-yes, excellent point. My record is good, I, uh, never violate protocol!
 #index 9
 #name player
 I have a few more questions for you before I go bothering the others.
+~cont3 = true
 
 + When could the footage have been possible deleted? 
      -> branch1
@@ -291,16 +288,17 @@ I have a few more questions for you before I go bothering the others.
         Oh, uhm, me, the other guard, Nrguzzus, uhm, the boss, and, uh, Detective G.
         Well all know the passcode.
         #name player
-        And who of these actually manages the files.
+        And who of these actually manages the files?
         #name Dauphin
-        Oh, uhm, just Nerguzzus.
+        Oh, uhm, just me.
         #name player
-        Do you think Nerguzzus deleted the files?
+        Do you think the Boss or Detective G deleted the files?
         #name Dauphin 
         W-w-w-w-well! I say, uhm, yes...
-        L-l-l-look, I don't want to throw them under the shuttle bus, but there's a complicated 25-factor authentication process beyond the password. 
-        Only, uhm, Nerguzzus and myself can really navigate it. 
-        So, uhm, it must have been them.
+        L-l-l-look, I don't want to throw them under the shuttle bus, but there's a complicated 25-factor authentication process beyond the password.
+        To prevent password spotters, you know?
+        Only, uhm, the Boss can \*really* navigate it. 
+        So, uhm, it could have been them.
         ~ cont2 = true
 #index 9
         #name player
@@ -312,7 +310,7 @@ I have a few more questions for you before I go bothering the others.
 =branch2
     #name Dauphin
     Well, you would need the password.
-    The creatures that have the password are, um, j-just me and Nerguzzus. 
+    The creatures that have the password are, um, j-just me. 
     And Detective G.
     And the boss.
     ...
@@ -329,6 +327,7 @@ I have a few more questions for you before I go bothering the others.
     #name player
     That's all right, we all forget things from time to time. (Heh, heh.)
     Let me notate that, potential password gleamer.
+    ~cont2 = true
     +++When could the footage have possibly been deleted?
         #name Dauphin
         W-w-wow, uhm, I am stumped. 
@@ -336,13 +335,14 @@ I have a few more questions for you before I go bothering the others.
         #name player
         OK. That makes sense, the footage must have been deleted at some other time.
         #name Dauphin
-        P-p-p-precisely.
+        Y-yup!
 #index 10
         #name player
-        OK. Footage was deleted off-watch. 
-        Thank you.
+        OK. You sure you can't think of a time when a password gleamer may have entered the password?
+        #name Dauphin
+        N-no, n-not off the top of my blowhole.
         ->DONE
-
+        
 === DONE ===
 #name Dauphin 
 W-w-w-well I appreciate your concern, b-b-b-but I must get back to work.
@@ -372,6 +372,11 @@ Knock yourself out, buddy.
 = Default
     {cont1 == true && Tree3.branch2 : -> Cont1}
     {cont2 == true && Tree1.branch1 : -> Cont2}
+    {cont3 == true && Tree1.branch1 : -> Cont3}
+    {cont4 == true && Tree1.branch2 : -> Cont4}
+    {cont4 == true && Tree2.branch1 : -> Cont4}
+    {cont4 == true && Tree2.branch2 : -> Cont4}
+    {cont4 == true && Tree3 : -> Cont4}
 #index 13
      #name player
      (I have'nt encountered any inconsistencies in Dauphin's story yet.)
@@ -410,7 +415,7 @@ Knock yourself out, buddy.
 //You're really throwing your companion under the bus
 = Cont2
     #name player
-    Don't get smart with me, stop blaming Nerguzzus.
+    Don't get smart with me.
     #name Dauphin 
     W-w-what? I would n-n-n-never...
     #name player
@@ -436,10 +441,47 @@ Knock yourself out, buddy.
 #index 14
 #name player
     I'll have to have a talk with him later. 
-    (flashy thing animation)
-    Never mind, I have everything I need.
-    You have a nice day.
     #found stage1Info1
     ->END
+    
+=Cont3
+#name player 
+Please don't lie to me, Dauphin.
+#name Dauphin
+W-w-w-w-w-w-what!?!?
+I-I-I would never!
+#name player 
+I have a memory wiper. I have you on record as you never leaving the room unlocked.
+Please, just tell me the truth.
+#name Dauphin 
+O-o-oh, all right.
+-> TRUTH
 
+=Cont4
+#name player 
+Please don't lie to me, Dauphin.
+#name Dauphin
+W-w-w-w-w-w-what!?!?
+I-I-I would never!
+#name player 
+I have a memory wiper. I have you on record as you leaving the room.
+Please, just tell me the truth.
+#name Dauphin 
+O-o-oh, all right.
+->TRUTH
+
+==TRUTH==
+#name Dauphin 
+I-I, uhm, I deleted the footage. 
+Uhm, S-shudderz asked me to. 
+He had an embarassing moment in the file room a few relative days ago...
+#name player
+And you, the biggest goody two-fin in the office, broke protocol and deleted the files for him? 
+#name Dauphin 
+W-w-w-well, he told me he'd invite me to one of his parties if I did...
+#index 14
+#name player
+I'll have to have a talk with him later. 
+    #found stage1Info1
+->END
 
