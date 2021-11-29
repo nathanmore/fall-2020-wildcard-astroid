@@ -1417,7 +1417,10 @@ MonoBehaviour:
   m_CI: {fileID: 11400000, guid: e192e6f302eafa24ab2f034e885e3b2b, type: 2}
   characterName: {fileID: 201986501}
   image: {fileID: 175807652}
+  notes: []
   guilty: 0
+  indexTrigger: 0
+  interrogated: 0
 --- !u!1 &201986499
 GameObject:
   m_ObjectHideFlags: 0
@@ -6974,7 +6977,10 @@ MonoBehaviour:
   m_CI: {fileID: 11400000, guid: fa2eef3e2d773aa44b25e5088cc87269, type: 2}
   characterName: {fileID: 2031549601}
   image: {fileID: 595146005}
+  notes: []
   guilty: 0
+  indexTrigger: 0
+  interrogated: 0
 --- !u!1001 &595545657
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9284,7 +9290,10 @@ MonoBehaviour:
   m_CI: {fileID: 11400000, guid: 7d94f55acaed851418969532540afd8a, type: 2}
   characterName: {fileID: 101648026}
   image: {fileID: 805356083}
+  notes: []
   guilty: 0
+  indexTrigger: 0
+  interrogated: 0
 --- !u!1001 &816928079
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11605,7 +11614,10 @@ MonoBehaviour:
   m_CI: {fileID: 11400000, guid: a634babf7790ba3448865474a34711d0, type: 2}
   characterName: {fileID: 1411109110}
   image: {fileID: 932992714}
+  notes: []
   guilty: 0
+  indexTrigger: 0
+  interrogated: 0
 --- !u!1 &936395093
 GameObject:
   m_ObjectHideFlags: 0
@@ -11743,7 +11755,10 @@ MonoBehaviour:
   m_CI: {fileID: 11400000, guid: 7caa1f97a490c114d8368e1a93af8e3d, type: 2}
   characterName: {fileID: 1951948201}
   image: {fileID: 936395096}
+  notes: []
   guilty: 0
+  indexTrigger: 0
+  interrogated: 0
 --- !u!1 &951045533
 GameObject:
   m_ObjectHideFlags: 0
@@ -12177,7 +12192,10 @@ MonoBehaviour:
   m_CI: {fileID: 11400000, guid: 58182458f420d2c428d61ab6074c8d74, type: 2}
   characterName: {fileID: 630319552}
   image: {fileID: 990441498}
+  notes: []
   guilty: 0
+  indexTrigger: 0
+  interrogated: 0
 --- !u!1 &1006415148
 GameObject:
   m_ObjectHideFlags: 0
@@ -20168,7 +20186,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   accusation: {fileID: 2073906437}
   image: {fileID: 341161118}
-  text: {fileID: 1513498696}
+  nameText: {fileID: 1513498696}
+  notes: {fileID: 1998684732}
 --- !u!1 &1481822953
 GameObject:
   m_ObjectHideFlags: 0
@@ -21171,7 +21190,10 @@ MonoBehaviour:
   m_CI: {fileID: 11400000, guid: 2d7c9f160d047df42afa107356f39a60, type: 2}
   characterName: {fileID: 1231327347}
   image: {fileID: 1587121112}
+  notes: []
   guilty: 0
+  indexTrigger: 0
+  interrogated: 0
 --- !u!1 &1590810847
 GameObject:
   m_ObjectHideFlags: 0
@@ -27773,10 +27795,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
+  m_fontSize: 72
   m_fontSizeBase: 36
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
@@ -27809,7 +27831,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: -223.96649, y: 0, z: -276.78882, w: -479.73953}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -29549,6 +29571,7 @@ MonoBehaviour:
   - {fileID: 535332815}
   - {fileID: 1497525194}
   audioMixer: {fileID: 24100000, guid: d2efdfc7ac1fcc04ab4d0ecdbef3ad91, type: 2}
+  accusation: {fileID: 0}
 --- !u!50 &2146892206
 Rigidbody2D:
   serializedVersion: 4

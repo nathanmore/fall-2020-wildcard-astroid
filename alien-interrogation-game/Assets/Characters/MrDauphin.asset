@@ -14,3 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Mr. Dauphin
   sprite: {fileID: 8046468626132484496, guid: 4db2b53fccd39fc42a9a316db323b0b0, type: 3}
+  indextrigger: 3
+  guilty: 0
+  interrogated: 0
+  contradictions:
+  - 3 creatures were in the evidence room at the time of the theft.
+  - They entered and exited one at a time.
+  - 'Shudderz asked Dauphin to delete the footage for the day of the theft. '
+  - He claims not to remember asking Dauphin to delete the footage and may have been
+    memory wiped

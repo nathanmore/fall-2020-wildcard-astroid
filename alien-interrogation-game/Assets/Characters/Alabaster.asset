@@ -16,4 +16,8 @@ MonoBehaviour:
   sprite: {fileID: 226970964078247360, guid: da7c40dba9728544088a829356b0afd4, type: 3}
   id: 0
   guilty: 1
-  importantThings: []
+  contradictions:
+  - Alabaster was in the evidence room at the time of the theft.
+  - He claims not to remember the events in the evidence room and may have been memory
+    wiped
+  - He confirms that he returned the blaster but denies stealing it

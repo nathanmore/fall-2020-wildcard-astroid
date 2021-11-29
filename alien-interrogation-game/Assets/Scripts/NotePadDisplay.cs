@@ -11,7 +11,8 @@ public class NotePadDisplay : MonoBehaviour
     private DisplayCI characterInfo;
 
     public Image image;
-    public TextMeshProUGUI text;
+    public TextMeshProUGUI nameText;
+    public TextMeshProUGUI notes;
 
     public static NotePadDisplay notePad;
     void Awake()
@@ -21,7 +22,7 @@ public class NotePadDisplay : MonoBehaviour
     }
     public void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.E))
         {
             gameObject.SetActive(false);
             accusation.SetActive(true);
@@ -38,7 +39,18 @@ public class NotePadDisplay : MonoBehaviour
     {
        // Debug.Log("Displaying");
         image.sprite = characterInfo.image.sprite;
-        text.text = characterInfo.characterName.text;
+        nameText.text = characterInfo.characterName.text;
+        notes.text = "";
+        if (characterInfo.interrogated)
+        {
+            foreach (string s in characterInfo.notes)
+            {
+                int i = characterInfo.notes.IndexOf(s);
+                if (i < characterInfo.indexTrigger) notes.text += s + "\n";
+                //if (GameValueManager.CurrIndex >= characterInfo.indexTrigger) notes.text += s + "\n";
+                if (i == characterInfo.indexTrigger && 1 >= characterInfo.indexTrigger) notes.text += s + "\n";
+            }
+        }
     }
 
 }

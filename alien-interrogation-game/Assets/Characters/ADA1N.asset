@@ -16,4 +16,6 @@ MonoBehaviour:
   sprite: {fileID: -1478865471969462114, guid: 73b70e450ae2f264dba3384996c8322d, type: 3}
   id: 0
   guilty: 0
-  contradictions: []
+  contradictions:
+  - 'ADA1N''s blaster was missing at the time of the theft. '
+  - Alabaster found and returned the blaster after the theft.
