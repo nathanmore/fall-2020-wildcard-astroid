@@ -10,9 +10,10 @@ public class DisplayCI : MonoBehaviour
     public TextMeshProUGUI characterName; //This is for editing the name using DisplayCI
     public Image image;
     public static DisplayCI displayer;
-    private List<string> notes;
-    public bool guilty; 
-
+    [HideInInspector] public List<string> notes;
+    [HideInInspector] public bool guilty ;
+    [HideInInspector] public int indexTrigger;
+    [HideInInspector] public bool interrogated;
     void Awake()
     {
         characterName.text = m_CI.name;
@@ -20,7 +21,18 @@ public class DisplayCI : MonoBehaviour
         //these are the notes that are going to be displayed in the notepad
         notes = m_CI.contradictions;
         guilty = m_CI.guilty;
-        displayer = this;
+        if (m_CI.indextrigger > 0)
+            indexTrigger = m_CI.indextrigger;
+        else
+            indexTrigger = notes.Count;
+
+        interrogated = m_CI.interrogated;
+        displayer = this;       
+    }
+
+    private void Update()
+    {
+        interrogated = m_CI.interrogated;
     }
     //this method is used for displaying character outside of DisplayCI;
     public void DisplayImage(CharacterInfo character)

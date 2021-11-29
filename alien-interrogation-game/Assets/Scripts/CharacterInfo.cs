@@ -8,10 +8,10 @@ public class CharacterInfo : ScriptableObject
 {
     public new string name;
     public Sprite sprite;
-    [SerializeField] public int id;
+    public int indextrigger;
     public bool guilty;
+    public bool interrogated;
     public List<string> contradictions = new List<string> { };
-    
-
+   
 }
 

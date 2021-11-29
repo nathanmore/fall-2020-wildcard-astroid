@@ -29,12 +29,26 @@ public class AudioManager : MonoBehaviour
 
         foreach (Sounds s in sounds)
         {
+            bool assigned = false;
             s.source = gameObject.AddComponent<AudioSource>();
             s.source.clip = s.clip;
             s.source.volume = s.volume;
             s.source.pitch = s.pitch;
             s.source.loop = s.loop;
-            s.source.outputAudioMixerGroup = groups[0];
+
+            foreach(AudioMixerGroup a in groups)
+            {
+                if (a.name == s.audioMixer) 
+                {
+                    s.source.outputAudioMixerGroup = a;
+                    assigned = true;
+                }                       
+            }
+
+            if (!assigned) {
+                s.source.outputAudioMixerGroup = groups[0]; 
+                //Debug.Log("Assigned to Master");
+            }
         }            
     }
     private void Start()

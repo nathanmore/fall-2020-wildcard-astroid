@@ -266,6 +266,7 @@ public class InkDialogueManager : MonoBehaviour
     //This function is called when memory device is used and it resets the story to the beginning.
     public void MemoryWipe()
     {
+        AudioManager.audioManager.PlayAudio("Memory Wipe"); //Plays "Memory Wipe" sound when button pressed 
         story.ChoosePathString("BEGINNING"); //FIXME: Should not use hard coded string
         StopAllCoroutines();
         if (choicesShown == true)

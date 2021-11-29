@@ -14,6 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Sleeeethly
   sprite: {fileID: -2368599648349397426, guid: f0368d7a080b759489546dce5fcad674, type: 3}
-  id: 0
+  indextrigger: 2
   guilty: 0
-  contradictions: []
+  interrogated: 0
+  contradictions:
+  - She admits to having a task in the evidence room.
+  - She admits to stopping at the evidence room door and ignoring her task.
+  - Nerguzzus asked Sleethy to meet Detective G in the evidence room.

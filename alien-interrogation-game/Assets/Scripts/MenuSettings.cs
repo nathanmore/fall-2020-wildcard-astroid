@@ -7,6 +7,7 @@ public class MenuSettings : MonoBehaviour
 {
     [SerializeField] private GameObject[] menus;
     [SerializeField] private AudioMixer audioMixer;
+    [SerializeField] private GameObject accusation;
 
     private static int index;
     private static int prevIndex;

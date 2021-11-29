@@ -14,3 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Dectective G
   sprite: {fileID: -2450039675600383597, guid: d2890d7846aee6442b2ce8d5ca3a0049, type: 3}
+  id: 0
+  guilty: 0
+  contradictions:
+  - He remembers seeing Sleethy enter the evidence room, but not Alabaster.
