@@ -1267,9 +1267,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.010992408, y: 0.15602508}
+  m_Offset: {x: -0.1243293, y: 0.10222477}
   serializedVersion: 2
-  m_Radius: 0.36345378
+  m_Radius: 0.3003176
 --- !u!4 &155031041 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7245478059402475633, guid: 69f77c3d866db9942ae0f1b97a362a79, type: 3}
@@ -4883,9 +4883,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.010992527, y: 0.1624468}
+  m_Offset: {x: -0.1243293, y: 0.10222477}
   serializedVersion: 2
-  m_Radius: 0.32738948
+  m_Radius: 0.3003176
 --- !u!1 &519627300
 GameObject:
   m_ObjectHideFlags: 0
@@ -6516,6 +6516,10 @@ PrefabInstance:
       value: 3.0881748
       objectReference: {fileID: 0}
     - target: {fileID: 3502233792111486243, guid: 95fe6e3eb8be07a4abb016a9d8991d5d, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3502233792111486243, guid: 95fe6e3eb8be07a4abb016a9d8991d5d, type: 3}
       propertyPath: m_Offset.x
       value: -0.5440874
       objectReference: {fileID: 0}
@@ -7611,9 +7615,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.013685942, y: 0.07550913}
+  m_Offset: {x: -0.1243293, y: 0.10222477}
   serializedVersion: 2
-  m_Radius: 0.38424534
+  m_Radius: 0.3003176
 --- !u!4 &640427859 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1902048720194890255, guid: fcd4958169f2b5944916ce2ec457b094, type: 3}
@@ -12458,9 +12462,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.010992408, y: 0.18202546}
+  m_Offset: {x: -0.1243293, y: 0.10222477}
   serializedVersion: 2
-  m_Radius: 0.3374534
+  m_Radius: 0.3003176
 --- !u!1001 &1041039071
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20841,9 +20845,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.010992408, y: 0.16557676}
+  m_Offset: {x: -0.1243293, y: 0.10222477}
   serializedVersion: 2
-  m_Radius: 0.3539021
+  m_Radius: 0.3003176
 --- !u!1 &1555084416
 GameObject:
   m_ObjectHideFlags: 0
@@ -21991,9 +21995,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0011115074, y: 0.14762545}
+  m_Offset: {x: -0.1243293, y: 0.10222477}
   serializedVersion: 2
-  m_Radius: 0.32244897
+  m_Radius: 0.3003176
 --- !u!1001 &1620613993
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22777,9 +22781,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.011422336, y: 0.12985352}
+  m_Offset: {x: -0.1243293, y: 0.10222477}
   serializedVersion: 2
-  m_Radius: 0.33358887
+  m_Radius: 0.3003176
 --- !u!1 &1758248338
 GameObject:
   m_ObjectHideFlags: 0
@@ -24334,9 +24338,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0050114393, y: 0.11864579}
+  m_Offset: {x: -0.1243293, y: 0.10222477}
   serializedVersion: 2
-  m_Radius: 0.41198528
+  m_Radius: 0.3003176
 --- !u!1 &1888149134 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1902048720194890254, guid: fcd4958169f2b5944916ce2ec457b094, type: 3}
@@ -29247,7 +29251,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7245478059402475632, guid: 69f77c3d866db9942ae0f1b97a362a79, type: 3}
       propertyPath: m_SortingOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7245478059402475633, guid: 69f77c3d866db9942ae0f1b97a362a79, type: 3}
       propertyPath: m_RootOrder
