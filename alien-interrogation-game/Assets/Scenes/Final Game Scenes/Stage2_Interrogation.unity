@@ -25676,7 +25676,7 @@ PrefabInstance:
     - target: {fileID: 925714034103187158, guid: a77ea8f0312afe34e98b09995d72676f, type: 3}
       propertyPath: inkFile
       value: 
-      objectReference: {fileID: 4900000, guid: 97aeb3c2c96f5a841b61df3917550ae0, type: 3}
+      objectReference: {fileID: 4900000, guid: 76b14f81cf7ceba4b810fbe16901cb43, type: 3}
     - target: {fileID: 925714034103187158, guid: a77ea8f0312afe34e98b09995d72676f, type: 3}
       propertyPath: dialogueUI
       value: 
