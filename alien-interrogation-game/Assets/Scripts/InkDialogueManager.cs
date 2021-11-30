@@ -236,7 +236,7 @@ public class InkDialogueManager : MonoBehaviour
                         SetSpeaker(characterInfo); //Edited by Josh to display image and name
                     }
                     break;
-                case "note":
+                case "index":
                     int noteNum = Int32.Parse(param); // Converts the string number to an integer
                     GameValueManager.CurrIndex = noteNum; // Passes the int to game manager
                     break;

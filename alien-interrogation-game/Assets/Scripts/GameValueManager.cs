@@ -24,6 +24,12 @@ public class GameValueManager : MonoBehaviour
 
     private int currIndex;
 
+
+    private void Start()
+    {
+        instance.currIndex = 15;
+    }
+
     // Important for making sure there is only one GameValueManager instance
     private void Awake()
     {
