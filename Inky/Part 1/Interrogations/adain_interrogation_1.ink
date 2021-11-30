@@ -32,6 +32,7 @@ VAR done = false //did we find the contradiction yet
 +You have actual StarTrooper aim. 
     -> Tree3 
 
+#index 15
 ->END
 
 //can I see your gun?
@@ -105,6 +106,7 @@ ADA1N is very fond of its blaster and doesn't like to let others touch it
         /*
         notes: ADA1N is no the only one with a blaster. THe boss, and detective g both carry a blaster.
         */
+        #index 15
         ->DONE
         
 //you have actual startrooper aim -> Did you loan your weapon out?
@@ -149,6 +151,7 @@ ADA1N is very fond of its blaster and doesn't like to let others touch it
         ADA1N did fire the in the past 3 days
         */
         ~const3 = true
+        #index 15
         ->DONE
 
 
@@ -230,6 +233,7 @@ ADA1N had his blaster on him for the past 3 relative days
         /*
         notes: ADA1N is no the only one with a blaster. THe boss, and detective g both carry a blaster.
         */
+        #index 15
         ->DONE
 
 //you have actual startrooper aim-> can I see your weapon?
@@ -287,6 +291,7 @@ ADA1N had his blaster on him for the past 3 relative days
         /*notes:
         
         */
+        #index 15
         ->DONE
     
 //you have actual startrooper aim
@@ -369,6 +374,7 @@ notes: ADA1N is no the only one with a blaster. THe boss, and detective g both c
             /*notes:
                 ADA1n says he lent his blaster to detective g    
             */
+            #index 15
     ->DONE
 
 //did you loan your weapon out -> can I see the gun
@@ -409,6 +415,7 @@ notes: ADA1N is no the only one with a blaster. THe boss, and detective g both c
         #index 14
         #name player 
         (We'll have to see about that).
+        #index 15
         ->DONE
 /*notes:
 ADA1N did not fire the in the past 3 days
@@ -429,6 +436,7 @@ I FIND YOUR COMMENT HIGHLY INSULTING.
 I CANNOT LIE. IT IS BEYOND MY PROGRAMMING.
 #name player 
 Yea, uh, whoops! Let's try that again.
+#index 15
 ->DONE
 
 //lie: you lent it out
@@ -458,6 +466,7 @@ Oop, and your memories are gone.
 ...
 Never mind, ADA1N. Responsible gun owner. I believe ya.
 ~done = true
+#index 15
 ->DONE
 
 //lie: you had it on you
@@ -487,6 +496,7 @@ Oop, and your memories are gone.
 ...
 Never mind, ADA1N. Responsible gun owner. I believe ya.
 ~done = true 
+#index 15
 ->DONE
 
 //lie: the weapon was not fired.
@@ -516,6 +526,7 @@ Oop, and your memories are gone.
 ...
 Never mind, ADA1N. Responsible gun owner. I believe ya.
 ~done = true 
+#index 15
 ->DONE
 
 //lie: the weapon was fired.
@@ -544,6 +555,7 @@ Oop, and your memories are gone.
 ...
 Never mind, ADA1N. Responsible gun owner. I believe ya.
 ~done = true 
+#index 15
 ->DONE
 
 ==DONE== 

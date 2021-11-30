@@ -74,6 +74,7 @@ notes:
 -intern values workplace safety
 -intern's old work mistreated them
 */
+#index 15
     ->DONE
 
 //value -> last place of work
@@ -119,6 +120,7 @@ notes:
 -intern worked border and customs patrol
 -intern worked for 12 years
 */
+#index 15
     ->DONE
     
 ==CONTRADICTION==
@@ -156,6 +158,7 @@ I'm sorry, I did lie! I gave that whole speech about loyalty, I didn't want to s
 #name player 
 Sometimes that's the best play.
 #found tutorialInternInfo
+#index 15
 ->DONE
 
 =Cont2
@@ -175,6 +178,7 @@ W-w-WHAT? Hello? Really? This isn't science fiction!
 #name player 
 Shush. You'll learn on the job.
 #found tutorialInternInfo
+#index 15
 ->DONE
 
 === DONE ===

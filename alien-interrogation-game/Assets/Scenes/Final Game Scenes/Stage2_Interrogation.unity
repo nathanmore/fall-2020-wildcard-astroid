@@ -25504,6 +25504,7 @@ GameObject:
   - component: {fileID: 1773626420}
   - component: {fileID: 1773626419}
   - component: {fileID: 1773626423}
+  - component: {fileID: 1773626424}
   m_Layer: 0
   m_Name: Sleeeethly
   m_TagString: Furniture
@@ -25638,6 +25639,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.1015068, y: 1.1873977}
   m_EdgeRadius: 0
+--- !u!114 &1773626424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1773626418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be7abdbb89543694196fddb424777def, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueObject: {fileID: 1946949265}
 --- !u!1001 &1777430987
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26215,10 +26229,10 @@ MonoBehaviour:
   question1: 
   question2: 
   question3: 
-  backButton: {fileID: 0}
-  nextButton: {fileID: 0}
-  notebookBody: {fileID: 0}
-  notebookTitle: {fileID: 0}
+  backButton: {fileID: 659060225}
+  nextButton: {fileID: 659060224}
+  notebookBody: {fileID: 659060226}
+  notebookTitle: {fileID: 659060227}
   facts: []
 --- !u!1 &1799569690
 GameObject:

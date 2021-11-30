@@ -56,7 +56,7 @@ public class NoteBook : MonoBehaviour
         }
 
         //only updates notebook if first time, if page changed, or if index changed
-        if (index == 15 || page != prevPage || index != prevIndex)
+        if (prevIndex == 15 || page != prevPage || index != prevIndex)
         {
             if (page == 0)
             {

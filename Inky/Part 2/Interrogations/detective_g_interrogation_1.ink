@@ -86,7 +86,7 @@ det. G was alone in the evidence room*/
         /*notes:
         Det. G doesn't remember being neuralyzed
         */
-        
+        #index 15
         ->DONE
     
     //I can't believe you got neuralyzed -> why did you go
@@ -127,7 +127,7 @@ det. G was alone in the evidence room*/
         G was sent an email to go to the evidence rooom
         */
         ~const2 = true
-    
+    #index 15
         ->DONE
 
 //why did you go to the evidence room?
@@ -183,6 +183,7 @@ G went to pick up some evidence*/
         #index 7
         #name Detective G 
         Oh, yeah. Funny how that works, I guess.
+        #index 15
         ->DONE
     
     //I can't believe
@@ -211,7 +212,7 @@ G went to pick up some evidence*/
         /*notes:
         g didn't see anybody in the evidence room
         */
-        
+        #index 15
         ->DONE
 
 //I can't believe you got Neuralyzed
@@ -270,7 +271,7 @@ detective g doesn't remember getting Neuralyzed */
         (The GOAT's motives are always enigmatic if you ask me.)
         /*notes: 
         Det g forgot why he went to the room*/
-        
+        #index 15
         ->DONE
     
     =branch2
@@ -319,7 +320,7 @@ detective g doesn't remember getting Neuralyzed */
         /*notes:
         Detective G doesn't remember anyone else in the room 
         */
-        
+        #index 15
         ->DONE
         
 ==CONTRADICTION==
@@ -359,6 +360,7 @@ That's a cold blow.
 The GOAT finds this quite unsavory.
 #name player 
 Now, please, give me the truth, the full truth.
+#index 15
 ->TRUTH
 
 =Cont2
@@ -378,6 +380,7 @@ Am I seriously a suspect in this case?
 Maybe. Now please, just give me the full truth. 
 No embellishments, no third person, just honest testimony please.
 And I'll know when it's honest, of course.
+#index 15
 ->TRUTH
 
 ==TRUTH==
@@ -421,6 +424,7 @@ I thought for sure you'd combust or something after I coldly lied to you in a pa
 #name player 
 Oh, I was mad. You just don't remember it.
 #found stage2InfoDetG
+#index 15
 ->DONE
 
 
