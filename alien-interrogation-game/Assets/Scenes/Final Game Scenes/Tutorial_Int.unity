@@ -613,6 +613,7 @@ MonoBehaviour:
   nextButton: {fileID: 6542619660924626374}
   notebookBody: {fileID: 6542619660924626373}
   notebookTitle: {fileID: 6542619660924626372}
+  isTutorial: 0
   facts: []
 --- !u!1 &133656700
 GameObject:
@@ -6819,6 +6820,7 @@ MonoBehaviour:
   nextButton: {fileID: 6542619660924626374}
   notebookBody: {fileID: 6542619660924626373}
   notebookTitle: {fileID: 6542619660924626372}
+  isTutorial: 0
   facts: []
 --- !u!1 &1035598789
 GameObject:
@@ -9114,6 +9116,7 @@ MonoBehaviour:
   nextButton: {fileID: 6542619660924626374}
   notebookBody: {fileID: 6542619660924626373}
   notebookTitle: {fileID: 6542619660924626372}
+  isTutorial: 0
   facts: []
 --- !u!1 &1560187512
 GameObject:
@@ -9385,6 +9388,7 @@ MonoBehaviour:
   nextButton: {fileID: 6542619660924626374}
   notebookBody: {fileID: 6542619660924626373}
   notebookTitle: {fileID: 6542619660924626372}
+  isTutorial: 1
   facts:
   - Worked customs and border patrol for 2 years
   - Values workplace safety, was mistreated at last workplace

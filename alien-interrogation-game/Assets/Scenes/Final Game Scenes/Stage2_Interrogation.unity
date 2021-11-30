@@ -21511,7 +21511,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FishPosition: {fileID: 2146892211}
-  speed: 4
+  speed: 5
   noticed: 1
 --- !u!61 &1350417778
 BoxCollider2D:

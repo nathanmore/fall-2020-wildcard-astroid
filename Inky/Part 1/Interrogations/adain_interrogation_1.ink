@@ -559,8 +559,8 @@ Never mind, ADA1N. Responsible gun owner. I believe ya.
 ->DONE
 
 ==DONE== 
-{done == true: -> nop}
 =Default
+{done == true: -> nop}
 #name player 
 Well, that about wraps up the questions I have for you, ADA1N.
 #name ADA1N 
