@@ -1411,29 +1411,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63ff3a1b60bdb484bbd8f00329c7b2d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  question1: 
-  question2: 
-  question3: 
+  question1: Was anybody else with you in the evidence room?
+  question2: Why did you go to the evidence room?
+  question3: I can't believe you got Neuralyzed.
   backButton: {fileID: 659060225}
   nextButton: {fileID: 659060224}
   notebookBody: {fileID: 659060226}
   notebookTitle: {fileID: 659060227}
   facts:
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - det. G was alone in the evidence room
+  - Detective g went to the evidence room to check out evidence
+  - Det. G doesn't remember being neuralyzed
+  - Det. G doesn't remember being neuralyzed
+  - G was sent an email to go to the evidence rooom
+  - G went to pick up some evidence
+  - G didn't see anyone in the evidence room
+  - Det. G doesn't remember being neuralyzed
+  - Det. G doesn't remember being neuralyzed
+  - g didn't see anybody in the evidence room
+  - detective g doesn't remember getting Neuralyzed
+  - G didn't see anyone in the evidence room
+  - Det g forgot why he went to the room
+  - 'detective g went to the evidence room to check out evidence '
+  - Detective G doesn't remember anyone else in the room
 --- !u!4 &171024628 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7245478059402475633, guid: 69f77c3d866db9942ae0f1b97a362a79, type: 3}
@@ -19766,21 +19766,21 @@ MonoBehaviour:
   question2: Were you in the evidence room three relative days ago?
   question3: 'Could you stop speaking in riddles for a second? '
   backButton: {fileID: 659060225}
-  nextButton: {fileID: 659060225}
+  nextButton: {fileID: 659060224}
   notebookBody: {fileID: 659060226}
   notebookTitle: {fileID: 659060227}
   facts:
   - Alabster found the blaster on his desk
   - Alabaster was at his desk at the time of the theft, at 3 o'clock
   - Alabaster can be sensible but chooses not to
-  - No
+  - Alabaster won't stop talking in riddles
   - alabster was at his desk at the time
   - ADA1N did not go into the evidence room
   - Alabaster found the blaster on his desk
   - Alabaster can be sensible but chooses not to
-  - No
+  - Alabaster won't stop talking in riddles
   - Alabaster was asleep 3 days ago between 1 and 5 o'clock
-  - No
+  - Alabaster won't stop talking in riddles
   - ' Alabaster found the blaster on his desk'
   - alabster was at his desk at the time
   - alabster was in the lounge
@@ -27752,29 +27752,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63ff3a1b60bdb484bbd8f00329c7b2d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  question1: 
-  question2: 
-  question3: 
+  question1: 'What evidence were you there to pick up from the evidence room? '
+  question2: How is your case progress coming along?
+  question3: 'Did anything unusual happen while you were in the evidence room? '
   backButton: {fileID: 659060225}
   nextButton: {fileID: 659060224}
   notebookBody: {fileID: 659060226}
   notebookTitle: {fileID: 659060227}
   facts:
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - 'Sleethy was supposed to pick up a photo but didn''t '
+  - Sleethy's case is coming along Well
+  - sleethy claims he didn't see the blaster damage on the wall
+  - sleethy claims he didn't see the blaster damage on the wall
+  - Sleethy's case is coming along Well
+  - 'sleethy still have evidence in the evidence room to be checked out '
+  - sleeethy pick up a photo of a space rock as evidence
+  - sleethy claims he did saw a single shot on the wall
+  - sleethy claims he did saw mulitple shots on the wall
+  - sleeethy pick up a photo of a space rock as evidence
+  - sleethy claims she was busy
+  - sleeethy pick up a photo of a space rock as evidence
+  - Sleethy's case is coming along Well
+  - sleethy is nervous about his case
+  - sleethy is inept as his job
 --- !u!4 &1947126017 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 367082930377763706, guid: c45dd792c64508c45bfecb209dd4de56, type: 3}

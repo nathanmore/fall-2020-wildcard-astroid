@@ -14353,29 +14353,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63ff3a1b60bdb484bbd8f00329c7b2d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  question1: ADA1N told me you returned their blaster. How did you acquire it?
-  question2: Were you in the evidence room three relative days ago?
-  question3: 'Could you stop speaking in riddles for a second? '
+  question1: 
+  question2: 
+  question3: 
   backButton: {fileID: 1873768651}
   nextButton: {fileID: 648867801}
   notebookBody: {fileID: 1883120406}
   notebookTitle: {fileID: 1290085882}
-  facts:
-  - Alabster found the blaster on his desk
-  - Alabaster was at his desk at the time of the theft, at 3 o'clock
-  - Alabaster can be sensible but chooses not to
-  - No
-  - alabster was at his desk at the time
-  - ADA1N did not go into the evidence room
-  - Alabaster found the blaster on his desk
-  - Alabaster can be sensible but chooses not to
-  - No
-  - Alabaster was asleep 3 days ago between 1 and 5 o'clock
-  - No
-  - ' Alabaster found the blaster on his desk'
-  - alabster was at his desk at the time
-  - alabster was in the lounge
-  - alabaster was in the lounge frmo 1 to 3. THe blaster was dropped on his desk
+  facts: []
 --- !u!4 &876105606 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8158239858086308118, guid: a77ea8f0312afe34e98b09995d72676f, type: 3}
@@ -18003,29 +17988,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63ff3a1b60bdb484bbd8f00329c7b2d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  question1: ADA1N told me you returned their blaster. How did you acquire it?
-  question2: Were you in the evidence room three relative days ago?
-  question3: 'Could you stop speaking in riddles for a second? '
+  question1: 
+  question2: 
+  question3: 
   backButton: {fileID: 1873768651}
   nextButton: {fileID: 648867801}
   notebookBody: {fileID: 1883120406}
   notebookTitle: {fileID: 1290085882}
-  facts:
-  - Alabster found the blaster on his desk
-  - Alabaster was at his desk at the time of the theft, at 3 o'clock
-  - Alabaster can be sensible but chooses not to
-  - No
-  - alabster was at his desk at the time
-  - ADA1N did not go into the evidence room
-  - Alabaster found the blaster on his desk
-  - Alabaster can be sensible but chooses not to
-  - No
-  - Alabaster was asleep 3 days ago between 1 and 5 o'clock
-  - No
-  - ' Alabaster found the blaster on his desk'
-  - alabster was at his desk at the time
-  - alabster was in the lounge
-  - alabaster was in the lounge frmo 1 to 3. THe blaster was dropped on his desk
+  facts: []
 --- !u!1001 &1372423649
 PrefabInstance:
   m_ObjectHideFlags: 0
