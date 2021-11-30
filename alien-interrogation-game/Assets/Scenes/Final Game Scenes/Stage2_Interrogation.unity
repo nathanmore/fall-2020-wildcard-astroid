@@ -1418,6 +1418,7 @@ MonoBehaviour:
   nextButton: {fileID: 659060224}
   notebookBody: {fileID: 659060226}
   notebookTitle: {fileID: 659060227}
+  isTutorial: 0
   facts:
   - det. G was alone in the evidence room
   - Detective g went to the evidence room to check out evidence
@@ -4195,6 +4196,7 @@ MonoBehaviour:
   nextButton: {fileID: 659060224}
   notebookBody: {fileID: 659060226}
   notebookTitle: {fileID: 659060227}
+  isTutorial: 0
   facts: []
 --- !u!1 &467996863
 GameObject:
@@ -7474,6 +7476,7 @@ MonoBehaviour:
   nextButton: {fileID: 659060224}
   notebookBody: {fileID: 659060226}
   notebookTitle: {fileID: 659060227}
+  isTutorial: 0
   facts: []
 --- !u!4 &573799667 stripped
 Transform:
@@ -9638,6 +9641,7 @@ MonoBehaviour:
   nextButton: {fileID: 659060224}
   notebookBody: {fileID: 659060226}
   notebookTitle: {fileID: 659060227}
+  isTutorial: 0
   facts: []
 --- !u!1 &746494567
 GameObject:
@@ -9779,6 +9783,7 @@ MonoBehaviour:
   nextButton: {fileID: 659060224}
   notebookBody: {fileID: 659060226}
   notebookTitle: {fileID: 659060227}
+  isTutorial: 0
   facts: []
 --- !u!1 &762508442
 GameObject:
@@ -19929,6 +19934,7 @@ MonoBehaviour:
   nextButton: {fileID: 659060224}
   notebookBody: {fileID: 659060226}
   notebookTitle: {fileID: 659060227}
+  isTutorial: 0
   facts:
   - Alabster found the blaster on his desk
   - Alabaster was at his desk at the time of the theft, at 3 o'clock
@@ -25754,6 +25760,7 @@ MonoBehaviour:
   nextButton: {fileID: 659060224}
   notebookBody: {fileID: 659060226}
   notebookTitle: {fileID: 659060227}
+  isTutorial: 0
   facts: []
 --- !u!1 &1784370446
 GameObject:
@@ -26233,6 +26240,7 @@ MonoBehaviour:
   nextButton: {fileID: 659060224}
   notebookBody: {fileID: 659060226}
   notebookTitle: {fileID: 659060227}
+  isTutorial: 0
   facts: []
 --- !u!1 &1799569690
 GameObject:
@@ -27933,7 +27941,7 @@ PrefabInstance:
     - target: {fileID: 925714034103187158, guid: a77ea8f0312afe34e98b09995d72676f, type: 3}
       propertyPath: inkFile
       value: 
-      objectReference: {fileID: 4900000, guid: efd7e71fe11b44a499609f5c9850b83c, type: 3}
+      objectReference: {fileID: 4900000, guid: db8f0f5b311af50488d143ba2fcec146, type: 3}
     - target: {fileID: 925714034103187158, guid: a77ea8f0312afe34e98b09995d72676f, type: 3}
       propertyPath: dialogueUI
       value: 
@@ -28017,6 +28025,7 @@ MonoBehaviour:
   nextButton: {fileID: 659060224}
   notebookBody: {fileID: 659060226}
   notebookTitle: {fileID: 659060227}
+  isTutorial: 0
   facts:
   - 'Sleethy was supposed to pick up a photo but didn''t '
   - Sleethy's case is coming along Well
@@ -31170,6 +31179,7 @@ MonoBehaviour:
   nextButton: {fileID: 659060224}
   notebookBody: {fileID: 659060226}
   notebookTitle: {fileID: 659060227}
+  isTutorial: 0
   facts: []
 --- !u!1 &2022122652
 GameObject:
