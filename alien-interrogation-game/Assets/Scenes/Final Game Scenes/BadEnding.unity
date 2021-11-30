@@ -803,6 +803,75 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1615277903}
   m_CullTransparentMesh: 1
+--- !u!1 &1682101735
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1682101737}
+  - component: {fileID: 1682101736}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1682101736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1682101735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cec35098da8d1e4da1d29d33f72c513, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: Background Music
+    clip: {fileID: 8300000, guid: af9888242d61ff94fbc296a77c32ddbf, type: 3}
+    volume: 0.611
+    pitch: 1.36
+    loop: 1
+    audioMixer: Master
+    mute: 0
+    source: {fileID: 0}
+  - name: Beep Sound
+    clip: {fileID: 8300000, guid: ed8cb31157220d846a9ed443cecf3b81, type: 3}
+    volume: 0.611
+    pitch: 1.36
+    loop: 0
+    audioMixer: Master
+    mute: 0
+    source: {fileID: 0}
+  - name: Memory Wipe
+    clip: {fileID: 8300000, guid: 5ef923356d3b5a64bb08894197e9fcbe, type: 3}
+    volume: 0.611
+    pitch: 1.36
+    loop: 0
+    audioMixer: Master
+    mute: 0
+    source: {fileID: 0}
+  audioMixer: {fileID: 24100000, guid: d2efdfc7ac1fcc04ab4d0ecdbef3ad91, type: 2}
+--- !u!4 &1682101737
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1682101735}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1696439900
 GameObject:
   m_ObjectHideFlags: 0
