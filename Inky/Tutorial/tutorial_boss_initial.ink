@@ -62,4 +62,9 @@ So, who are we conducting the test interrogation on?
 HEY! NEW INTERN! YOU'RE UP FOR THE NEXT INTERVIEW! 
 #name player 
 Ah.
-->END
+->DONE
+
+=== DONE ===
+#name Boss
+You still need to test out your interrogation on the intern.
+-> END
