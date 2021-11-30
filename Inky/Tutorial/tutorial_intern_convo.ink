@@ -14,7 +14,7 @@ Whatever your job is!
 
 ->BEGINNING
 
-==BEGINNING==
+=== BEGINNING ===
 VAR cont1 = false
 VAR cont2 = false
 VAR cont3 = false
@@ -149,6 +149,7 @@ Now fess up. You goofed.
 I'm sorry, I did lie! I gave that whole speech about loyalty, I didn't want to sabotage myself! 
 #name player 
 Sometimes that's the best play.
+#found tutorialInfo
 ->DONE
 
 =Cont2
@@ -167,10 +168,10 @@ I know. We have a memory loss device. I wiped your memory.
 W-w-WHAT? Hello? Really? This isn't science fiction! 
 #name player 
 Shush. You'll learn on the job.
-
+#found tutorialInfo
 ->DONE
 
-==DONE==
+=== DONE ===
 {cont4 == true: ->DONE3}
 {cont3 == true: -> DONE2}
 #name intern 
