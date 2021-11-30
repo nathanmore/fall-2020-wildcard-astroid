@@ -16115,6 +16115,10 @@ PrefabInstance:
       propertyPath: characterInfo
       value: 
       objectReference: {fileID: 11400000, guid: 2d7c9f160d047df42afa107356f39a60, type: 2}
+    - target: {fileID: 925714034103187158, guid: a77ea8f0312afe34e98b09995d72676f, type: 3}
+      propertyPath: needsNotebook
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8158239858086308118, guid: a77ea8f0312afe34e98b09995d72676f, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -24957,6 +24961,10 @@ PrefabInstance:
       propertyPath: characterInfo
       value: 
       objectReference: {fileID: 11400000, guid: 7d94f55acaed851418969532540afd8a, type: 2}
+    - target: {fileID: 925714034103187158, guid: a77ea8f0312afe34e98b09995d72676f, type: 3}
+      propertyPath: needsNotebook
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8158239858086308118, guid: a77ea8f0312afe34e98b09995d72676f, type: 3}
       propertyPath: m_RootOrder
       value: 0

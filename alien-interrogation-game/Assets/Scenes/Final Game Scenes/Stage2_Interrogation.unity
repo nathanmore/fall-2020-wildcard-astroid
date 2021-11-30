@@ -1343,6 +1343,10 @@ PrefabInstance:
       propertyPath: characterInfo
       value: 
       objectReference: {fileID: 11400000, guid: a634babf7790ba3448865474a34711d0, type: 2}
+    - target: {fileID: 925714034103187158, guid: a77ea8f0312afe34e98b09995d72676f, type: 3}
+      propertyPath: needsNotebook
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8158239858086308118, guid: a77ea8f0312afe34e98b09995d72676f, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -19859,6 +19863,10 @@ PrefabInstance:
       propertyPath: characterInfo
       value: 
       objectReference: {fileID: 11400000, guid: e192e6f302eafa24ab2f034e885e3b2b, type: 2}
+    - target: {fileID: 925714034103187158, guid: a77ea8f0312afe34e98b09995d72676f, type: 3}
+      propertyPath: needsNotebook
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8158239858086308118, guid: a77ea8f0312afe34e98b09995d72676f, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -27950,6 +27958,10 @@ PrefabInstance:
       propertyPath: characterInfo
       value: 
       objectReference: {fileID: 11400000, guid: fa2eef3e2d773aa44b25e5088cc87269, type: 2}
+    - target: {fileID: 925714034103187158, guid: a77ea8f0312afe34e98b09995d72676f, type: 3}
+      propertyPath: needsNotebook
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8158239858086308118, guid: a77ea8f0312afe34e98b09995d72676f, type: 3}
       propertyPath: m_RootOrder
       value: 0

@@ -18,7 +18,10 @@ public class InkDialogueManager : MonoBehaviour
     public CharacterInfo characterInfo;
     public CharacterInfo player;
     // 
-    
+
+    [SerializeField]
+    private bool needsNotebook = false;
+
     GameObject textBox; // The gameObject that displays the dialogue box and holds the message and nametag text boxes.
     GameObject optionPanel; // Holds the buttons using vertical layout component.
     GameObject confrontButton; // Holds the confront button
@@ -36,7 +39,6 @@ public class InkDialogueManager : MonoBehaviour
     private string currentSentence;
     private float typeDelay = 0.01f; //Determines delay between each character being printed
     bool buttonsSet = false;
-    bool needsNotebook = false;
 
 
     /// Various variables used for saving and loading into a specific state in the story
@@ -54,7 +56,7 @@ public class InkDialogueManager : MonoBehaviour
         optionPanel = dialogueUI.transform.GetChild(1).gameObject;
         confrontButton = dialogueUI.transform.GetChild(2).gameObject;
         memoryButon = dialogueUI.transform.GetChild(3).gameObject;
-        notebookUI = dialogueUI.transform.GetChild(3).gameObject;
+        notebookUI = dialogueUI.transform.GetChild(4).gameObject;
 
         // These components must be listed as children of the textbox object in the Unity scene in this same order in order for script to function
         nametag = textBox.transform.GetChild(2).GetComponent<TextMeshProUGUI>();

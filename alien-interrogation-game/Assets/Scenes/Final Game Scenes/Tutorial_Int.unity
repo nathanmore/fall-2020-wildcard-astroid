@@ -9313,6 +9313,10 @@ PrefabInstance:
       propertyPath: characterInfo
       value: 
       objectReference: {fileID: 11400000, guid: 0b37a13df9a07d74a9f55598ae3a91bf, type: 2}
+    - target: {fileID: 925714034103187158, guid: a77ea8f0312afe34e98b09995d72676f, type: 3}
+      propertyPath: needsNotebook
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8158239858086308118, guid: a77ea8f0312afe34e98b09995d72676f, type: 3}
       propertyPath: m_RootOrder
       value: 0
