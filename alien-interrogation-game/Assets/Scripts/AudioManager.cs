@@ -35,6 +35,7 @@ public class AudioManager : MonoBehaviour
             s.source.volume = s.volume;
             s.source.pitch = s.pitch;
             s.source.loop = s.loop;
+            s.source.mute = s.mute;
 
             foreach(AudioMixerGroup a in groups)
             {
@@ -54,6 +55,7 @@ public class AudioManager : MonoBehaviour
     private void Start()
     {
         PlayAudio("Background Music");
+        PlayAudio("Walking Sounds");
     }
 
     public void PlayAudio(string musName)
