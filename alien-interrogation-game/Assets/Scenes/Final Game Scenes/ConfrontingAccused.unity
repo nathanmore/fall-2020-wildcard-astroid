@@ -4785,6 +4785,7 @@ MonoBehaviour:
   nextButton: {fileID: 0}
   notebookBody: {fileID: 0}
   notebookTitle: {fileID: 0}
+  isTutorial: 0
   facts: []
 --- !u!1 &478921203
 GameObject:
@@ -6925,6 +6926,7 @@ MonoBehaviour:
   nextButton: {fileID: 0}
   notebookBody: {fileID: 0}
   notebookTitle: {fileID: 0}
+  isTutorial: 0
   facts:
   - ADA1N is very fond of its blaster and doesn't like to let others touch it
   - ADA1N fired the weapon several times
@@ -7416,6 +7418,7 @@ MonoBehaviour:
   nextButton: {fileID: 0}
   notebookBody: {fileID: 0}
   notebookTitle: {fileID: 0}
+  isTutorial: 0
   facts: []
 --- !u!1001 &1147684449
 PrefabInstance:
@@ -13912,6 +13915,75 @@ CircleCollider2D:
   m_Offset: {x: -0.1243293, y: 0.10222477}
   serializedVersion: 2
   m_Radius: 0.3003176
+--- !u!1 &1505102485
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1505102487}
+  - component: {fileID: 1505102486}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1505102486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1505102485}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cec35098da8d1e4da1d29d33f72c513, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: Background Music
+    clip: {fileID: 8300000, guid: af9888242d61ff94fbc296a77c32ddbf, type: 3}
+    volume: 0.611
+    pitch: 1.36
+    loop: 1
+    audioMixer: Master
+    mute: 0
+    source: {fileID: 0}
+  - name: Beep Sound
+    clip: {fileID: 8300000, guid: ed8cb31157220d846a9ed443cecf3b81, type: 3}
+    volume: 0.611
+    pitch: 1.36
+    loop: 0
+    audioMixer: Master
+    mute: 0
+    source: {fileID: 0}
+  - name: Memory Wipe
+    clip: {fileID: 8300000, guid: 5ef923356d3b5a64bb08894197e9fcbe, type: 3}
+    volume: 0.611
+    pitch: 1.36
+    loop: 0
+    audioMixer: Master
+    mute: 0
+    source: {fileID: 0}
+  audioMixer: {fileID: 24100000, guid: d2efdfc7ac1fcc04ab4d0ecdbef3ad91, type: 2}
+--- !u!4 &1505102487
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1505102485}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1509124551
 GameObject:
   m_ObjectHideFlags: 0
@@ -16673,6 +16745,7 @@ MonoBehaviour:
   nextButton: {fileID: 0}
   notebookBody: {fileID: 0}
   notebookTitle: {fileID: 0}
+  isTutorial: 0
   facts:
   - Dauphin, Detective G, The Boss and Nerguzzus have the password, someone may have
     seen it though.
@@ -17759,6 +17832,7 @@ MonoBehaviour:
   nextButton: {fileID: 0}
   notebookBody: {fileID: 0}
   notebookTitle: {fileID: 0}
+  isTutorial: 0
   facts:
   - Alabster found the blaster on his desk
   - Alabaster was at his desk at the time of the theft, at 3 o'clock
