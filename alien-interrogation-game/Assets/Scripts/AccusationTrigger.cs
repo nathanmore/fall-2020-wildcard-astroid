@@ -46,8 +46,7 @@ public class AccusationTrigger : MonoBehaviour
         {
             interactableIcon.SetActive(false);
             allowPress = false;
-        }
-           
+        }          
     }
 
 }
