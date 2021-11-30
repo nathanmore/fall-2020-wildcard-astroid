@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: Intern
   m_EditorClassIdentifier: 
   name: 
-  sprite: {fileID: 0}
+  sprite: {fileID: -3280491226722250382, guid: aec9dd0ef3a25fc4fa2e9ff5f2ed188d, type: 3}
   indextrigger: 0
   guilty: 0
   interrogated: 0
-  contradictions: []
+  contradictions:
+  - There's no evidence that points towards them...that's a little suspicious

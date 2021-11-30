@@ -503,6 +503,7 @@ This thief is more clever than I initially thought.
 You won't remember this, but thanks for the info, Alabaster.
 #name Alabaster 
 Eh?
+#found stage2InfoAlabaster
 ~done = true
 ->DONE
 

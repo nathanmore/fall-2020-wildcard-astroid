@@ -55,6 +55,7 @@ public class AudioManager : MonoBehaviour
     private void Start()
     {
         PlayAudio("Background Music");
+        PlayAudio("Walking Sounds");
     }
 
     public void PlayAudio(string musName)

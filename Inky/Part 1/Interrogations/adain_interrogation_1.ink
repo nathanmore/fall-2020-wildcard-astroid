@@ -559,6 +559,6 @@ HAR HAR.
 AS IF YOU HAD THE COMPUTING POWER.
 #name player 
 All right, fun talk. 
-#found stage1Info2
+#found stage1InfoADA1N
 ->END
 
