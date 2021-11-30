@@ -16,8 +16,9 @@ Y-yes, I can bring that up, just a second...here it is!
 What's this static?
 #name Dauphin
 W-well, it seems we have seismic readings as usual - looks to me like 3 creatures were in the room at that time.
-They all left one by one.
-Visual footage is missing. That's odd.
+They all entered one by one.
+Then, two of them left at once.
+O-oh, visual footage is missing. That's odd.
 #name player
 What? How on Terra-2 did that happen? 
 We have like 25 zetabytes of storage on this thing!

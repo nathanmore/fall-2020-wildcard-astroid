@@ -14,7 +14,7 @@ Go on.
 ADA1N claims to have lost a blaster the day of the incident as well. 
 Coincidentally, the blaster's records show that it was fired once at the time Detectice G said he was in the evidence room.
 #name boss
-I see. Any working theories.
+I see. Any working theories?
 #name player 
 I would find it plausible to believe that Detective G. and one other creature were held at blasterpoint.
 ADA1N's blaster was used for the heist.

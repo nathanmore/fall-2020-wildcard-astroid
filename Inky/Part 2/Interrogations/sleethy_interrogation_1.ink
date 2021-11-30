@@ -1,5 +1,5 @@
 #name player 
-Nerguzzus? May I speak to you a second?
+Sleethy? May I speak to you a second?
 #name Sleethy 
 Ugh, fine, if you mussst.
 #name player 
@@ -16,7 +16,7 @@ I wasss in and out, I checked out ssso much evidence for my case.
 #name player
 Excellent! Can you tell me anything you remember?
 Like who fired the blaster?
-#name Nerguzzus 
+#name Sleethy
 Blasster? What blasst-?
 ...
 Oh, right. The blasster.
