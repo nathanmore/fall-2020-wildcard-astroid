@@ -112,6 +112,7 @@ All right, I'll keep in mind the possibility of a creature gleaning the pass.
         #name player
         Sure, that's plausible.
         ~cont4 = true //left door open for spotter
+        #index 15
              ->DONE
     
 //Do you leave door unlocked -> when could it have happened
@@ -147,6 +148,7 @@ All right, I'll keep in mind the possibility of a creature gleaning the pass.
         #name Dauphin
         T-t-this is why you're the detective, not me.
         #name player
+        #index 15
         ->DONE
 
 
@@ -206,6 +208,7 @@ I'll note that down.
         #name player
         I could imagine that.
         ~cont3 = true
+        #index 15
         ->DONE
 
 //how -> who
@@ -235,6 +238,7 @@ I'll note that down.
         #name player
         Ok, thank you, duly noted. 
         Only you usually access these files.
+        #index 15
         ->DONE
 
 
@@ -306,6 +310,7 @@ I have a few more questions for you before I go bothering the others.
         #index 12
         #name player
         Understood.
+        #index 15
         ->DONE
         //+ {Tree1.branch1} Don't get smart with me, stop blaming Nerguzzus. ->Cont2
 
@@ -345,6 +350,7 @@ I have a few more questions for you before I go bothering the others.
         #index 14
         #name Dauphin
         N-no, n-not off the top of my blowhole.
+        #index 15
         ->DONE
         
 === DONE ===
@@ -385,6 +391,7 @@ Knock yourself out, buddy.
      (I have'nt encountered any inconsistencies in Dauphin's story yet.)
      (I should keep asking him questions. Maybe even try the memory gun.)
      #return ToSave
+     #index 15
      -> DONE
 //what about 25FA
 = Cont1 
@@ -413,6 +420,7 @@ Knock yourself out, buddy.
     Never mind, I have everything I need.
     You have a nice day.
     #found stage1InfoDauphin
+    #index 15
     -> DONE2
 
 //You're really throwing your companion under the bus
@@ -459,6 +467,7 @@ I have a memory wiper. I have you on record as you never leaving the room unlock
 Please, just tell me the truth.
 #name Dauphin 
 O-o-oh, all right.
+#index 15
 -> TRUTH
 
 =Cont4
@@ -472,6 +481,7 @@ I have a memory wiper. I have you on record as you leaving the room.
 Please, just tell me the truth.
 #name Dauphin 
 O-o-oh, all right.
+#index 15
 ->TRUTH
 
 ==TRUTH==

@@ -125,6 +125,7 @@ Alabster found the blaster on his desk
         /*
         Alabaster can be sensible but chooses not to
         */
+        #index 15
         ->DONE
     
     //could you stop speaking in riddles for a second? -> were you in the evidence room 3 days ago?
@@ -176,6 +177,7 @@ Alabster found the blaster on his desk
             Excellent. Thanks.
             /*notes:
             alabster was at his desk at the time*/
+            #index 15
             ->DONE
     
 //were you in the evidence room three relative days ago?
@@ -267,6 +269,7 @@ adain did not go into the evidence room*/
         /*
         Alabaster can be sensible but chooses not to
         */
+        #index 15
         ->DONE
     
     //Can you stop speaking in riddles -> how did you get the blaster
@@ -312,6 +315,7 @@ adain did not go into the evidence room*/
         */
         ~const2 = true
     
+    #index 15
         ->DONE
         
 //could you stop speaking in riddles?
@@ -403,6 +407,7 @@ Yeah, sure. Be like that.
         Excellent. Thanks.
         /*notes:
         alabster was at his desk at the time*/
+        #index 15
         ->DONE
     
     //were you in evidence room -> how did you get blaster    
@@ -462,6 +467,7 @@ Yeah, sure. Be like that.
         /*notes:
         alabaster was in the lounge frmo 1 to 3. THe blaster was dropped on his desk
         */
+        #index 15
         ->DONE
         
         
@@ -522,6 +528,7 @@ You won't remember this, but thanks for the info, Alabaster.
 Eh?
 #found stage2InfoAlabaster
 ~done = true
+#index 15
 ->DONE
 
 
