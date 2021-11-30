@@ -4106,6 +4106,7 @@ GameObject:
   - component: {fileID: 371663960}
   - component: {fileID: 371663959}
   - component: {fileID: 371663958}
+  - component: {fileID: 371663962}
   m_Layer: 0
   m_Name: DetectiveC (PLAYER)
   m_TagString: Player
@@ -4193,6 +4194,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &371663962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 371663956}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5d1b17630c0d2c46889ece1ad483b33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 0
+  rb: {fileID: 371663961}
 --- !u!61 &371663963
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4227,7 +4242,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 371663956}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 11306e5e118df2142bec3e8fb3d38a16, type: 2}
   m_CullingMode: 0
@@ -17744,7 +17759,7 @@ PrefabInstance:
     - target: {fileID: 925714034103187158, guid: a77ea8f0312afe34e98b09995d72676f, type: 3}
       propertyPath: inkFile
       value: 
-      objectReference: {fileID: 4900000, guid: 505155e4f05cc4346bb71ccd34c9f42d, type: 3}
+      objectReference: {fileID: 4900000, guid: c504ad6e74a34264b8e195d8dc6cee83, type: 3}
     - target: {fileID: 925714034103187158, guid: a77ea8f0312afe34e98b09995d72676f, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -17820,7 +17835,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2045877898}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 63ff3a1b60bdb484bbd8f00329c7b2d7, type: 3}
   m_Name: 

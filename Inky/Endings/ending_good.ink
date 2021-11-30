@@ -81,5 +81,5 @@ That was some outburst, Alabaster.
 We may have to take you into special confinement.
 The rest of you,
 none of you saw anything.
-
+#transition GoodEnding
 ->END

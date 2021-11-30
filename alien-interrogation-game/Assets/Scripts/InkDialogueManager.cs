@@ -23,6 +23,7 @@ public class InkDialogueManager : MonoBehaviour
     GameObject optionPanel; // Holds the buttons using vertical layout component.
     GameObject confrontButton; // Holds the confront button
     GameObject memoryButon; // Holds button for flashy thing (memory wipe)
+    GameObject notebookUI; // Holds notebook
     Story story;
     TMP_Text nametag;
     TMP_Text message;
@@ -35,6 +36,7 @@ public class InkDialogueManager : MonoBehaviour
     private string currentSentence;
     private float typeDelay = 0.01f; //Determines delay between each character being printed
     bool buttonsSet = false;
+    bool needsNotebook = false;
 
 
     /// Various variables used for saving and loading into a specific state in the story
@@ -52,6 +54,7 @@ public class InkDialogueManager : MonoBehaviour
         optionPanel = dialogueUI.transform.GetChild(1).gameObject;
         confrontButton = dialogueUI.transform.GetChild(2).gameObject;
         memoryButon = dialogueUI.transform.GetChild(3).gameObject;
+        notebookUI = dialogueUI.transform.GetChild(3).gameObject;
 
         // These components must be listed as children of the textbox object in the Unity scene in this same order in order for script to function
         nametag = textBox.transform.GetChild(2).GetComponent<TextMeshProUGUI>();
@@ -102,6 +105,15 @@ public class InkDialogueManager : MonoBehaviour
         {
             // Makes UI for dialogue visible
             dialogueUI.SetActive(true);
+
+            if (needsNotebook == true)
+            {
+                notebookUI.SetActive(true);
+            }
+            else
+            {
+                notebookUI.SetActive(false);
+            }
 
             if (buttonsSet == false)
             {
