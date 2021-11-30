@@ -432,6 +432,7 @@ It'ssss embarassssing!
 #name player 
 Oh, everyone gets embarassed from time to time. 
 Unless your memory is good, you'll forget about it, eventually.
+#found stage2InfoSleethy
 ->DONE
 
 

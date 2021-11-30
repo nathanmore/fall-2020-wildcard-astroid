@@ -3849,6 +3849,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2044441981}
+  - {fileID: 1071589738}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -15703,10 +15704,11 @@ MonoBehaviour:
   sounds:
   - name: Background Music
     clip: {fileID: 8300000, guid: af9888242d61ff94fbc296a77c32ddbf, type: 3}
-    volume: 0.611
+    volume: 0.368
     pitch: 1.36
     loop: 1
     audioMixer: Master
+    mute: 0
     source: {fileID: 0}
   - name: Beep Sound
     clip: {fileID: 8300000, guid: ed8cb31157220d846a9ed443cecf3b81, type: 3}
@@ -15714,6 +15716,7 @@ MonoBehaviour:
     pitch: 1.36
     loop: 0
     audioMixer: Master
+    mute: 0
     source: {fileID: 0}
   - name: Memory Wipe
     clip: {fileID: 8300000, guid: 5ef923356d3b5a64bb08894197e9fcbe, type: 3}
@@ -15721,6 +15724,15 @@ MonoBehaviour:
     pitch: 1.36
     loop: 0
     audioMixer: Master
+    mute: 0
+    source: {fileID: 0}
+  - name: Walking Sounds
+    clip: {fileID: 8300000, guid: 0437beb4958d6dc49928d110f313068a, type: 3}
+    volume: 1
+    pitch: 1.36
+    loop: 1
+    audioMixer: Master
+    mute: 1
     source: {fileID: 0}
   audioMixer: {fileID: 24100000, guid: d2efdfc7ac1fcc04ab4d0ecdbef3ad91, type: 2}
 --- !u!4 &1071589738
@@ -15730,12 +15742,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1071589736}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -16.22, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_Father: {fileID: 174503412}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1071909281
 GameObject:
@@ -17093,8 +17105,8 @@ GameObject:
   - component: {fileID: 1287118137}
   - component: {fileID: 1287118136}
   - component: {fileID: 1287118135}
-  - component: {fileID: 1287118138}
   - component: {fileID: 1287118134}
+  - component: {fileID: 1287118138}
   m_Layer: 0
   m_Name: Shudderz
   m_TagString: Furniture
@@ -17239,11 +17251,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1287118132}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 722dde1a129e34a4b899cca9d535b268, type: 3}
+  m_Script: {fileID: 11500000, guid: a2542b704650bdd4c86208f6f3d25c19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueObject1: {fileID: 1986977933}
   dialogueObject2: {fileID: 284246662}
+  characterName: Shudderz
 --- !u!1 &1290085882 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 560763001393772583, guid: 666d1b94788a89c4a98ad4bcaf03c466, type: 3}
@@ -18880,7 +18893,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6075500591180134439, guid: ae3ef4a8d98a3614084b63097c0c4ae3, type: 3}
       propertyPath: m_RootOrder
-      value: 17
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 6075500591180134439, guid: ae3ef4a8d98a3614084b63097c0c4ae3, type: 3}
       propertyPath: m_AnchorMax.x
@@ -22646,7 +22659,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FishPosition: {fileID: 2096024691}
-  speed: 4
+  speed: 5
   noticed: 1
 --- !u!1 &1727694982
 GameObject:
@@ -23581,7 +23594,7 @@ RectTransform:
   m_Children:
   - {fileID: 1270836542}
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -26312,7 +26325,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2512164345199746183, guid: ebfd612857f95ca468c477ee90f1ab01, type: 3}
       propertyPath: m_RootOrder
-      value: 16
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 2512164345199746183, guid: ebfd612857f95ca468c477ee90f1ab01, type: 3}
       propertyPath: m_LocalPosition.x
@@ -27482,11 +27495,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 2081405050}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 722dde1a129e34a4b899cca9d535b268, type: 3}
+  m_Script: {fileID: 11500000, guid: a2542b704650bdd4c86208f6f3d25c19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueObject1: {fileID: 876105603}
   dialogueObject2: {fileID: 1360803540}
+  characterName: Alabaster
 --- !u!1 &2082711855
 GameObject:
   m_ObjectHideFlags: 0
@@ -27854,7 +27868,6 @@ MonoBehaviour:
   - {fileID: 242032499}
   - {fileID: 1424490874}
   audioMixer: {fileID: 24100000, guid: d2efdfc7ac1fcc04ab4d0ecdbef3ad91, type: 2}
-  accusation: {fileID: 0}
 --- !u!114 &2096024697
 MonoBehaviour:
   m_ObjectHideFlags: 0

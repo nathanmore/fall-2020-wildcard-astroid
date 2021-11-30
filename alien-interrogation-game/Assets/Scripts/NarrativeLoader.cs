@@ -18,6 +18,7 @@ public class NarrativeLoader : MonoBehaviour
         Tutorial_Int,
         Stage1_Interrogation,
         Stage2_Interrogation,
+        ConfrontingAccused,
         BadEnding,
         GoodEnding
     }
@@ -61,6 +62,11 @@ public class NarrativeLoader : MonoBehaviour
         }
         else
             Debug.Log("Stage number " + stageNumber + "does not exist.");       
+    }
+
+    public void ConfrontingScene()
+    {
+        StartCoroutine(TransitionStr(Scene.ConfrontingAccused.ToString()));
     }
 
     public void Ending(bool good)

@@ -2,11 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BossTriggerStage1 : MonoBehaviour
+public class TwoDialoguesEventTrigger : MonoBehaviour
 {
     //GameObject that renders icon above NPC head and holds dialogueManager for that character
     public GameObject dialogueObject1;
     public GameObject dialogueObject2;
+    public string characterName;
 
     private GameObject currDialogueObject;
 
@@ -19,9 +20,30 @@ public class BossTriggerStage1 : MonoBehaviour
 
     private void Update()
     {
-        if (GameValueManager.instance.stage1InfoDauphin == true && GameValueManager.instance.stage1InfoADA1N == true)
+        if (characterName == "Alabaster")
         {
-            currDialogueObject = dialogueObject2;
+            if (GameValueManager.instance.stage1InfoADA1N == true)
+            {
+                currDialogueObject = dialogueObject2;
+            }
+        }
+        else if (characterName == "Shudderz")
+        {
+            if (GameValueManager.instance.stage1InfoDauphin == true)
+            {
+                currDialogueObject = dialogueObject2;
+            }
+        }
+        else if (characterName == "Nerguzzus")
+        {
+            if (GameValueManager.instance.stage2InfoSleethy == true)
+            {
+                currDialogueObject = dialogueObject2;
+            }
+        }
+        else
+        {
+            Debug.Log("Invalid character name");
         }
     }
 

@@ -403,6 +403,7 @@ I am so relieved you're not mad at me!
 I thought for sure you'd combust or something after I coldly lied to you in a parallel dialogue option.
 #name player 
 Oh, I was mad. You just don't remember it.
+#found stage2InfoDetG
 ->DONE
 
 

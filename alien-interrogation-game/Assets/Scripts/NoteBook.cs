@@ -32,7 +32,7 @@ public class NoteBook : MonoBehaviour
 
         //initializes list with empty strings
         int i = 0;
-        while (i < 12)
+        while (i <= 15)
         {
             notebook.Add("");
             i++;
@@ -46,6 +46,7 @@ public class NoteBook : MonoBehaviour
     {
         //gets current index, should be 15 if no facts have been found yet
         int index = GameValueManager.CurrIndex;
+        //Debug.Log(index);
         //int index = 0;
         
         //adds newly found fact if it's not already in the notebook and if index has been changed from it's default value
@@ -55,49 +56,49 @@ public class NoteBook : MonoBehaviour
         }
 
         //only updates notebook if first time, if page changed, or if index changed
-        if (prevIndex == 15 || page != prevPage || index != prevIndex)
+        if (index == 15 || page != prevPage || index != prevIndex)
         {
             if (page == 0)
             {
                 title.text = "Page 1";
                 message.text = question1 + "\n   " + notebook[0];
-                message.text += "\n" + question2 + "\n   " + notebook[1];
-                message.text += "\n" + question3 + "\n   " + notebook[2];
+                message.text += "\n\n" + question2 + "\n   " + notebook[1];
+                message.text += "\n\n" + question3 + "\n   " + notebook[2];
             }
             else if (page == 1)
             {
                 title.text = "Page 2";
                 message.text = question1 + "\n   " + notebook[0];
-                message.text += "\n" + question3 + "\n   " + notebook[3];
-                message.text += "\n" + question2 + "\n   " + notebook[4];
+                message.text += "\n\n" + question3 + "\n   " + notebook[3];
+                message.text += "\n\n" + question2 + "\n   " + notebook[4];
             }
             else if (page == 2)
             {
                 title.text = "Page 3";
                 message.text = question2 + "\n   " + notebook[5];
-                message.text += "\n" + question1 + "\n   " + notebook[6];
-                message.text += "\n" + question3 + "\n   " + notebook[7];
+                message.text += "\n\n" + question1 + "\n   " + notebook[6];
+                message.text += "\n\n" + question3 + "\n   " + notebook[7];
             }
             else if (page == 3)
             {
                 title.text = "Page 4";
                 message.text = question2 + "\n   " + notebook[5];
-                message.text += "\n" + question3 + "\n   " + notebook[8];
-                message.text += "\n" + question1 + "\n   " + notebook[9];
+                message.text += "\n\n" + question3 + "\n   " + notebook[8];
+                message.text += "\n\n" + question1 + "\n   " + notebook[9];
             }
             else if (page == 4)
             {
                 title.text = "Page 5";
                 message.text = question3 + "\n   " + notebook[10];
-                message.text += "\n" + question1 + "\n   " + notebook[11];
-                message.text += "\n" + question2 + "\n   " + notebook[12];
+                message.text += "\n\n" + question1 + "\n   " + notebook[11];
+                message.text += "\n\n" + question2 + "\n   " + notebook[12];
             }
             else if (page == 5)
             {
                 title.text = "Page 6";
                 message.text = question3 + "\n   " + notebook[10];
-                message.text += "\n" + question2 + "\n   " + notebook[13];
-                message.text += "\n" + question1 + "\n   " + notebook[14];
+                message.text += "\n\n" + question2 + "\n   " + notebook[13];
+                message.text += "\n\n" + question1 + "\n   " + notebook[14];
             }
         }
 

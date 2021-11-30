@@ -13,9 +13,13 @@ public class GameValueManager : MonoBehaviour
     private string stage2SceneName = "Stage2_Int";
 
     // Bools used to track player info for scene transitions from tutorial to stage 1 and stage 1 to stage 2
-    public bool tutorialInfo = false;
-    public bool stage1Info1 = false;
-    public bool stage1Info2 = false;
+    public bool tutorialInternInfo = false;
+    public bool stage1InfoDauphin = false;
+    public bool stage1InfoADA1N = false;
+    public bool stage2InfoAlabaster = false;
+    public bool stage2InfoDetG = false;
+    public bool stage2InfoSleethy = false;
+
 
     //used to record important pieces of info seen
     List<string> convoKnowledge = new List<string>();
@@ -23,6 +27,12 @@ public class GameValueManager : MonoBehaviour
     List<bool> acuKnowledge = new List<bool>();
 
     private int currIndex;
+
+
+    private void Start()
+    {
+        instance.currIndex = 15;
+    }
 
     // Important for making sure there is only one GameValueManager instance
     private void Awake()
@@ -81,17 +91,33 @@ public class GameValueManager : MonoBehaviour
 
     public static void SetInfoBools(string boolName)
     {
-        if (boolName == "tutorialInfo")
+        if (boolName == "tutorialInternInfo")
         {
-            instance.tutorialInfo = true;
+            instance.tutorialInternInfo = true;
         }
-        else if (boolName == "stage1Info1")
+        else if (boolName == "stage1InfoDauphin")
         {
-            instance.stage1Info1 = true;
+            instance.stage1InfoDauphin = true;
         }
-        else if (boolName == "stage1Info2")
+        else if (boolName == "stage1InfoADA1N")
         {
-            instance.stage1Info2 = true;
+            instance.stage1InfoADA1N = true;
+        }
+        else if (boolName == "stage2InfoAlabaster")
+        {
+            instance.stage2InfoAlabaster = true;
+        }
+        else if (boolName == "stage2InfoDetG")
+        {
+            instance.stage2InfoDetG = true;
+        }
+        else if (boolName == "stage2InfoSleethy")
+        {
+            instance.stage2InfoSleethy = true;
+        }
+        else
+        {
+            Debug.Log("Invalid bool name in inky file");
         }
     }
 
@@ -106,6 +132,10 @@ public class GameValueManager : MonoBehaviour
         {
             // SceneManager.LoadScene(instance.stage2SceneName); Edited it so that it includes Narrative Loader
             NarrativeLoader.narrativeLoader.StageInterrogation(2); //int parameter for interrogaition number must be a valid interrogation number scene
+        }
+        else if (scene == "GoodEnding")
+        {
+            //NarrativeLoader.narrativeLoader.StageInterrogation(?)
         }
         else
         {

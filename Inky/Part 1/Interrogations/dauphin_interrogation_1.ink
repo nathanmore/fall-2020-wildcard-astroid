@@ -410,7 +410,7 @@ Knock yourself out, buddy.
     (Flashy Thing animation)
     Never mind, I have everything I need.
     You have a nice day.
-    #found stage1Info1
+    #found stage1InfoDauphin
     -> DONE2
 
 //You're really throwing your companion under the bus
@@ -442,7 +442,7 @@ Knock yourself out, buddy.
 #index 14
 #name player
     I'll have to have a talk with him later. 
-    #found stage1Info1
+    #found stage1InfoDauphin
     ->END
     
 =Cont3
@@ -483,6 +483,6 @@ W-w-w-well, he told me he'd invite me to one of his parties if I did...
 #index 14
 #name player
 I'll have to have a talk with him later. 
-    #found stage1Info1
+    #found stage1InfoDauphin
 ->END
 

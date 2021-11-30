@@ -18,6 +18,8 @@ public class Sounds
 
     public string audioMixer;
 
+    public bool mute;
+
     [HideInInspector]
     public AudioSource source;
 }

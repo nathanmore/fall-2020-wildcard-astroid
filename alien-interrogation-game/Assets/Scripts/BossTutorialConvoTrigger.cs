@@ -19,7 +19,7 @@ public class BossTutorialConvoTrigger : MonoBehaviour
 
     private void Update()
     {
-        if (GameValueManager.instance.tutorialInfo == true)
+        if (GameValueManager.instance.tutorialInternInfo == true)
         {
             currDialogueObject = dialogueObject2;
         }
