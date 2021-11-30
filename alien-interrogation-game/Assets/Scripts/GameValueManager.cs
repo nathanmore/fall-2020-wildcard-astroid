@@ -99,11 +99,13 @@ public class GameValueManager : MonoBehaviour
     {
         if (scene == "stage1")
         {
-            SceneManager.LoadScene(instance.stage1SceneName);
+            // SceneManager.LoadScene(instance.stage1SceneName); Edited it so that it includes Narrative Loader
+            NarrativeLoader.narrativeLoader.StageInterrogation(1); //int parameter for interrogaition number must be a valid interrogation number scene
         }
         else if (scene == "stage2")
         {
-            SceneManager.LoadScene(instance.stage2SceneName);
+            // SceneManager.LoadScene(instance.stage2SceneName); Edited it so that it includes Narrative Loader
+            NarrativeLoader.narrativeLoader.StageInterrogation(2); //int parameter for interrogaition number must be a valid interrogation number scene
         }
         else
         {
