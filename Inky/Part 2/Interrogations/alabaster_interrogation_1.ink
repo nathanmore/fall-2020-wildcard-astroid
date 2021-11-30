@@ -1,3 +1,4 @@
+#index 15
 #name player
 Hey, Alabaster. I'm performing an investigation, and your name has come up.
 Can I ask you a few questions?
@@ -61,6 +62,7 @@ So you...what? Found the blaster on your desk?
 The blaster materialized on my desk whist I was away, as though the elder gods had plucked it from its proper place and delivered it straight to me.
 ...
 So I returned it.
+#index 0
 #name player 
 Got it. (That's an oddly specific description).
 /*notes:
@@ -99,6 +101,7 @@ Alabster found the blaster on his desk
     What were you doing at your desk at that time?
     #name Alabaster 
     I was discovering the blaster that had been placed upon my desk by the elder gods.
+    #index 1
     #name player 
     Excellent. Thank you. (This is so unhelpful.)
     /*notes:
@@ -115,6 +118,7 @@ Alabster found the blaster on his desk
         #name Alabaster 
         Your one second of sanity has passed. 
         Observe as the overly complex syntax format and grammar of my statemements combine with subtle mistakes in the Terran language to form a superstatement that confounds and delights in its purpose derived from meaninglessness; thereby crowning Alabaster the ruler of the known universe.
+        #index 2
         #name player 
         (I hate this witness).
         
@@ -133,6 +137,7 @@ Alabster found the blaster on his desk
         Or, I could not. 
         That is the question. 
         Whether 'tis nobler in the mind to suffer the EMPs and lasers of outrageous fortune, or to take out limbs against-
+        #index 3
         #name player 
         That's enough, please, please stop.
         I have just a few more questions, if you could just answer them as plainly as possible.
@@ -166,6 +171,7 @@ Alabster found the blaster on his desk
             So you were at your desk at this time, having just found the blaster?
             #name Alabaster 
             Alabaster affirms this statement with Detective C's pedestrian definitnion of 'were'.
+            #index 4
             #name player
             Excellent. Thanks.
             /*notes:
@@ -204,6 +210,7 @@ Yes.
 Yes, you didn't go in there?
 #name Alabaster 
 Yes.
+#index 5
 #name player 
 All right. I'm putting down that you say you didn't go in there...
 No objection?
@@ -236,6 +243,7 @@ adain did not go into the evidence room*/
     Did it now?
     #name Alabaster
     Yes. Materlialized onto the desk of Alabaster while Alabaster was away.
+    #index 6
     #name player 
     I see. So you found it on your desk, because it was placed there while you were gone. 
     Makes sense.
@@ -252,6 +260,7 @@ adain did not go into the evidence room*/
         #name Alabaster 
         Your one second of sanity has passed. 
         Alabaster now returns to his own mannerism of speaking which Detective C seems to find frustrating but for which Alabaster has been accustomed to for most of his lifetime.
+        #index 7
         #name player 
         (I swear to science, this guy sometimes...).
         
@@ -270,6 +279,7 @@ adain did not go into the evidence room*/
     Or, I could not. 
     That is the question. 
     Whether 'tis nobler in the mind to suffer the EMPs and lasers of outrageous fortune, or to take out limbs against-
+    #index 8
     #name player 
     That's enough, please, please stop.
     I have just a few more questions, if you could just answer them as plainly as possible.
@@ -294,6 +304,7 @@ adain did not go into the evidence room*/
         Alabaster left the desk-hole at 1 o'clock to sleepy-pod, only to return at 5 o'clock and discover the mysterious blaster of mystery.
         #name player 
         And then you promptly returned it to ADA1N?
+        #index 9
         #name Alabaster 
         Alabaster affirms.
         /*notes:
@@ -322,6 +333,7 @@ How long did it take you to think that up?
 #name Alabaster 
 Alabaster does not think.
 Alabaster simply makes gutteral sounds with skin flabs that produce 'speech'.
+#index 10
 #name player 
 Yeah, sure. Be like that.
 
@@ -350,6 +362,7 @@ Yeah, sure. Be like that.
     Did it now?
     #name Alabaster
     Yes. Materlialized onto the desk of Alabaster while Alabaster was away.
+    #index 11
     #name player 
     I see. So you found it on your desk, because it was placed there while you were gone. 
     Makes sense.
@@ -385,6 +398,7 @@ Yeah, sure. Be like that.
         So you were at your desk at this time, having just found the blaster?
         #name Alabaster 
         Alabaster affirms this statement with Detective C's pedestrian definitnion of 'were'.
+        #index 12
         #name player
         Excellent. Thanks.
         /*notes:
@@ -415,6 +429,7 @@ Yeah, sure. Be like that.
     #name Alabaster
     Alas, Alabaster's internal clock is broken, and Alabaster is bad at doing a time.
     Can Alabaster help you after his internal clock is re-installed?
+    #index 13
     #name player 
     ~const3 = true
     I have no idea what you're talking about, again, so we'll move on to the next question.
@@ -441,6 +456,7 @@ Yeah, sure. Be like that.
         Alabaster left the desk-hole at 1 o'clock to lounge, only to return at 5 o'clock and discover the mysterious blaster of mystery.
         #name player 
         And then you promptly returned it to ADA1N?
+        #index 14
         #name Alabaster 
         Alabaster affirms.
         /*notes:
@@ -466,6 +482,7 @@ Sorry, I must have misheard Alabaster.
 Please continue your ramblings.
 #name Alabaster.
 Yes.
+#index 15
 ->END
 
 
@@ -519,6 +536,7 @@ I don't have any more questions at the moment, but do you mind if I stick around
 I mind, therefore I am. Detective C thinks, therefore he is. We shall be together.
 #name player 
 Yes...? You're not wrong.
+#index 15
 ->END
 
 =done1
@@ -530,6 +548,7 @@ How can Alabaster fulfill his social duties without necessary social interaction
 #name player 
 Don't worry about it.
 (Alabaster was memory wiped by the culprit...this isn't good.)
+#index 15
 ->END
 
 
