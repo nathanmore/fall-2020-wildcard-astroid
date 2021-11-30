@@ -9289,7 +9289,7 @@ PrefabInstance:
     - target: {fileID: 925714034103187158, guid: a77ea8f0312afe34e98b09995d72676f, type: 3}
       propertyPath: characterInfo
       value: 
-      objectReference: {fileID: 11400000, guid: 57633034281f6fe41b0d328e40a36e0c, type: 2}
+      objectReference: {fileID: 11400000, guid: 0b37a13df9a07d74a9f55598ae3a91bf, type: 2}
     - target: {fileID: 8158239858086308118, guid: a77ea8f0312afe34e98b09995d72676f, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -13998,6 +13998,7 @@ MonoBehaviour:
     pitch: 1.36
     loop: 1
     audioMixer: Master
+    mute: 0
     source: {fileID: 0}
   - name: Beep Sound
     clip: {fileID: 8300000, guid: ed8cb31157220d846a9ed443cecf3b81, type: 3}
@@ -14005,6 +14006,7 @@ MonoBehaviour:
     pitch: 1.36
     loop: 0
     audioMixer: Master
+    mute: 0
     source: {fileID: 0}
   - name: Memory Wipe
     clip: {fileID: 8300000, guid: 5ef923356d3b5a64bb08894197e9fcbe, type: 3}
@@ -14012,6 +14014,7 @@ MonoBehaviour:
     pitch: 1.36
     loop: 0
     audioMixer: Master
+    mute: 0
     source: {fileID: 0}
   audioMixer: {fileID: 24100000, guid: d2efdfc7ac1fcc04ab4d0ecdbef3ad91, type: 2}
 --- !u!4 &2011530741
