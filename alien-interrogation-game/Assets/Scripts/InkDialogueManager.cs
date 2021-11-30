@@ -122,6 +122,7 @@ public class InkDialogueManager : MonoBehaviour
         }
     }
 
+    // Adds listeners to buttons (is done each time dialogue is started with character so it is active for their specific script)
     public void AddButtonListeners()
     {
         // Makes it so that buttons preform their task when clicked
