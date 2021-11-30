@@ -3836,6 +3836,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: DialogueUI
       objectReference: {fileID: 0}
+    - target: {fileID: 2962568179622270588, guid: 666d1b94788a89c4a98ad4bcaf03c466, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2962568179622270591, guid: 666d1b94788a89c4a98ad4bcaf03c466, type: 3}
+      propertyPath: m_AdditionalShaderChannelsFlag
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 666d1b94788a89c4a98ad4bcaf03c466, type: 3}
 --- !u!1 &341166923 stripped
@@ -17644,6 +17652,10 @@ PrefabInstance:
       propertyPath: inkFile
       value: 
       objectReference: {fileID: 4900000, guid: 505155e4f05cc4346bb71ccd34c9f42d, type: 3}
+    - target: {fileID: 925714034103187158, guid: a77ea8f0312afe34e98b09995d72676f, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 925714034103187158, guid: a77ea8f0312afe34e98b09995d72676f, type: 3}
       propertyPath: dialogueUI
       value: 
