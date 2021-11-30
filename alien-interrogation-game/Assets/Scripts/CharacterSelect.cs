@@ -128,7 +128,7 @@ public class CharacterSelect : MonoBehaviour
         if (charInfo.guilty)
         {
             gameObject.SetActive(false); //might need to change this if we are planning on being able to access the accusation canvas again
-            NarrativeLoader.narrativeLoader.Ending(true);
+            NarrativeLoader.narrativeLoader.ConfrontingScene();
             // SceneManager.LoadScene("You Win");
         }
         else
