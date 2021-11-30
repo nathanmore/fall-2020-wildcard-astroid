@@ -1,0 +1,3 @@
+Alabaster was taken into special custody after an intensive search of the space station. For how long, no person can say. Detective C was awared a promotion to be awarded in a relative month's time. They forgot to show up to the office the day of the promotion. Precinct 130A was 'handled' by higher ups. Every creature was returned to their rightful place and scrubbed clean of memories of the incident. No creature in the precinct remembered the heroics of Detective C. The whole ordeal might as well have never occured in the first place. 
+
+Victory.

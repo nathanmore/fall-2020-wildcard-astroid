@@ -133,6 +133,10 @@ public class GameValueManager : MonoBehaviour
             // SceneManager.LoadScene(instance.stage2SceneName); Edited it so that it includes Narrative Loader
             NarrativeLoader.narrativeLoader.StageInterrogation(2); //int parameter for interrogaition number must be a valid interrogation number scene
         }
+        else if (scene == "GoodEnding")
+        {
+            //NarrativeLoader.narrativeLoader.StageInterrogation(?)
+        }
         else
         {
             Debug.Log("Invalid scene code in Inky");

@@ -76,7 +76,6 @@ public class DialogueManager : MonoBehaviour
             yield return null;
         }
     }
-
     
     //closes dialogue box then displays choices
     void EndDialogue()
@@ -84,7 +83,6 @@ public class DialogueManager : MonoBehaviour
         animator.SetBool("IsOpen", false);
         DisplayChoices();
     }
-
 
     //displays choices
     void DisplayChoices()

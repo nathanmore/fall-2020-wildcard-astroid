@@ -12449,11 +12449,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 877698821}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 722dde1a129e34a4b899cca9d535b268, type: 3}
+  m_Script: {fileID: 11500000, guid: a2542b704650bdd4c86208f6f3d25c19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueObject1: {fileID: 563610140}
   dialogueObject2: {fileID: 762143991}
+  characterName: Nerguzzus
 --- !u!95 &877698826
 Animator:
   serializedVersion: 3
