@@ -4375,6 +4375,7 @@ MonoBehaviour:
   nextButton: {fileID: 648867801}
   notebookBody: {fileID: 1883120406}
   notebookTitle: {fileID: 1290085882}
+  isTutorial: 0
   facts: []
 --- !u!4 &290940106 stripped
 Transform:
@@ -11520,6 +11521,7 @@ MonoBehaviour:
   nextButton: {fileID: 648867801}
   notebookBody: {fileID: 1883120406}
   notebookTitle: {fileID: 1290085882}
+  isTutorial: 0
   facts: []
 --- !u!1001 &685608024
 PrefabInstance:
@@ -14403,6 +14405,7 @@ MonoBehaviour:
   nextButton: {fileID: 648867801}
   notebookBody: {fileID: 1883120406}
   notebookTitle: {fileID: 1290085882}
+  isTutorial: 0
   facts: []
 --- !u!4 &876105606 stripped
 Transform:
@@ -15402,6 +15405,7 @@ MonoBehaviour:
   nextButton: {fileID: 648867801}
   notebookBody: {fileID: 1883120406}
   notebookTitle: {fileID: 1290085882}
+  isTutorial: 0
   facts: []
 --- !u!1 &1037388003
 GameObject:
@@ -15542,6 +15546,7 @@ MonoBehaviour:
   nextButton: {fileID: 648867801}
   notebookBody: {fileID: 1883120406}
   notebookTitle: {fileID: 1290085882}
+  isTutorial: 0
   facts: []
 --- !u!1 &1041588516
 GameObject:
@@ -15702,6 +15707,7 @@ MonoBehaviour:
   nextButton: {fileID: 648867801}
   notebookBody: {fileID: 1883120406}
   notebookTitle: {fileID: 1290085882}
+  isTutorial: 0
   facts: []
 --- !u!1 &1066805017 stripped
 GameObject:
@@ -15727,6 +15733,7 @@ MonoBehaviour:
   nextButton: {fileID: 648867801}
   notebookBody: {fileID: 1883120406}
   notebookTitle: {fileID: 1290085882}
+  isTutorial: 0
   facts:
   - ADA1N is very fond of its blaster and doesn't like to let others touch it
   - ADA1N fired the weapon several times
@@ -17146,6 +17153,7 @@ MonoBehaviour:
   nextButton: {fileID: 648867801}
   notebookBody: {fileID: 1883120406}
   notebookTitle: {fileID: 1290085882}
+  isTutorial: 0
   facts:
   - Dauphin, Detective G, The Boss and Nerguzzus have the password, someone may have
     seen it though.
@@ -18086,6 +18094,7 @@ MonoBehaviour:
   nextButton: {fileID: 648867801}
   notebookBody: {fileID: 1883120406}
   notebookTitle: {fileID: 1290085882}
+  isTutorial: 0
   facts: []
 --- !u!1001 &1372423649
 PrefabInstance:
@@ -18646,6 +18655,7 @@ MonoBehaviour:
   nextButton: {fileID: 648867801}
   notebookBody: {fileID: 1883120406}
   notebookTitle: {fileID: 1290085882}
+  isTutorial: 0
   facts: []
 --- !u!4 &1389711882 stripped
 Transform:
@@ -24001,6 +24011,7 @@ MonoBehaviour:
   nextButton: {fileID: 648867801}
   notebookBody: {fileID: 1883120406}
   notebookTitle: {fileID: 1290085882}
+  isTutorial: 0
   facts: []
 --- !u!1001 &1811356398
 PrefabInstance:
@@ -24795,9 +24806,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.014558136, y: -0.3223598}
+  m_Offset: {x: 0.014558136, y: -0.29769346}
   serializedVersion: 2
-  m_Radius: 0.10484904
+  m_Radius: 0.12951538
 --- !u!61 &1892552075
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -24808,7 +24819,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.019355357, y: -0.120432615}
@@ -26285,6 +26296,7 @@ MonoBehaviour:
   nextButton: {fileID: 648867801}
   notebookBody: {fileID: 1883120406}
   notebookTitle: {fileID: 1290085882}
+  isTutorial: 0
   facts: []
 --- !u!1001 &1988902451
 PrefabInstance:
