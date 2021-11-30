@@ -134,7 +134,7 @@ All right, I'll keep in mind the possibility of a creature gleaning the pass.
     Don't ask.
     #name player
     The room was locked each time, though?
-#index 3
+    #index 3
     #name Dauphin 
     Y-y-yes. I did not leave the door open.
     ~cont3 = true //never left door open
@@ -143,9 +143,9 @@ All right, I'll keep in mind the possibility of a creature gleaning the pass.
         W-w-w-well, uhm, I don't know. 
         #name player
         Any ideas? Since the door is locked when you're away and only a few choice people know the password.
+        #index 4
         #name Dauphin
         T-t-this is why you're the detective, not me.
-#index 4
         #name player
         ->DONE
 
@@ -184,7 +184,7 @@ I'll note that down.
     You have no other ideas of who it could be? 
     #name Dauphin 
     Other than us, uhm, no. Unless another creature learned the password.
-#index 6
+    #index 6
     #name player
     This really isn't a lot to go on...
     
@@ -202,7 +202,7 @@ I'll note that down.
         #name Dauphin
         U-um, uhh, yes. 
         Sometimes they can forget things, right?
-    #index 7
+        #index 7
         #name player
         I could imagine that.
         ~cont3 = true
@@ -217,6 +217,7 @@ I'll note that down.
     #name player
     Yes, yes.
     So you claim that because you kept the door locked, the files could not possibly have been deleted on your shift?
+    #index 8
     #name Dauphin
     Y-y-y-es.
     ~cont3 = true
@@ -230,7 +231,7 @@ I'll note that down.
         W-w-well, the boss has, boss things to do, and, uh,
         Detective G. doesn't really do much of anything, so, uh,
         it's mostly me.
-    #index 8
+        #index 9
         #name player
         Ok, thank you, duly noted. 
         Only you usually access these files.
@@ -255,7 +256,7 @@ I did, uh, a few times, but, uh, each time the door was locked.
 Then, it could not have been negligence while you were on duty.
 #name Dauphin
 Y-y-yes, excellent point. My record is good, I, uh, never violate protocol!
-#index 9
+#index 10
 #name player
 I have a few more questions for you before I go bothering the others.
 ~cont3 = true
@@ -280,6 +281,7 @@ I have a few more questions for you before I go bothering the others.
     T-that's correct.
     #name player
     Then it's reasonable to conclude that the files weren't delete during your shift.
+    #index 11
     #name Dauphin
     Y-y-y-es, b-b-brilliant observation, uh,
     I concur totally. 
@@ -301,7 +303,7 @@ I have a few more questions for you before I go bothering the others.
         Only, uhm, the Boss can \*really* navigate it. 
         So, uhm, it could have been them.
         ~ cont2 = true
-#index 9
+        #index 12
         #name player
         Understood.
         ->DONE
@@ -325,6 +327,7 @@ I have a few more questions for you before I go bothering the others.
     #name Dauphin 
     Uhm, uhm, ah...no. 
     My memory is good, but not that good.
+    #index 13
     #name player
     That's all right, we all forget things from time to time. (Heh, heh.)
     Let me notate that, potential password gleamer.
@@ -337,9 +340,9 @@ I have a few more questions for you before I go bothering the others.
         OK. That makes sense, the footage must have been deleted at some other time.
         #name Dauphin
         Y-yup!
-#index 10
         #name player
         OK. You sure you can't think of a time when a password gleamer may have entered the password?
+        #index 14
         #name Dauphin
         N-no, n-not off the top of my blowhole.
         ->DONE
@@ -347,9 +350,9 @@ I have a few more questions for you before I go bothering the others.
 === DONE ===
 #name Dauphin 
 W-w-w-well I appreciate your concern, b-b-b-but I must get back to work.
-#index 11
 #name player
 Of course. I might hang around just a bit. Don't mind me.
+#index 15
 -> END
 //->Beginning
 
@@ -362,9 +365,9 @@ Aren't you going to ask any questions, D-detective?
 No, I've got all the information I need.
 #name Dauphin 
 O-o-ok. I'm good to resume work, then?
-#index 12
 #name player
 Knock yourself out, buddy.
+#index 15
 ->END
 
 
@@ -378,7 +381,6 @@ Knock yourself out, buddy.
     {cont4 == true && Tree2.branch1 : -> Cont4}
     {cont4 == true && Tree2.branch2 : -> Cont4}
     {cont4 == true && Tree3 : -> Cont4}
-#index 13
      #name player
      (I have'nt encountered any inconsistencies in Dauphin's story yet.)
      (I should keep asking him questions. Maybe even try the memory gun.)
@@ -439,10 +441,11 @@ Knock yourself out, buddy.
     And you, the biggest goody two-fin in the office, broke protocol and deleted the files for him? 
     #name Dauphin 
     W-w-w-well, he told me he'd invite me to one of his parties if I did...
-#index 14
-#name player
+    #index 14
+    #name player
     I'll have to have a talk with him later. 
     #found stage1InfoDauphin
+    #index 15
     ->END
     
 =Cont3
@@ -484,5 +487,6 @@ W-w-w-well, he told me he'd invite me to one of his parties if I did...
 #name player
 I'll have to have a talk with him later. 
     #found stage1InfoDauphin
+    #index 15
 ->END
 

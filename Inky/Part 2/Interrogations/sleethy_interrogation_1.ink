@@ -1,3 +1,4 @@
+#index 15
 #name player 
 Sleethy? May I speak to you a second?
 #name Sleethy 
@@ -71,6 +72,7 @@ Sssome no-good perp is duplicating non-fungiblesss and ssselling them on the bla
 Oh, I see. Non-fungible tokens.
 It all makes sense now.
 Did you actually complete your delivery for Nerguzzus?
+#index 0
 #name Sleethy 
 Of course, dude. 
 What do I look like, ssssome sssort of ssslacker?
@@ -89,6 +91,7 @@ Sleethy was supposed to pick up a photo but didn't
     Yeah, perssson, cassse is coming well. 
     Nerguzzusss hacked into the perp'sss computer.
     Pretty sssure we have enough evidenccce to issssue a ssspaccce warrant sssoon.
+    #index 1
     #name player 
     Wow, that's good to hear.
     /*notes: 
@@ -106,6 +109,7 @@ Sleethy was supposed to pick up a photo but didn't
         But did you see the damage to the wall?
         #name Sleethy
         No, uh, I wasss ssso abssorbed in my work that I forgot to look at the wall.
+        #index 2
         #name player
         (He's totally lying, but I don't want to make a scene by dragging him to the evidence room.)
         /*notes: 
@@ -125,6 +129,7 @@ Sleethy was supposed to pick up a photo but didn't
     But did you see the damage to the wall?
     #name Sleethy
     No, uh, I wasss ssso abssorbed in my work that I forgot to look at the wall.
+    #index 3
     #name player
     (He's totally lying, but I don't want to make a scene by dragging him to the evidence room.)
     ~const3 = true
@@ -137,6 +142,7 @@ Sleethy was supposed to pick up a photo but didn't
         Yeah, perssson, cassse is coming well. 
         Nerguzzusss hacked into the perp'sss computer.
         Pretty sssure we have enough evidenccce to issssue a ssspaccce warrant sssoon.
+        #index 4
         #name player 
         Wow, that's good to hear.
         /*notes: 
@@ -163,6 +169,7 @@ If you'll excussse me, I musst-
 #name player 
 Hold on, I'm not finished questioning you.
 This'll only take a minute or two.
+#index 5
 #name Sleethy
 If you insissst.
 /*notes:
@@ -186,6 +193,7 @@ sleethy still have evidence in the evidence room to be checked out
     Our perp is a thief who is a little bit too happy copying tokensss to their own devicccce.
     #name player 
     Ah, I see. And you picked up this evidence as part of your work three days ago?
+    #index 6
     #name Sleethy
     Yesss. Nerguzzusss assssked me to.
     
@@ -206,6 +214,7 @@ sleethy still have evidence in the evidence room to be checked out
         Uh, yesss, I did.
         Of courssse, that'sss why the room'sss closssed.
         There wasss, uh, a sssingle shot on the wall?
+        #index 7
         #name player
         (He's totally lying, but I don't want to make a scene by dragging him to the evidence room.)
         /*notes: 
@@ -226,6 +235,7 @@ sleethy still have evidence in the evidence room to be checked out
     Uh, yesss, I did.
     Of courssse, that'sss why the room'sss closssed.
     There were, uh, three shotsss on the wall?
+    #index 8
     #name player
     (He's totally lying, but I don't want to make a scene by dragging him to the evidence room.)
     /*notes: 
@@ -243,6 +253,7 @@ sleethy still have evidence in the evidence room to be checked out
         Our perp is a thief who is a little bit too happy copying tokensss to their own devicccce.
         #name player 
         Ah, I see. And you picked up this evidence as part of your work three days ago?
+        #index 9
         #name Sleethy
         Yesss. Nerguzzusss assssked me to.
     
@@ -262,6 +273,7 @@ So you don't know anything about the blaster craters on the wall?
 I mussst've been ssso absssorbed in my work that I didn't ssssee it.
 #name player 
 I see. You must have been real busy.
+#index 10
 #name Sleethy
 Yesss, extremely ssso.
 /*notes:
@@ -285,6 +297,7 @@ sleethy claims she was busy*/
     Our perp is a thief who is a little bit too happy copying tokensss to their own devicccce.
     #name player 
     Ah, I see. And you picked up this evidence as part of your work three days ago?
+    #index 11
     #name Sleethy
     Yesss. Nerguzzusss assssked me to.
     
@@ -296,6 +309,7 @@ sleethy claims she was busy*/
         Yeah, perssson, cassse is coming well. 
         Nerguzzusss hacked into the perp'sss computer.
         Pretty sssure we have enough evidenccce to issssue a ssspaccce warrant sssoon.
+        #index 12
         #name player 
         Wow, that's good to hear.
         /*notes: 
@@ -317,6 +331,7 @@ sleethy claims she was busy*/
     THe cassse work isss complicated and daunting, to say the leassst.
     #name player 
     Well, if it's any consolation, you're doing very well answering these questions.
+    #index 13
     #name Sleethy
     Thankssss.
         ++What evidence were you supposed to pick up from the evidence room?
@@ -335,6 +350,7 @@ sleethy claims she was busy*/
         I'll take a break, be back in a relative hour.
         #name Sleethy
         Wow, thanksss.
+        #index 14
         #name player 
         (It would be really funny if I let him take the class, then neuralyzed him.)
         (No, C. That's abuse of power. Don't think such thoughts.)
@@ -367,6 +383,7 @@ Oh, sorry, I thought you said something else.
 YOur esses and zees are a little hard to distinguish. 
 #name Sleethy
 Sssssorry. Not much I can do about my acccccent. 
+#index 15
 ->END
 
 =Cont1
@@ -399,6 +416,7 @@ It'ssss embarassssing!
 #name player 
 Oh, everyone gets embarassed from time to time. 
 Unless your memory is good, you'll forget about it, eventually.
+#index 15
 ->END
 
 
@@ -443,6 +461,7 @@ Unless your memory is good, you'll forget about it, eventually.
 Do you mind if I stick around and think about what you told me, Sleethy?
 #name Sleethy
 Of courssse not. I am very busssy though so pleasssse think in silence. 
+#index 15
 I have ssssensssitive earsssss.
 ->END
 
@@ -455,8 +474,10 @@ How? I didn't assssk any quessstions.
 I'm psychic and I divined the answer. 
 #name Sleethy
 Ssssssure.
+#index 15
 
 ->END
 
 =done2
+#index 15
 ->END

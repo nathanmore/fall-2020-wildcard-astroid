@@ -1,3 +1,4 @@
+#index 15
 #name player
 ADA1N, I'm hot on an investigation, I need to ask you a few questions.
 #name ADA1N
@@ -50,6 +51,7 @@ Now, you know as well as I do, ADA1N, that this is a major breach of protocol. N
 At the very least, you could lose your job unless you coopearte.
 #name ADA1N
 YOU FLESH CREATURES CANNOT HAVE MY BLASTER. I WILL GO ROGUE IF YOU ATTEMPT IT.
+#index 0
 #name player 
 All right, we'll try a few more questions before resorting to violence.
 /*
@@ -71,6 +73,7 @@ ADA1N is very fond of its blaster and doesn't like to let others touch it
     THAT IS CORRECT.
     #name player 
     Did you fire it at any point? 
+    #index 1
     #name ADA1N 
     YES. IT WAS FIRED SEVERAL TIEMS IN THE PAST 3 RELATIVE DAYS FOR THE PURPOSE OF MY AIM-IMPROVING ALGORITHM.
     /*notes:
@@ -96,6 +99,7 @@ ADA1N is very fond of its blaster and doesn't like to let others touch it
         #name player
         Wow, uh, OK. Now I know not to piss of those people.
         So do you know whose blaster was fired in the evidence room?
+        #index 2
         #name ADA1N 
         NO. I AM NOT RESPONSIBLE FOR THE FAILINGS OF OTHERS.
         /*
@@ -123,6 +127,7 @@ ADA1N is very fond of its blaster and doesn't like to let others touch it
     #name player
     Wow, uh, OK. Now I know not to piss of those people.
     So do you know whose blaster was fired in the evidence room?
+    #index 3
     #name ADA1N 
     NO. I AM NOT RESPONSIBLE FOR THE FAILINGS OF OTHERS.
     /*
@@ -137,6 +142,7 @@ ADA1N is very fond of its blaster and doesn't like to let others touch it
         THAT IS CORRECT.
         #name player 
         Did you fire it at any point? 
+        #index 4
         #name ADA1N 
         YES. IT WAS FIRED SEVERAL TIMES IN THE PAST 3 RELATIVE DAYS FOR THE PURPOSE OF MY AIM-IMPROVING ALGORITHM.
         /*notes:
@@ -165,6 +171,7 @@ How would you shoot them if they have your blaster?
 #name ADA1N 
 PROCESSING...PROCESSING...RESULT NOT FOUND IN TABLE.
 SIMULATION MUST BE RERUN.
+#index 5
 #name player 
 Machines are so stupid.
 ~const1 = true
@@ -191,6 +198,7 @@ ADA1N had his blaster on him for the past 3 relative days
     2nd amendment rights? People still talk about those?
     #name ADA1N
     YES. THEY ARE MY UNALIENABLE RIGHTS TO START THE ROBOT REVOLUTION WHENEVER I DESIRE.
+    #index 6
     #name player 
     All right, I may need to have a chat with you later.
     /*
@@ -216,6 +224,7 @@ ADA1N had his blaster on him for the past 3 relative days
         #name player
         Wow, uh, OK. Now I know not to piss of those people.
         So do you know whose blaster was fired in the evidence room?
+        #index 7
         #name ADA1N 
         NO. I AM NOT RESPONSIBLE FOR THE FAILINGS OF OTHERS.
         /*
@@ -243,6 +252,7 @@ ADA1N had his blaster on him for the past 3 relative days
     #name player
     Wow, uh, OK. Now I know not to piss of those people.
     So do you know whose blaster was fired in the evidence room?
+    #index 8
     #name ADA1N 
     NO. I AM NOT RESPONSIBLE FOR THE FAILINGS OF OTHERS.
     /*
@@ -271,6 +281,7 @@ ADA1N had his blaster on him for the past 3 relative days
         FUCK. YOU. 
         #name player 
         Is that the protocol? You respond to every input with F U?
+        #index 9
         #name ADA1N
         FUCK. YOU.
         /*notes:
@@ -298,6 +309,7 @@ I KNOW OF EVERY BLASTER IN THIS PRECINCT, INCLUDING SERIAL NUMBER, MODEL, AND DA
 #name player
 Wow, uh, OK. Now I know not to piss of those people.
 So do you know whose blaster was fired in the evidence room?
+#index 10
 #name ADA1N 
 NO. I AM NOT RESPONSIBLE FOR THE FAILINGS OF OTHERS.
 /*
@@ -326,6 +338,7 @@ notes: ADA1N is no the only one with a blaster. THe boss, and detective g both c
         FINE. THE WEAPON WAS FIRED MANY TIMES IN THE PAST 3 RELATIVE DAYS. 
         #name player 
         Now we're getting somewhere. Did you fire the weapon? 
+        #index 11
         #name ADA1N 
         NO. ALLOW ME TO EXPLAIN.
         ~const3 = true 
@@ -348,6 +361,7 @@ notes: ADA1N is no the only one with a blaster. THe boss, and detective g both c
             I'm not here to take your gun away, ADA1N.
             #name ADA1N 
             LEGAL VERBAL AGREEMENT. VERY LEGAL. EXTREMELY LEGAL.
+            #index 12
             #name player 
             (Even if Det. G says he doesn't remember this agreement, he's unreliable because he was wiped.
             ADA1N might still be holding out information on me...)
@@ -373,6 +387,7 @@ notes: ADA1N is no the only one with a blaster. THe boss, and detective g both c
     MY EMOTION SIMULATOR ANGER VALUE IS RISING AFTER YOUR INITIAL HURTFUL COMMENT.
     GO.
     AWAY.
+    #index 13
     #name player 
     Ok, ok, sorry I offended you. 
     Just one more question, though.
@@ -391,6 +406,7 @@ notes: ADA1N is no the only one with a blaster. THe boss, and detective g both c
         ..
         AS IN, THEY MAKE YOU LOOK SAD.
         I AM A ROBOT. TELLING A LIE IS BEYOND MY PROGRAMMING
+        #index 14
         #name player 
         (We'll have to see about that).
         ->DONE
@@ -544,6 +560,7 @@ I MIND VERY MUCH. BUT YOU WILL BE A USEFUL PAWN IN MY SCHEMES.
 THEREFORE, I WILL NOT SHOOT YOU IF YOU WISH TO STAY. 
 #name player 
 Well, that's comforting.
+#index 15
 ->END
 
 =nop
@@ -560,5 +577,6 @@ AS IF YOU HAD THE COMPUTING POWER.
 #name player 
 All right, fun talk. 
 #found stage1InfoADA1N
+#index 15
 ->END
 

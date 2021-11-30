@@ -1,3 +1,4 @@
+#index 15
 #name player
 Hey, G. 
 Wanted to ask you a few questions about the incident.
@@ -43,6 +44,7 @@ So, then you don't remember anybody taking your Nueralyzer from you at all?
 #name Detective G 
 Not at all.
 Not even my other head remembers.
+#index 0
 #name player 
 All right then. Not a lot to go on.
 /*notes:
@@ -66,6 +68,7 @@ det. G was alone in the evidence room*/
     #name player 
     You do know this is a serious situation, right?
     If you keep joking around we could all get fired, or worse.
+    #index 1
     #name Detective G
     Hey, the Goat's gonna say what the Goat's gonna say.
     Can't muzzle the G-O-A-T!
@@ -77,6 +80,7 @@ det. G was alone in the evidence room*/
         #name Detective G
         Hey, mum's still the word on that theory of yours.
         You haven't proven it, have you?
+        #index 2
         #name player 
         No, but I'm fairly certain of it.
         /*notes:
@@ -91,6 +95,7 @@ det. G was alone in the evidence room*/
     #name Detective G
     Hey, mum's still the word on that theory of yours.
     You haven't proven it, have you?
+    #index 3
     #name player 
     No, but I'm fairly certain of it.
     /*notes:
@@ -115,6 +120,7 @@ det. G was alone in the evidence room*/
         #name Detectice G 
         Well, yes, I did. 
         Sadly, goatfan22@goaty.com is a spoofed address.
+        #index 4
         #name player 
         (He clicked on an email from that address? Really?)
         /*notes:
@@ -140,6 +146,7 @@ Well, I had to check out some evidence for that day, all right?
 That's all you'll get for your records.
 #name player 
 You know, it really behooves you to cooperate with this investigation right now.
+#index 5
 #name Detective G 
 Don't make hoof jokes around me.
 /*notes:
@@ -160,6 +167,7 @@ G went to pick up some evidence*/
     Of course I'm certain! 
     The GOAT's memory is perfect.
     At least, the memory of my other head is perfect.
+    #index 6
     #name player 
     /*notes 
     G didn't see anyone in the evidence room
@@ -172,6 +180,7 @@ G went to pick up some evidence*/
         Your testimony proves it pretty conclusively.
         There's concrete evidence that other creatures were in the evidence room,
         and you just admitted to not seeing anyone there.
+        #index 7
         #name Detective G 
         Oh, yeah. Funny how that works, I guess.
         ->DONE
@@ -181,6 +190,7 @@ G went to pick up some evidence*/
     #name Detective G
     Hey, mum's still the word on that theory of yours.
     You haven't proven it, have you?
+    #index 8
     #name player 
     No, but I'm fairly certain of it.
     /*notes:
@@ -195,6 +205,7 @@ G went to pick up some evidence*/
         Goat testimony is goated, liked anything else goat-related.
         If it should so please you, 
         I did not see anyone else in the evidence room at that time.
+        #index 9
         #name player 
         See? This is actually helpful testimony.
         /*notes:
@@ -217,6 +228,7 @@ I'd have gaps in my memory or headaches or something?
 #name player 
 Not really. It'd only be obvious if key memories about your surroundings were taken away. 
 And usually the Neuralyzer safety is set to get rid of only a few minutes of memory at a time.
+#index 10
 #name Detective G 
 Well, I'm racking both my brains, and I got nothing.
 /*notes:
@@ -236,6 +248,7 @@ detective g doesn't remember getting Neuralyzed */
     Of course I'm certain! 
     The GOAT's memory is perfect.
     At least, it WAS until I apparently got Neuralyzed.
+    #index 11
     #name player 
     /*notes 
     G didn't see anyone in the evidence room
@@ -252,6 +265,7 @@ detective g doesn't remember getting Neuralyzed */
         #name Detective G 
         Yup.
         I guess the GOAT's motives will remain an enigma.
+        #index 12
         #name player 
         (The GOAT's motives are always enigmatic if you ask me.)
         /*notes: 
@@ -282,6 +296,7 @@ detective g doesn't remember getting Neuralyzed */
     #name Detective G 
     The details are still fuzzy...
     If I rememer later I'll let you know.
+    #index 13
     #name player 
     (This is going nowhere. I'll move on to another question).
     
@@ -298,6 +313,7 @@ detective g doesn't remember getting Neuralyzed */
         Fine. I don't remember anyone in that room except me.
         #name player 
         See? Was that so hard?
+        #index 14
         #name Detective G 
         Nah, it wasn't.
         /*notes:
@@ -325,6 +341,7 @@ Are you interrogating me?
 #name player 
 Nope! Not at all! Don't worry about it! 
 #returnToSave 
+#index 15
 ->END
 
 =Cont1
@@ -418,6 +435,7 @@ Only 3? Huh, that's pretty short for an interrogation.
 Wait, are you going to Nueralyze me?
 #name player 
 No. Don't worry about it.
+#index 15
 ->END
 
 =done1
@@ -428,8 +446,10 @@ I was going to Neuralyze and interrogation you, but I don't think that's necessa
 Hey, thanks! That's pretty goated of you! 
 #name player 
 (I never knew goat was also a verb and an adjective.)
+#index 15
 
 ->END
 
 =done2
+#index 15
 ->END

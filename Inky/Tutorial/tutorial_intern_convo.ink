@@ -1,3 +1,4 @@
+#index 15
 #name intern 
 Hi, I was hoping to apply for the internship position!
 #name player 
@@ -43,6 +44,7 @@ How long did you work there?
 #name intern
 I did leave after only two relative years, because the working conditions were absolutely terrible. 
 My old supervisor used to scream when papers weren't processed fast enough.
+#index 1
 #name player 
 Don't worry, the Boss never yells at people. And he only occasionally takes nibbles.
 ~ cont1 = true
@@ -64,6 +66,7 @@ notes:
     No, probably not.
     Mvoing on, I do want to warn you, this IS a precinct for criminals, so we can't really guarantee your safety.
     But, we CAN guarantee that everyone at the precinct respects you. We have a zero tolerance for hazing, ghosting, and gaslighting.
+    #index 2
     #name intern 
     Not sure what all those terms are but that does sound nice.
 /*
@@ -88,6 +91,7 @@ Anything else you want in your workplace?
 Well, I actually have a lot more to say on this. 
 I've had some...bad experiences in the past.
 I have strong opinions on office morality, Creature Resources, hiring practices, workplace relationships, dress code, food quality, pension program, retirement program, insurance policy, tax benefits, employee discounts, friends and family visitation p-
+#index 5
 #name player 
 Ok, ok, that's enough. We'll move onto the next question.
 /*
@@ -106,6 +110,7 @@ notes:
     And, uh, how long did you work there?
     #name intern 
     Oh, uhm, I stayed there for 12 relative years. I have references, they'll tell you I was a hard, dedicated worker..
+    #index 6
     #name player 
     I'll leave reference checking to you, player.
     ~cont2 = true
@@ -126,6 +131,7 @@ Contradiction? What do you mean?
 Oh, I think I misheard something.
 (Shoot. I should memory wipe them and get back to where I was).
 #return ToSave
+#index 15
 ->END
 
 =Cont1
@@ -182,6 +188,7 @@ Uhm, I can't really think of any more at the moment.
 (All right C, you're out of questions. Time to scrub the brain clean!)
 (Remember, best practice says you apply the same stimuli to the subject, so be sure to ask the same question after using the Neuralyzer!)
 ~cont3 = true
+#index 15
 ->END
 
 =DONE2
@@ -192,6 +199,7 @@ Contradiction?
 #name player 
 (Oops. I spoke that out loud. Oh well, it doesn't matter).
 (I should try confronting them on their contradictory statement for maximum effect next time).
+#index 15
 ->END
 
 =DONE3
@@ -206,4 +214,5 @@ Thanks...? Wait, how'd you-
 I'm a detective. I do this for a living.
 #name intern 
 Woooow...
+#index 15
 ->END
