@@ -8,9 +8,11 @@ public class CharacterInfo : ScriptableObject
 {
     public new string name;
     public Sprite sprite;
-    public int indextrigger;
     public bool guilty;
-    public bool interrogated;
+    public int indexTrigger;
+    public bool talked;
+    public int boolID;
+    public CharacterInfo secondCharacter;
     public List<string> contradictions = new List<string> { };
 }
 

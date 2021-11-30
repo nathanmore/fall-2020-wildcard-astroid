@@ -14,9 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Shudderz
   sprite: {fileID: 3268200912896706232, guid: 15f73825a7f13ee418822239c7e2ede2, type: 3}
-  indextrigger: 0
   guilty: 0
-  interrogated: 0
+  indexTrigger: 0
+  talked: 1
+  boolID: 0
+  secondCharacter: {fileID: 0}
   contradictions:
-  - He claims not to remember asking Dauphin to delete the footage and may have been
-    memory wiped
+  - Shudderz claims not to remember asking Dauphin to delete the footage and may
+    have been memory wiped

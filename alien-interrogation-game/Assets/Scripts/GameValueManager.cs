@@ -20,6 +20,7 @@ public class GameValueManager : MonoBehaviour
     public bool stage2InfoDetG = false;
     public bool stage2InfoSleethy = false;
 
+    public List<bool> info = new List<bool> { };
 
     //used to record important pieces of info seen
     List<string> convoKnowledge = new List<string>();
@@ -28,9 +29,9 @@ public class GameValueManager : MonoBehaviour
 
     private int currIndex;
 
-
     private void Start()
     {
+        info = new List<bool>() { tutorialInternInfo, stage1InfoDauphin, stage1InfoADA1N, stage2InfoAlabaster, stage2InfoDetG, stage2InfoSleethy};
         instance.currIndex = 15;
     }
 
@@ -135,7 +136,7 @@ public class GameValueManager : MonoBehaviour
         }
         else if (scene == "GoodEnding")
         {
-            //NarrativeLoader.narrativeLoader.StageInterrogation(?)
+            NarrativeLoader.narrativeLoader.Ending(true);
         }
         else
         {

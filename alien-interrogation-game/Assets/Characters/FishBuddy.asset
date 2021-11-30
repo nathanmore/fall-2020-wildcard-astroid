@@ -14,3 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Fish Buddy
   sprite: {fileID: -8628822604558622053, guid: 02ec11b7f4c07e745b38442bd355ae37, type: 3}
+  guilty: 0
+  indexTrigger: 0
+  talked: 0
+  boolID: 0
+  secondCharacter: {fileID: 0}
+  contradictions: []

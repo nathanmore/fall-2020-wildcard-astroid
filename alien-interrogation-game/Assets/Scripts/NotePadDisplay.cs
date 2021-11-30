@@ -37,20 +37,44 @@ public class NotePadDisplay : MonoBehaviour
 
     public void Display()
     {
-       // Debug.Log("Displaying");
+        // Debug.Log("Displaying");
+        int number = 1;
         image.sprite = characterInfo.image.sprite;
         nameText.text = characterInfo.characterName.text;
-        notes.text = "";
+
+        notes.text = "Not enough info";
+
         if (characterInfo.interrogated)
         {
+            notes.text = "";
             foreach (string s in characterInfo.notes)
             {
                 int i = characterInfo.notes.IndexOf(s);
-                if (i < characterInfo.indexTrigger) notes.text += s + "\n";
-                //if (GameValueManager.CurrIndex >= characterInfo.indexTrigger) notes.text += s + "\n";
-                if (i == characterInfo.indexTrigger && 1 >= characterInfo.indexTrigger) notes.text += s + "\n";
+
+                if (i < characterInfo.indexTrigger)
+                {
+                    notes.text += number + ". " + s + "\n";
+                    number++;
+                }
+                if (characterInfo.secondCharacter != null)
+                {
+                    if (i == characterInfo.indexTrigger && characterInfo.secondCharacter.talked)
+                    {
+                        notes.text += "\n" +"New Contradiction" + "\n";
+                        notes.text += number + ". " + s + "\n";
+                        number++;
+                    }
+                }
+            }
+        }
+        else if (characterInfo.interacted && characterInfo.boolID == 0)
+        {
+            notes.text = "";
+            foreach (string s in characterInfo.notes)
+            {
+                notes.text += number + ". " + s + "\n";
+                number++;
             }
         }
     }
-
 }

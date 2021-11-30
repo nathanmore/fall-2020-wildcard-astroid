@@ -14,8 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: LTAnorakSect
   sprite: {fileID: -2393588265003470299, guid: 7dd08e54f1321044eb3cc4a1d805bd6d, type: 3}
-  id: 0
   guilty: 0
+  indexTrigger: 0
+  talked: 1
+  boolID: 0
+  secondCharacter: {fileID: 0}
   contradictions:
-  - ADA1N's blaster was missing at the time of the theft.
-  - Alabaster found and returned the blaster after the theft.
+  - If you're reading this, that means you're not solving the case. "GO BACK TO WORK!"
+    - LTAnorakSect
