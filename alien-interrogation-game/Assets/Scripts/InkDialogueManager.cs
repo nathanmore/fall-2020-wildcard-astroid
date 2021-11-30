@@ -34,6 +34,7 @@ public class InkDialogueManager : MonoBehaviour
     private bool choicesShown = false;
     private string currentSentence;
     private float typeDelay = 0.01f; //Determines delay between each character being printed
+    bool buttonsSet = false;
 
 
     /// Various variables used for saving and loading into a specific state in the story
@@ -62,8 +63,8 @@ public class InkDialogueManager : MonoBehaviour
         skip = false; 
 
         // Makes it so that buttons preform their task when clicked
-        confrontButton.GetComponent<Button>().onClick.AddListener(() => { ConfrontButton(); });
-        memoryButon.GetComponent<Button>().onClick.AddListener(() => { MemoryWipe(); });
+        //confrontButton.GetComponent<Button>().onClick.AddListener(() => { ConfrontButton(); });
+        //memoryButon.GetComponent<Button>().onClick.AddListener(() => { MemoryWipe(); });
     }
 
     private void Update()
@@ -102,6 +103,11 @@ public class InkDialogueManager : MonoBehaviour
             // Makes UI for dialogue visible
             dialogueUI.SetActive(true);
 
+            if (buttonsSet == false)
+            {
+                AddButtonListeners();
+            }
+
             AdvanceDialogue();
 
             // Are there any choices?
@@ -116,6 +122,15 @@ public class InkDialogueManager : MonoBehaviour
         }
     }
 
+    public void AddButtonListeners()
+    {
+        // Makes it so that buttons preform their task when clicked
+        confrontButton.GetComponent<Button>().onClick.AddListener(() => { ConfrontButton(); });
+        memoryButon.GetComponent<Button>().onClick.AddListener(() => { MemoryWipe(); });
+
+        buttonsSet = true;
+    }
+
     // Finished the story
     public void FinishDialogue()
     {
@@ -123,6 +138,7 @@ public class InkDialogueManager : MonoBehaviour
 
         // Makes dialogue UI invisible
         dialogueUI.SetActive(false);
+        buttonsSet = false;
         PlayerMovement.playerMovement.AllowMovement(true);
 
         // Sets story to passive phrase
