@@ -51,11 +51,13 @@ public class PlayerMovement : MonoBehaviour
             movement.x = Input.GetAxisRaw("Horizontal");
             if (movement.x > 0)
             {
+                AudioManager.audioManager.PlayAudio("Walking Sound");
                 sprite.flipX = false;
                 animator.SetBool("SideWalking", true);
             }
             else if (movement.x < 0)
             {
+                AudioManager.audioManager.PlayAudio("Walking Sound");
                 sprite.flipX = true;
                 animator.SetBool("SideWalking", true);
             }
@@ -66,10 +68,12 @@ public class PlayerMovement : MonoBehaviour
 
             if (movement.y > 0)
             {
+                AudioManager.audioManager.PlayAudio("Walking Sound");
                 animator.SetBool("Backwards", true);
             }
             else if (movement.y < 0)
             {
+                AudioManager.audioManager.PlayAudio("Walking Sound");
                 animator.SetBool("Forwards", true);
             }
             else

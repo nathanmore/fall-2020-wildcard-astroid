@@ -12,6 +12,5 @@ public class CharacterInfo : ScriptableObject
     public bool guilty;
     public bool interrogated;
     public List<string> contradictions = new List<string> { };
-   
 }
 

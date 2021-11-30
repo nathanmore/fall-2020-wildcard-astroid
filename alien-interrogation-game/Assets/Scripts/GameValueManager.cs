@@ -13,7 +13,7 @@ public class GameValueManager : MonoBehaviour
     private string stage2SceneName = "Stage2_Int";
 
     // Bools used to track player info for scene transitions from tutorial to stage 1 and stage 1 to stage 2
-    public bool tutorialInfo = false;
+    public bool tutorialInternInfo = false;
     public bool stage1Info1 = false;
     public bool stage1Info2 = false;
 
@@ -81,9 +81,9 @@ public class GameValueManager : MonoBehaviour
 
     public static void SetInfoBools(string boolName)
     {
-        if (boolName == "tutorialInfo")
+        if (boolName == "tutorialInternInfo")
         {
-            instance.tutorialInfo = true;
+            instance.tutorialInternInfo = true;
         }
         else if (boolName == "stage1Info1")
         {
