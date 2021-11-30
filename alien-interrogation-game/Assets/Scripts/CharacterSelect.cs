@@ -132,8 +132,12 @@ public class CharacterSelect : MonoBehaviour
             // SceneManager.LoadScene("You Win");
         }
         else
+        {
+            gameObject.SetActive(false);
             NarrativeLoader.narrativeLoader.Ending(false);
-           // SceneManager.LoadScene("You Lose");
+            // SceneManager.LoadScene("You Lose");
+        }
+
     }
 
 }
