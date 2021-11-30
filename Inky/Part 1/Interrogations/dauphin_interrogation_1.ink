@@ -372,7 +372,7 @@ Knock yourself out, buddy.
 
 
 
-=== CONTRADICTION ===
+===CONTRADICTION===
 = Default
     {cont1 == true && Tree3.branch2 : -> Cont1}
     {cont2 == true && Tree1.branch1 : -> Cont2}

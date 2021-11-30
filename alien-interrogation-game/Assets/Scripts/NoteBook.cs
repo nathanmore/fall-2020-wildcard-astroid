@@ -61,44 +61,44 @@ public class NoteBook : MonoBehaviour
             if (page == 0)
             {
                 title.text = "Page 1";
-                message.text = "1. " + question1 + "\n   " + notebook[0];
-                message.text += "\n\n2. " + question2 + "\n   " + notebook[1];
-                message.text += "\n\n3. " + question3 + "\n   " + notebook[2];
+                message.text = "1. " + question1 + "\n-" + notebook[0];
+                message.text += "\n\n2. " + question2 + "\n-" + notebook[1];
+                message.text += "\n\n3. " + question3 + "\n-" + notebook[2];
             }
             else if (page == 1)
             {
                 title.text = "Page 2";
-                message.text = "1. " + question1 + "\n   " + notebook[0];
-                message.text += "\n\n2. " + question3 + "\n   " + notebook[3];
-                message.text += "\n\n3. " + question2 + "\n   " + notebook[4];
+                message.text = "1. " + question1 + "\n-" + notebook[0];
+                message.text += "\n\n2. " + question3 + "\n-" + notebook[3];
+                message.text += "\n\n3. " + question2 + "\n-" + notebook[4];
             }
             else if (page == 2)
             {
                 title.text = "Page 3";
-                message.text = "1. " + question2 + "\n   " + notebook[5];
-                message.text += "\n\n2. " + question1 + "\n   " + notebook[6];
-                message.text += "\n\n3. " + question3 + "\n   " + notebook[7];
+                message.text = "1. " + question2 + "\n-" + notebook[5];
+                message.text += "\n\n2. " + question1 + "\n-" + notebook[6];
+                message.text += "\n\n3. " + question3 + "\n-" + notebook[7];
             }
             else if (page == 3)
             {
                 title.text = "Page 4";
-                message.text = "1. " + question2 + "\n   " + notebook[5];
-                message.text += "\n\n2. " + question3 + "\n   " + notebook[8];
-                message.text += "\n\n3. " + question1 + "\n   " + notebook[9];
+                message.text = "1. " + question2 + "\n-" + notebook[5];
+                message.text += "\n\n2. " + question3 + "\n-" + notebook[8];
+                message.text += "\n\n3. " + question1 + "\n-" + notebook[9];
             }
             else if (page == 4)
             {
                 title.text = "Page 5";
-                message.text = "1. " + question3 + "\n   " + notebook[10];
-                message.text += "\n\n2. " + question1 + "\n   " + notebook[11];
-                message.text += "\n\n3. " + question2 + "\n   " + notebook[12];
+                message.text = "1. " + question3 + "\n-" + notebook[10];
+                message.text += "\n\n2. " + question1 + "\n-" + notebook[11];
+                message.text += "\n\n3. " + question2 + "\n-" + notebook[12];
             }
             else if (page == 5)
             {
                 title.text = "Page 6";
-                message.text = "1. " + question3 + "\n   " + notebook[10];
-                message.text += "\n\n2. " + question2 + "\n   " + notebook[13];
-                message.text += "\n\n3. " + question1 + "\n   " + notebook[14];
+                message.text = "1. " + question3 + "\n-" + notebook[10];
+                message.text += "\n\n2. " + question2 + "\n-" + notebook[13];
+                message.text += "\n\n3. " + question1 + "\n-" + notebook[14];
             }
         }
 
