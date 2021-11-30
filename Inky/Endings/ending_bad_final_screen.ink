@@ -1,0 +1,3 @@
+Detective C did not catch the criminal with the stolen Neuralyzer. Slowly, one by one, the criminal Neuralyzed each and every creature in the precinct until nobody remembered anything. Nobody knew what a Neuralyzer was. The days stopped advancing. The mastermind was unstoppable, because everyone had forgot there was a mastermind. Detective C's investigation was long forgotten. The whole ordeal may as well have never happened in the first place.
+
+Game Over.
