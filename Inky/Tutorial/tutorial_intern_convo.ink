@@ -149,7 +149,7 @@ Now fess up. You goofed.
 I'm sorry, I did lie! I gave that whole speech about loyalty, I didn't want to sabotage myself! 
 #name player 
 Sometimes that's the best play.
-#found tutorialInfo
+#found tutorialInternInfo
 ->DONE
 
 =Cont2
@@ -168,7 +168,7 @@ I know. We have a memory loss device. I wiped your memory.
 W-w-WHAT? Hello? Really? This isn't science fiction! 
 #name player 
 Shush. You'll learn on the job.
-#found tutorialInfo
+#found tutorialInternInfo
 ->DONE
 
 === DONE ===
