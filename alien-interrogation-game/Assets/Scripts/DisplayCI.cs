@@ -7,32 +7,74 @@ using TMPro;
 public class DisplayCI : MonoBehaviour
 {
     public CharacterInfo m_CI;
+    [HideInInspector] 
+    public CharacterInfo secondCharacter;
     public TextMeshProUGUI characterName; //This is for editing the name using DisplayCI
     public Image image;
     public static DisplayCI displayer;
-    [HideInInspector] public List<string> notes;
-    [HideInInspector] public bool guilty ;
-    [HideInInspector] public int indexTrigger;
-    [HideInInspector] public bool interrogated;
+
+    //Strings to print out in the accusation scene
+    [HideInInspector] 
+    public List<string> notes;
+    
+    //Bool to check if the character is guilty 
+    [HideInInspector] 
+    public bool guilty;
+
+    //check if palyer interacter with this person
+    [HideInInspector]
+    public bool interacted;
+
+    //Tells at what index to stop printing
+    [HideInInspector] 
+    public int indexTrigger;
+
+    //Bool to check if played knows the info
+    [HideInInspector] 
+    public bool interrogated;
+
+    [HideInInspector]
+    public int boolID;
+
     void Awake()
     {
         characterName.text = m_CI.name;
         image.sprite = m_CI.sprite;
+
+        guilty = m_CI.guilty;
+
+        if(m_CI.secondCharacter != null)
+            secondCharacter = m_CI.secondCharacter;
+
         //these are the notes that are going to be displayed in the notepad
         notes = m_CI.contradictions;
-        guilty = m_CI.guilty;
-        if (m_CI.indextrigger > 0)
-            indexTrigger = m_CI.indextrigger;
+
+        //checks if index is out of bounds or less than zero
+        if (m_CI.indexTrigger > 0)
+        {
+            indexTrigger = m_CI.indexTrigger;
+        }
+        else if (indexTrigger > notes.Count)
+        {
+            indexTrigger = notes.Count;
+            Debug.Log("Index out of bounds");
+        }
         else
             indexTrigger = notes.Count;
 
-        interrogated = m_CI.interrogated;
+        boolID = m_CI.boolID;   
+        interrogated = GameValueManager.instance.info[m_CI.boolID];
+
+        interacted = m_CI.talked;
+
         displayer = this;       
     }
-
     private void Update()
     {
-        interrogated = m_CI.interrogated;
+        if(secondCharacter != null)
+             interacted = secondCharacter.talked;
+
+        interrogated = GameValueManager.instance.info[boolID];
     }
     //this method is used for displaying character outside of DisplayCI;
     public void DisplayImage(CharacterInfo character)

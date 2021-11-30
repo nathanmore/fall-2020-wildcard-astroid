@@ -14,7 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Nerguzzus Collective
   sprite: {fileID: -8914878883170797022, guid: e73ffdb8f24f68e49adec3d932194dd2, type: 3}
-  indextrigger: 0
   guilty: 0
-  interrogated: 0
-  contradictions: []
+  indexTrigger: 0
+  talked: 0
+  boolID: 0
+  secondCharacter: {fileID: 0}
+  contradictions:
+  - Nerguzzus asked Sleethy to meet Detective G in the evidence room.

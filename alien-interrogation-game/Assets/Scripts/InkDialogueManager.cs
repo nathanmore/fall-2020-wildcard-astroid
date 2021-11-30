@@ -251,6 +251,9 @@ public class InkDialogueManager : MonoBehaviour
                     else
                     {
                         SetSpeaker(characterInfo); //Edited by Josh to display image and name
+                        //if statement added to check specifically if the player interacted with these two AIs 
+                        if (characterInfo.name == "Shudderz" || characterInfo.name == "Nerguzzus Collective")
+                            characterInfo.talked = true;
                     }
                     break;
                 case "index":

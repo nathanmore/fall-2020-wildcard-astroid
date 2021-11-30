@@ -14,9 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Sleeeethly
   sprite: {fileID: -2368599648349397426, guid: f0368d7a080b759489546dce5fcad674, type: 3}
-  indextrigger: 2
   guilty: 0
-  interrogated: 0
+  indexTrigger: 2
+  talked: 0
+  boolID: 5
+  secondCharacter: {fileID: 11400000, guid: d51ec161f03282c438c8d9911621528d, type: 2}
   contradictions:
   - She admits to having a task in the evidence room.
   - She admits to stopping at the evidence room door and ignoring her task.
