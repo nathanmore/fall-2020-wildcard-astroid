@@ -51,35 +51,38 @@ public class PlayerMovement : MonoBehaviour
             movement.x = Input.GetAxisRaw("Horizontal");
             if (movement.x > 0)
             {
-                AudioManager.audioManager.PlayAudio("Walking Sound");
+                AudioManager.audioManager.sounds[AudioManager.audioManager.sounds.Length - 1].source.mute = false;
                 sprite.flipX = false;
                 animator.SetBool("SideWalking", true);
             }
             else if (movement.x < 0)
             {
-                AudioManager.audioManager.PlayAudio("Walking Sound");
+                AudioManager.audioManager.sounds[AudioManager.audioManager.sounds.Length - 1].source.mute = false;
                 sprite.flipX = true;
                 animator.SetBool("SideWalking", true);
             }
-            else 
+            else
+            {
+                AudioManager.audioManager.sounds[AudioManager.audioManager.sounds.Length - 1].source.mute = true;
                 animator.SetBool("SideWalking", false);
-
+            }
             movement.y = Input.GetAxisRaw("Vertical");
 
             if (movement.y > 0)
             {
-                AudioManager.audioManager.PlayAudio("Walking Sound");
+                AudioManager.audioManager.sounds[AudioManager.audioManager.sounds.Length - 1].source.mute = false;
                 animator.SetBool("Backwards", true);
             }
             else if (movement.y < 0)
             {
-                AudioManager.audioManager.PlayAudio("Walking Sound");
+                AudioManager.audioManager.sounds[AudioManager.audioManager.sounds.Length - 1].source.mute = false;
                 animator.SetBool("Forwards", true);
             }
             else
             {
                 animator.SetBool("Forwards", false);
                 animator.SetBool("Backwards", false);
+                AudioManager.audioManager.sounds[AudioManager.audioManager.sounds.Length - 1].source.mute = true;
             }
         }
     }
