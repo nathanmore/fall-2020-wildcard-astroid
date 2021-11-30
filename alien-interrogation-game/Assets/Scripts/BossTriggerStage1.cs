@@ -19,7 +19,7 @@ public class BossTriggerStage1 : MonoBehaviour
 
     private void Update()
     {
-        if (GameValueManager.instance.stage1Info1 == true && GameValueManager.instance.stage1Info2 == true)
+        if (GameValueManager.instance.stage1InfoDauphin == true && GameValueManager.instance.stage1InfoADA1N == true)
         {
             currDialogueObject = dialogueObject2;
         }
