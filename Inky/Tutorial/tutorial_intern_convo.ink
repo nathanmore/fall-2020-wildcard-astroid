@@ -44,7 +44,7 @@ How long did you work there?
 #name intern
 I did leave after only two relative years, because the working conditions were absolutely terrible. 
 My old supervisor used to scream when papers weren't processed fast enough.
-#index 1
+#index 0
 #name player 
 Don't worry, the Boss never yells at people. And he only occasionally takes nibbles.
 ~ cont1 = true
@@ -66,7 +66,7 @@ notes:
     No, probably not.
     Mvoing on, I do want to warn you, this IS a precinct for criminals, so we can't really guarantee your safety.
     But, we CAN guarantee that everyone at the precinct respects you. We have a zero tolerance for hazing, ghosting, and gaslighting.
-    #index 2
+    #index 1
     #name intern 
     Not sure what all those terms are but that does sound nice.
 /*
