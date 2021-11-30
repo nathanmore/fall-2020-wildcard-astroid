@@ -96,9 +96,15 @@ public class PlayerMovement : MonoBehaviour
         rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
     }
 
-    public void AllowMovement(bool movement)
+    public void AllowMovement(bool movementAllowed)
     {
-        allowed = movement;
+        allowed = movementAllowed;
+
+        // Makes player stop moving even if they enter convo while in motion
+        if (allowed == false)
+        {
+            movement = Vector2.zero;
+        }
     }
     public void AlreadyOpened(bool opened)
     {
