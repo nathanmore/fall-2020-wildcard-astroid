@@ -104,6 +104,9 @@ public class PlayerMovement : MonoBehaviour
         if (allowed == false)
         {
             movement = Vector2.zero;
+            animator.SetBool("SideWalking", false);
+            animator.SetBool("Forwards", false);
+            animator.SetBool("Backwards", false);
         }
     }
     public void AlreadyOpened(bool opened)
