@@ -17105,8 +17105,8 @@ GameObject:
   - component: {fileID: 1287118137}
   - component: {fileID: 1287118136}
   - component: {fileID: 1287118135}
-  - component: {fileID: 1287118138}
   - component: {fileID: 1287118134}
+  - component: {fileID: 1287118138}
   m_Layer: 0
   m_Name: Shudderz
   m_TagString: Furniture
@@ -17251,11 +17251,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1287118132}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 722dde1a129e34a4b899cca9d535b268, type: 3}
+  m_Script: {fileID: 11500000, guid: a2542b704650bdd4c86208f6f3d25c19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueObject1: {fileID: 1986977933}
   dialogueObject2: {fileID: 284246662}
+  characterName: Shudderz
 --- !u!1 &1290085882 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 560763001393772583, guid: 666d1b94788a89c4a98ad4bcaf03c466, type: 3}
@@ -27494,11 +27495,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 2081405050}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 722dde1a129e34a4b899cca9d535b268, type: 3}
+  m_Script: {fileID: 11500000, guid: a2542b704650bdd4c86208f6f3d25c19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueObject1: {fileID: 876105603}
   dialogueObject2: {fileID: 1360803540}
+  characterName: Alabaster
 --- !u!1 &2082711855
 GameObject:
   m_ObjectHideFlags: 0
