@@ -13,7 +13,7 @@ Whatever your job is!
 (That sounded like it came straight out of a book).
 
 
-->BEGINNING
+-> BEGINNING
 
 === BEGINNING ===
 VAR cont1 = false
