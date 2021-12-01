@@ -20,12 +20,14 @@ public class GameValueManager : MonoBehaviour
     public bool stage2InfoDetG = false;
     public bool stage2InfoSleethy = false;
 
-    public List<bool> info = new List<bool> { };
+    public List<bool> info = new List<bool>();
 
     //used to record important pieces of info seen
     List<string> convoKnowledge = new List<string>();
     //used to track if important info has been gathered from each character
     List<bool> acuKnowledge = new List<bool>();
+
+    public List<CharacterInfo> characters = new List<CharacterInfo>();
 
     private int currIndex;
 
@@ -51,6 +53,11 @@ public class GameValueManager : MonoBehaviour
             stage1InfoDauphin = true;
             stage1InfoADA1N = true;
         }
+        foreach (CharacterInfo c in instance.characters)
+        {
+            c.talked = false;
+        }
+
     }
 
     // Important for making sure there is only one GameValueManager instance
@@ -161,6 +168,7 @@ public class GameValueManager : MonoBehaviour
             // Saves stage player is in
             savedStageNum = 2;
             PlayerPrefs.SetInt("stage", savedStageNum);
+            instance.characters[0].talked = false;
 
             // SceneManager.LoadScene(instance.stage2SceneName); Edited it so that it includes Narrative Loader
             NarrativeLoader.narrativeLoader.StageInterrogation(2); //int parameter for interrogaition number must be a valid interrogation number scene
