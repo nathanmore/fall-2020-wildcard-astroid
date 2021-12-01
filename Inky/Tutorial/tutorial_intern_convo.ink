@@ -90,7 +90,8 @@ Anything else you want in your workplace?
 #name intern 
 Well, I actually have a lot more to say on this. 
 I've had some...bad experiences in the past.
-I have strong opinions on office morality, Creature Resources, hiring practices, workplace relationships, dress code, food quality, pension program, retirement program, insurance policy, tax benefits, employee discounts, friends and family visitation p-
+I have strong opinions on office morality, Creature Resources, hiring practices, workplace relationships, dress code, food quality, ...
+...pension program, retirement program, insurance policy, tax benefits, employee discounts, friends and family visitation p-
 #index 5
 #name player 
 Ok, ok, that's enough. We'll move onto the next question.
@@ -188,7 +189,7 @@ Do you have any more questions?
 Uhm, I can't really think of any more at the moment.
 #name player 
 (All right C, you're out of questions. Time to scrub the brain clean!)
-(Remember, best practice says you apply the same stimuli to the subject, so be sure to ask the same question after using the Neuralyzer!)
+(Remember, best practice says you apply the same stimuli to the subject, so be sure to ask similar questions after using the Neuralyzer!)
 ~cont3 = true
 #index 15
 ->END
@@ -200,7 +201,7 @@ Hmm, I was hoping to spot the contradiction. I don't think I found it yet.
 Contradiction? 
 #name player 
 (Oops. I spoke that out loud. Oh well, it doesn't matter).
-(I should try confronting them on their contradictory statement for maximum effect next time).
+(I should try to get a contradictory statement before confronting them next time).
 #index 15
 ->END
 

@@ -34,9 +34,10 @@ Thanks for the tip off. I'll talk with them.
 Oh, before you go, there's one more thing.
 Word of the theft has reached my superiors. You've been granted Omega level access to the case.
 #name player 
-Wow, really? First Omega clearance, woo!
+Wow, really? Omega clearance!
 #name Boss 
-You may now accuse anyone who you like. As a detective with Omega level clearance, your word is taken to be truth.
+You may now conclude the investigation when you feel ready. 
+As a detective with Omega level clearance, your word is taken to be truth.
 Anyone who you accuse will instantly be judged guilty.
 Do not abuse this power, and good luck.
 #transition stage2

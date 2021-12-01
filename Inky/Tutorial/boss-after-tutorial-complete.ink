@@ -7,7 +7,7 @@ I think you did quite well.
 #name player
 Thanks, Boss. 
 #name Boss 
-Now for the specs:
+Now for the details:
 We think the crime occured three relative days ago, in the evidence room. 
 A blaster was discharged in that room three relative days ago, as well.
 #name player 
@@ -55,6 +55,7 @@ Well don't take too long. I need you on this case ASAP.
 === DONE ===
      #name Boss
      Are you ready to start your investigation?
+     #name player
      +I'm ready!     -> Ready
      +I'm not ready  -> NotReady
      +Hit me with the specs again -> Specs
