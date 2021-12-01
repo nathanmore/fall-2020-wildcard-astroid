@@ -467,6 +467,7 @@ Oop, and your memories are gone.
 Never mind, ADA1N. Responsible gun owner. I believe ya.
 ~done = true
 #index 15
+#found stage1InfoADA1N
 ->DONE
 
 //lie: you had it on you
@@ -497,6 +498,7 @@ Oop, and your memories are gone.
 Never mind, ADA1N. Responsible gun owner. I believe ya.
 ~done = true 
 #index 15
+#found stage1InfoADA1N
 ->DONE
 
 //lie: the weapon was not fired.
@@ -527,6 +529,7 @@ Oop, and your memories are gone.
 Never mind, ADA1N. Responsible gun owner. I believe ya.
 ~done = true 
 #index 15
+#found stage1InfoADA1N
 ->DONE
 
 //lie: the weapon was fired.
@@ -556,6 +559,7 @@ Oop, and your memories are gone.
 Never mind, ADA1N. Responsible gun owner. I believe ya.
 ~done = true 
 #index 15
+#found stage1InfoADA1N
 ->DONE
 
 ==DONE== 
