@@ -15741,20 +15741,20 @@ MonoBehaviour:
     a blaster.
   - ADA1N is not the only one with a blaster. The boss, detctive g, and sleethy all
     carry a blaster.
-  - ADA1N did fire the in the past 3 days
+  - ADA1N did fired the weapon several times in the past 3 days
   - ADA1N had his blaster on him for the past 3 relative days
   - ADA1N is very fond of its blaster
-  - ADA1N is not the only one with a blaster. THe boss, and detective g both carry
+  - ADA1N is not the only one with a blaster. The boss, and detective g both carry
     a blaster.
   - ADA1N is not the only one with a blaster. The boss, and detective g both carry
     a blaster.
   - ADA1N got very angry when I asked for his blaster
   - ADA1N is not the only one with a blaster. The boss, and detective g both carry
     a blaster.
-  - the weapon was fired several TIMES
-  - 'ADA1N says he lent his blaster to detective g  '
+  - ADA1N fired the weapon several times in the past 3 days
+  - 'ADA1N says they lent their blaster to detective g  '
   - ADA1N did not fire the weapon
-  - ADA1N did not fire the in the past 3 days
+  - ADA1N is hesitant to let me see the weapon
 --- !u!1 &1071589736
 GameObject:
   m_ObjectHideFlags: 0
@@ -17159,27 +17159,22 @@ MonoBehaviour:
   notebookTitle: {fileID: 1290085882}
   isTutorial: 0
   facts:
-  - Dauphin, Detective G, The Boss and Nerguzzus have the password, someone may have
-    seen it though.
-  - Not sure, someone else may have left it unlocked
-  - Dauphin never leaves door unlocked when not present, Nerguzzus may have left
-    unlocked
-  - Dauphin never leaves door unlocked when not present, Nerguzzus may have left
-    unlocked
-  - 'Says Nerguzzus deleted it, but Dauphin is being suspicious '
-  - Happened when Dauphin was away
-  - Dauphin, Detective G, The Boss and Nerguzzus have the password, someone may have
-    seen it though.
-  - Dauphin never leaves door unlocked when not present, Nerguzzus may have left
-    unlocked
-  - Dauphin never leaves door unlocked when not present, Nerguzzus may have left
-    unlocked
-  - Only Dauphin and Nerguzzus really have access to the footage
+  - Dauphin, Detective G, and the Bosshave the password, someone may have seen it
+    though.
+  - Dauphin thinks a password spotter may have deleted the footage
+  - Dauphin broke protocol and left the door open one time
+  - Dauphin never leaves door unlocked when not present
+  - Nothing important here
+  - Footage deletion happened when Dauphin was away
+  - Dauphin, Detective G, and the Boss have the password.
+  - Dauphin never leaves door unlocked when not present
+  - Dauphin never leaves door unlocked when not present
+  - Only Dauphin frequently accesses the footage
   - Dauphin never leaves the door unlocked
   - Files weren't deleted during Dauphin's shift
-  - Only Nerguzzus manages tge files, and probably deleted them
-  - Dauphin, Detective G, The Boss and Nerguzzus have the password, someone may have
-    seen it though.
+  - There's a 25-factor authentication process to prevent password-gleaming
+  - Dauphin, Detective G, and the Bosshave the password, someone may have seen it
+    though.
   - Files weren't deleted during Dauphin's shift
 --- !u!1 &1287118132
 GameObject:

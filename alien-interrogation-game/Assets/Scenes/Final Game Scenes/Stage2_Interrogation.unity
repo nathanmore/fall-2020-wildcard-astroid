@@ -1290,21 +1290,21 @@ MonoBehaviour:
   notebookTitle: {fileID: 659060227}
   isTutorial: 0
   facts:
-  - det. G was alone in the evidence room
-  - Detective g went to the evidence room to check out evidence
-  - Det. G doesn't remember being neuralyzed
-  - Det. G doesn't remember being neuralyzed
+  - G was alone in the evidence room
+  - G went to the evidence room to check out evidence
+  - G doesn't remember being neuralyzed
+  - G doesn't remember being neuralyzed
   - G was sent an email to go to the evidence rooom
   - G went to pick up some evidence
   - G didn't see anyone in the evidence room
-  - Det. G doesn't remember being neuralyzed
-  - Det. G doesn't remember being neuralyzed
-  - g didn't see anybody in the evidence room
-  - detective g doesn't remember getting Neuralyzed
+  - G doesn't remember being neuralyzed
+  - G doesn't remember being neuralyzed
+  - G didn't see anybody in the evidence room
+  - G doesn't remember getting Neuralyzed
   - G didn't see anyone in the evidence room
-  - Det g forgot why he went to the room
-  - 'detective g went to the evidence room to check out evidence '
-  - Detective G doesn't remember anyone else in the room
+  - G forgot why he went to the room
+  - 'G went to the evidence room to check out evidence '
+  - G doesn't remember anyone else in the room
 --- !u!4 &171024628 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7245478059402475633, guid: 69f77c3d866db9942ae0f1b97a362a79, type: 3}
@@ -19520,20 +19520,21 @@ MonoBehaviour:
   isTutorial: 0
   facts:
   - Alabster found the blaster on his desk
-  - Alabaster was at his desk at the time of the theft, at 3 o'clock
+  - Alabaster was at his desk at the time of the theft, 3 o'clock
   - Alabaster can be sensible but chooses not to
-  - Alabaster won't stop talking in riddles
-  - alabster was at his desk at the time
-  - ADA1N did not go into the evidence room
+  - Alabaster can be sensible but chooses not to
+  - Alabster was at his desk at the time of the theft, 3 o'clock
+  - Alabaster  did not go into the evidence room
   - Alabaster found the blaster on his desk
   - Alabaster can be sensible but chooses not to
-  - Alabaster won't stop talking in riddles
+  - Alabaster can be sensible but chooses not to
   - Alabaster was asleep 3 days ago between 1 and 5 o'clock
   - Alabaster won't stop talking in riddles
-  - ' Alabaster found the blaster on his desk'
-  - alabster was at his desk at the time
-  - alabster was in the lounge
-  - alabaster was in the lounge frmo 1 to 3. THe blaster was dropped on his desk
+  - Alabaster found the blaster on his desk
+  - Alabaster was at his desk at the time of the theft
+  - Alabster was in the lounge three relative days ago.
+  - alabaster was in the lounge frmo 1 to 3. The blaster was dropped on his desk
+    then
 --- !u!4 &1227463741 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7619249194818725793, guid: c469961587422bf4db00cb6f3cbf9172, type: 3}
@@ -27922,20 +27923,20 @@ MonoBehaviour:
   isTutorial: 0
   facts:
   - 'Sleethy was supposed to pick up a photo but didn''t '
-  - Sleethy's case is coming along Well
-  - sleethy claims he didn't see the blaster damage on the wall
-  - sleethy claims he didn't see the blaster damage on the wall
-  - Sleethy's case is coming along Well
-  - 'sleethy still have evidence in the evidence room to be checked out '
-  - sleeethy pick up a photo of a space rock as evidence
-  - sleethy claims he did saw a single shot on the wall
-  - sleethy claims he did saw mulitple shots on the wall
-  - sleeethy pick up a photo of a space rock as evidence
-  - sleethy claims she was busy
-  - sleeethy pick up a photo of a space rock as evidence
-  - Sleethy's case is coming along Well
-  - sleethy is nervous about his case
-  - sleethy is inept as his job
+  - Sleethy's case is coming along well
+  - Sleethy claims she didn't see the blaster damage on the wall
+  - Sleethy claims she didn't see the blaster damage on the wall
+  - Sleethy's case is coming along well
+  - 'Sleethy still have evidence in the evidence room to be checked out '
+  - Sleeethy picked up a photo of a space rock as evidence
+  - Sleethy claims she saw a single shot on the wall
+  - Sleethy claims she saw mulitple shots on the wall
+  - Sleeethy picked up a photo of a space rock as evidence
+  - Sleethy claims she was busy
+  - Sleeethy pick up a photo of a space rock as evidence
+  - Sleethy's case is coming along well
+  - Sleethy is nervous about her case
+  - Sleethy is inept as her job
 --- !u!4 &1947126017 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 367082930377763706, guid: c45dd792c64508c45bfecb209dd4de56, type: 3}
