@@ -6,11 +6,11 @@ using UnityEngine.SceneManagement;
 public class GameValueManager : MonoBehaviour
 {
     public static GameValueManager instance;
-    
+
     [SerializeField]
-    private string stage1SceneName = "Stage1_Interrogation";
-    [SerializeField]
-    private string stage2SceneName = "Stage2_Int";
+    private bool debugging = false;
+
+    public static int savedStageNum;
 
     // Bools used to track player info for scene transitions from tutorial to stage 1 and stage 1 to stage 2
     public bool tutorialInternInfo = false;
@@ -33,6 +33,24 @@ public class GameValueManager : MonoBehaviour
     {
         info = new List<bool>() { tutorialInternInfo, stage1InfoDauphin, stage1InfoADA1N, stage2InfoAlabaster, stage2InfoDetG, stage2InfoSleethy};
         instance.currIndex = 15;
+
+        if (debugging == false)
+        {
+            // Loads what stage player is at
+            savedStageNum = PlayerPrefs.GetInt("stage");
+        }
+        
+        // Sets info booleans based on stage player is at
+        if (savedStageNum == 1)
+        {
+            tutorialInternInfo = true;
+        }
+        else if (savedStageNum == 2)
+        {
+            tutorialInternInfo = true;
+            stage1InfoDauphin = true;
+            stage1InfoADA1N = true;
+        }
     }
 
     // Important for making sure there is only one GameValueManager instance
@@ -126,21 +144,46 @@ public class GameValueManager : MonoBehaviour
     {
         if (scene == "stage1")
         {
+            // Saves stage player is in
+            savedStageNum = 1;
+            PlayerPrefs.SetInt("stage", savedStageNum);
+
             // SceneManager.LoadScene(instance.stage1SceneName); Edited it so that it includes Narrative Loader
             NarrativeLoader.narrativeLoader.StageInterrogation(1); //int parameter for interrogaition number must be a valid interrogation number scene
         }
         else if (scene == "stage2")
         {
+            // Saves stage player is in
+            savedStageNum = 2;
+            PlayerPrefs.SetInt("stage", savedStageNum);
+
             // SceneManager.LoadScene(instance.stage2SceneName); Edited it so that it includes Narrative Loader
             NarrativeLoader.narrativeLoader.StageInterrogation(2); //int parameter for interrogaition number must be a valid interrogation number scene
         }
         else if (scene == "GoodEnding")
         {
+            // Removes save so players can start new game
+            ResetSave();
+
             NarrativeLoader.narrativeLoader.Ending(true);
         }
         else
         {
             Debug.Log("Invalid scene code in Inky");
         }
+    }
+
+    // Erases save data to start new game
+    public static void ResetSave()
+    {
+        savedStageNum = 0;
+        PlayerPrefs.SetInt("stage", savedStageNum);
+
+        instance.tutorialInternInfo = false;
+        instance.stage1InfoDauphin = false;
+        instance.stage1InfoADA1N = false;
+        instance.stage2InfoAlabaster = false;
+        instance.stage2InfoDetG = false;
+        instance.stage2InfoSleethy = false;
     }
 }

@@ -8,9 +8,6 @@ public class NarrativeLoader : MonoBehaviour
     public Animator transition;
     public float transitionTime = 1f;
 
-    [SerializeField]
-    private string firstSceneName = "Tutorial_Int";
-
     public static NarrativeLoader narrativeLoader;
     public enum Scene
     {
@@ -37,7 +34,14 @@ public class NarrativeLoader : MonoBehaviour
 
     public void LoadNextLevel()
     {
-        StartCoroutine(TransitionInt(SceneManager.GetActiveScene().buildIndex + 1));
+        if (GameValueManager.savedStageNum > 0 && GameValueManager.savedStageNum < 3)
+        {
+            StartCoroutine(TransitionInt(SceneManager.GetActiveScene().buildIndex + 1 + GameValueManager.savedStageNum));
+        }
+        else
+        {
+            StartCoroutine(TransitionInt(SceneManager.GetActiveScene().buildIndex + 1));
+        }
     }
     
     public void TitleScreen()
@@ -96,6 +100,17 @@ public class NarrativeLoader : MonoBehaviour
         yield return new WaitForSeconds(transitionTime);
 
         SceneManager.LoadScene(levelName);
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
+
+    public void NewGame()
+    {
+        GameValueManager.ResetSave();
+        LoadNextLevel();
     }
 
 }
