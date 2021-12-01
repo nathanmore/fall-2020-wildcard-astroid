@@ -11,7 +11,8 @@ You looking to be a detective, a beat cop, maybe management?
 Whatever your job is! 
 #name player 
 (That sounded like it came straight out of a book).
-
+#name player
+(Well, I don't feel like doing any more small talk. I suppose I'll just have to start asking questions.)
 
 -> BEGINNING
 
@@ -22,8 +23,6 @@ VAR cont3 = false
 VAR cont4 = false
 
 #name player
-(Well, I don't feel like doing any more small talk. I suppose I'll just have to start asking questions.)
-
 +What was your last place of work? 
     -> Tree1
 +What do you value in your workplace? 
@@ -37,12 +36,12 @@ I worked border and customs patrol. Illegal aliens are a real problem on my plan
 #name player 
 What kind of work did that entail?
 #name intern
-Oh! Uhm, I verified IDs and visas, filed documentation, and occasionally was sent to monitor the border.
+Oh! Uhm, I verified IDs and visas, filed documententation, and occasionally was sent to monitor the border.
 #name player 
 This one seems overqualified for an intern, boss.
 How long did you work there?
 #name intern
-I did leave after only two relative years, because the working conditions were absolutely terrible. 
+I left after only two relative years, because the working conditions were absolutely terrible. 
 My old supervisor used to scream when papers weren't processed fast enough.
 #index 0
 #name player 
@@ -64,7 +63,7 @@ notes:
     I'm very much a "robot-rights" person, that won't be a problem, will it?
     #name player 
     No, probably not.
-    Mvoing on, I do want to warn you, this IS a precinct for criminals, so we can't really guarantee your safety.
+    Moving on, I do want to warn you, this IS a precinct for criminals, so we can't really guarantee your safety.
     But, we CAN guarantee that everyone at the precinct respects you. We have a zero tolerance for hazing, ghosting, and gaslighting.
     #index 1
     #name intern 
@@ -112,8 +111,6 @@ notes:
     #name intern 
     Oh, uhm, I stayed there for 12 relative years. I have references, they'll tell you I was a hard, dedicated worker..
     #index 6
-    #name player 
-    I'll leave reference checking to you, player.
     ~cont2 = true
 /*
 notes:
@@ -182,6 +179,7 @@ Shush. You'll learn on the job.
 ->DONE
 
 === DONE ===
+= Default
 {cont4 == true: ->DONE3}
 {cont3 == true: -> DONE2}
 #name intern 

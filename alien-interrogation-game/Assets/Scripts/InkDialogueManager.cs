@@ -151,13 +151,24 @@ public class InkDialogueManager : MonoBehaviour
     {
         Debug.Log("End of Dialogue");
 
+        RemoveButtonListeners();
+
         // Makes dialogue UI invisible
         dialogueUI.SetActive(false);
-        buttonsSet = false;
+
         PlayerMovement.playerMovement.AllowMovement(true);
 
         // Sets story to passive phrase
         story.ChoosePathString("DONE"); //FIXME: Don't use hard coded string
+    }
+
+    public void RemoveButtonListeners()
+    {
+        // Removes button functionality for this character so it doesn't conflict when talking to new character
+        confrontButton.GetComponent<Button>().onClick.RemoveAllListeners();
+        memoryButon.GetComponent<Button>().onClick.RemoveAllListeners();
+
+        buttonsSet = false;
     }
 
     // Advance through the story

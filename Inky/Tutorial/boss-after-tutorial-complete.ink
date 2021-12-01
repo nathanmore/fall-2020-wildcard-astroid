@@ -49,5 +49,13 @@ ADA1N is responsible for armaments on the mothership, they should be wary of a d
 === NotReady ===
 #name boss
 Well don't take too long. I need you on this case ASAP.
-     -> MENU
+     -> DONE
+     
+
+=== DONE ===
+     #name Boss
+     Are you ready to start your investigation?
+     +I'm ready!     -> Ready
+     +I'm not ready  -> NotReady
+     +Hit me with the specs again -> Specs
 
