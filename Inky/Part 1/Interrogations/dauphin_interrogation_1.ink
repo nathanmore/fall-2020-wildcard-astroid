@@ -203,10 +203,9 @@ I'll note that down.
         You're sure?
         #name Dauphin
         U-um, uhh, yes. 
-        Sometimes they can forget things, right?
         #index 7
         #name player
-        I could imagine that.
+        Understood.
         ~cont3 = true
         #index 15
         ->DONE
