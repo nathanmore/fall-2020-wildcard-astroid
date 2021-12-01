@@ -363,16 +363,16 @@ sleethy claims she was busy*/
 ==CONTRADICTION==
 
 =Default
-{const1 == true && Tree2.branch2} ->Cont1 
-{const2 == true && Tree2.branch1} ->Cont1 
+{const1 == true && Tree2.branch2: ->Cont1 }
+{const2 == true && Tree2.branch1: ->Cont1 }
 
-{const1 == true && Tree1.branch1} ->Cont2
-{const2 == true && Tree1.branch1} ->Cont2
-{const1 == true && Tree1.branch2} ->Cont2
-{const2 == true && Tree1.branch2} ->Cont2
+{const1 == true && Tree1.branch1: ->Cont2 }
+{const2 == true && Tree1.branch1: ->Cont2 }
+{const1 == true && Tree1.branch2: ->Cont2 }
+{const2 == true && Tree1.branch2: ->Cont2 }
 
-{const3 == true && Tree2.branch1} ->Cont2 
-{const3 == true && Tree2.branch2} ->Cont2
+{const3 == true && Tree2.branch1: ->Cont2 }
+{const3 == true && Tree2.branch2: ->Cont2 }
 
 #name player 
 Don't lie to me, Sleethy.
@@ -457,7 +457,7 @@ Unless your memory is good, you'll forget about it, eventually.
 
 ==DONE==
 =Default
-{done == true} -> done1
+{done == true: -> done1}
 #name player 
 Do you mind if I stick around and think about what you told me, Sleethy?
 #name Sleethy
