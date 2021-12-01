@@ -17,7 +17,7 @@ ADA1N is responsible for armaments on the mothership, they should be wary of a d
 #name Boss 
 Wow, I didn't even have to clue you in.
 #name player 
-I worked here a long time, Boss. I still know my way around the place.
+I worked here a long time Boss. I still know my way around the place.
 #name Boss 
 Yeah, you still got it.
 Keep this investigation on the down low out there.

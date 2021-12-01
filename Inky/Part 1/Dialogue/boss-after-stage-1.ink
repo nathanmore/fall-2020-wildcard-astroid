@@ -40,4 +40,8 @@ You may now accuse anyone who you like. As a detective with Omega level clearanc
 Anyone who you accuse will instantly be judged guilty.
 Do not abuse this power, and good luck.
 #transition stage2
-    -> END 
+    -> DONE
+    
+=== DONE ===
+#transition stage2
+-> END

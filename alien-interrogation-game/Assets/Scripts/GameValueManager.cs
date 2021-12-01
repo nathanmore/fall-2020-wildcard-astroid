@@ -45,17 +45,18 @@ public class GameValueManager : MonoBehaviour
         // Sets info booleans based on stage player is at
         if (savedStageNum == 1)
         {
-            tutorialInternInfo = true;
+            SetInfoBools("tutorialInternInfo");
         }
         else if (savedStageNum == 2)
         {
-            tutorialInternInfo = true;
-            stage1InfoDauphin = true;
-            stage1InfoADA1N = true;
+            SetInfoBools("tutorialInternInfo");
+            SetInfoBools("stage1InfoDauphin");
+            SetInfoBools("stage1InfoADA1N");
 
             instance.info[1] = true;
             instance.info[2] = true;
         }
+
         foreach (CharacterInfo c in instance.characters)
         {
             c.talked = false;
@@ -171,7 +172,10 @@ public class GameValueManager : MonoBehaviour
             // Saves stage player is in
             savedStageNum = 2;
             PlayerPrefs.SetInt("stage", savedStageNum);
-            instance.characters[0].talked = false;
+            if (instance.characters.Count > 0)
+            {
+                instance.characters[0].talked = false;
+            }
 
             // SceneManager.LoadScene(instance.stage2SceneName); Edited it so that it includes Narrative Loader
             NarrativeLoader.narrativeLoader.StageInterrogation(2); //int parameter for interrogaition number must be a valid interrogation number scene
@@ -201,5 +205,7 @@ public class GameValueManager : MonoBehaviour
         instance.stage2InfoAlabaster = false;
         instance.stage2InfoDetG = false;
         instance.stage2InfoSleethy = false;
+
+        instance.clearConvoKowledge();
     }
 }
