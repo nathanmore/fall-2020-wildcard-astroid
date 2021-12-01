@@ -31,7 +31,7 @@ public class GameValueManager : MonoBehaviour
 
     private void Start()
     {
-        info = new List<bool>() { tutorialInternInfo, stage1InfoDauphin, stage1InfoADA1N, stage2InfoAlabaster, stage2InfoDetG, stage2InfoSleethy};
+        info = new List<bool>() { instance.tutorialInternInfo, instance.stage1InfoDauphin, instance.stage1InfoADA1N, instance.stage2InfoAlabaster, instance.stage2InfoDetG, instance.stage2InfoSleethy };
         instance.currIndex = 15;
 
         if (debugging == false)
@@ -66,7 +66,6 @@ public class GameValueManager : MonoBehaviour
             Destroy(this);
         }
     }
-
     void addConvoKnowledge(string info)
     {
         instance.convoKnowledge.Add(info);
@@ -113,26 +112,32 @@ public class GameValueManager : MonoBehaviour
         if (boolName == "tutorialInternInfo")
         {
             instance.tutorialInternInfo = true;
+            instance.info[0] = true;
         }
         else if (boolName == "stage1InfoDauphin")
         {
             instance.stage1InfoDauphin = true;
+            instance.info[1] = true;
         }
         else if (boolName == "stage1InfoADA1N")
         {
             instance.stage1InfoADA1N = true;
+            instance.info[2] = true;
         }
         else if (boolName == "stage2InfoAlabaster")
         {
             instance.stage2InfoAlabaster = true;
+            instance.info[3] = true;
         }
         else if (boolName == "stage2InfoDetG")
         {
             instance.stage2InfoDetG = true;
+            instance.info[4] = true;
         }
         else if (boolName == "stage2InfoSleethy")
         {
             instance.stage2InfoSleethy = true;
+            instance.info[5] = true;
         }
         else
         {

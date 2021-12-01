@@ -7,18 +7,18 @@ using TMPro;
 public class DisplayCI : MonoBehaviour
 {
     public CharacterInfo m_CI;
-    [HideInInspector] 
+    [HideInInspector]
     public CharacterInfo secondCharacter;
     public TextMeshProUGUI characterName; //This is for editing the name using DisplayCI
     public Image image;
     public static DisplayCI displayer;
 
     //Strings to print out in the accusation scene
-    [HideInInspector] 
+    [HideInInspector]
     public List<string> notes;
-    
+
     //Bool to check if the character is guilty 
-    [HideInInspector] 
+    [HideInInspector]
     public bool guilty;
 
     //check if palyer interacter with this person
@@ -26,16 +26,15 @@ public class DisplayCI : MonoBehaviour
     public bool interacted;
 
     //Tells at what index to stop printing
-    [HideInInspector] 
+    [HideInInspector]
     public int indexTrigger;
 
     //Bool to check if played knows the info
-    [HideInInspector] 
+    [HideInInspector]
     public bool interrogated;
 
     [HideInInspector]
     public int boolID;
-
     void Awake()
     {
         characterName.text = m_CI.name;

@@ -423,12 +423,11 @@ ADA1N did not fire the in the past 3 days
 
 
 ==CONTRADICTION==
+=Default
 {const1 == true && Tree3.branch1: -> cont1}
 {const2 == true && Tree2: -> cont2}
 {const3 == true && Tree3.branch2: ->cont3}
 {const4 == true && (Tree1.branch1 or Tree1.branch2): ->cont4}
-
-=Default
 #name player 
 Don't lie to me, ADA1N. 
 #name ADA1N 

@@ -16,7 +16,7 @@ MonoBehaviour:
   sprite: {fileID: 3268200912896706232, guid: 15f73825a7f13ee418822239c7e2ede2, type: 3}
   guilty: 0
   indexTrigger: 0
-  talked: 0
+  talked: 1
   boolID: 0
   secondCharacter: {fileID: 0}
   contradictions:

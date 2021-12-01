@@ -14,5 +14,10 @@ public class CharacterInfo : ScriptableObject
     public int boolID;
     public CharacterInfo secondCharacter;
     public List<string> contradictions = new List<string> { };
+
+    public void Start()
+    {
+        talked = false; 
+    }
 }
 
