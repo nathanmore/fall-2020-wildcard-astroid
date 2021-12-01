@@ -53,12 +53,14 @@ public class PlayerMovement : MonoBehaviour
             {
                
                 sprite.flipX = false;
+                animator.SetBool("BackwardsIdle", false);
                 animator.SetBool("SideWalking", true);
             }
             else if (movement.x < 0)
             {
                 
                 sprite.flipX = true;
+                animator.SetBool("BackwardsIdle", false);
                 animator.SetBool("SideWalking", true);
             }
             else
@@ -72,10 +74,11 @@ public class PlayerMovement : MonoBehaviour
             {
                 
                 animator.SetBool("Backwards", true);
+                animator.SetBool("BackwardsIdle", true);
             }
             else if (movement.y < 0)
             {
-                
+                animator.SetBool("BackwardsIdle", false);
                 animator.SetBool("Forwards", true);
             }
             else
