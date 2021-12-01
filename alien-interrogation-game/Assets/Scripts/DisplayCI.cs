@@ -81,4 +81,10 @@ public class DisplayCI : MonoBehaviour
         image.sprite = character.sprite;
         characterName.text = character.name;
     }
+
+    public void DisplayReset()
+    {
+        interacted = false;
+        m_CI.talked = interacted;
+    }
 }
