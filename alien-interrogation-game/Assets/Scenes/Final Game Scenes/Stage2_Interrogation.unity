@@ -25339,6 +25339,18 @@ PrefabInstance:
       propertyPath: debugging
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2512164345199746180, guid: ebfd612857f95ca468c477ee90f1ab01, type: 3}
+      propertyPath: characters.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2512164345199746180, guid: ebfd612857f95ca468c477ee90f1ab01, type: 3}
+      propertyPath: characters.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: d51ec161f03282c438c8d9911621528d, type: 2}
+    - target: {fileID: 2512164345199746180, guid: ebfd612857f95ca468c477ee90f1ab01, type: 3}
+      propertyPath: characters.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: 58182458f420d2c428d61ab6074c8d74, type: 2}
     - target: {fileID: 2512164345199746181, guid: ebfd612857f95ca468c477ee90f1ab01, type: 3}
       propertyPath: m_Name
       value: GameManager

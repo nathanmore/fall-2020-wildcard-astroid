@@ -52,6 +52,9 @@ public class GameValueManager : MonoBehaviour
             tutorialInternInfo = true;
             stage1InfoDauphin = true;
             stage1InfoADA1N = true;
+
+            instance.info[1] = true;
+            instance.info[2] = true;
         }
         foreach (CharacterInfo c in instance.characters)
         {
