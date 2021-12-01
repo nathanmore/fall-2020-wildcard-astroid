@@ -464,7 +464,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: ba7ebf41c4a9d0f43b27abe7f68e4a75, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3845,7 +3845,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 174503410}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 16.22, z: -10}
+  m_LocalPosition: {x: 10.13, y: -9.94, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2044441981}
@@ -5680,7 +5680,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3502233792111486240, guid: 95fe6e3eb8be07a4abb016a9d8991d5d, type: 3}
       propertyPath: m_SortingOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3502233792111486241, guid: 95fe6e3eb8be07a4abb016a9d8991d5d, type: 3}
       propertyPath: m_RootOrder
@@ -16043,7 +16043,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1087405189}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 16.22, z: -10}
+  m_LocalPosition: {x: 10.13, y: -9.94, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1974708992}
@@ -26457,7 +26457,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2512164345199746180, guid: ebfd612857f95ca468c477ee90f1ab01, type: 3}
       propertyPath: debugging
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2512164345199746181, guid: ebfd612857f95ca468c477ee90f1ab01, type: 3}
       propertyPath: m_Name
@@ -27905,7 +27905,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2096024689}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 16.22, z: -1}
+  m_LocalPosition: {x: 10.13, y: -9.94, z: -1}
   m_LocalScale: {x: 1.75, y: 1.75, z: 1}
   m_Children: []
   m_Father: {fileID: 1781300236}
@@ -28456,7 +28456,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 900730428950537588, guid: d03c7440244056f4390de6881c98b8e5, type: 3}
       propertyPath: m_SortingOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 900730428950537590, guid: d03c7440244056f4390de6881c98b8e5, type: 3}
       propertyPath: m_Name
